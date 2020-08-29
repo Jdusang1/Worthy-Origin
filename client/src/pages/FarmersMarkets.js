@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
 
-const Home = () => {
+const FarmersMarkets = () => {
 
   return (
     <>
@@ -55,4 +55,4 @@ const Home = () => {
 
 }
 
-export default Home;
+export default FarmersMarkets;

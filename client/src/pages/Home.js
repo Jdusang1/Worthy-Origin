@@ -33,7 +33,7 @@ const Home = () => {
       <div>
         <h2>DID YOU KNOW?</h2>
         <p>GRAPH</p>
-        <Button>Learn More!</Button>
+        <Button href={"/facts"}>Learn More!</Button>
       </div>
 
       <div>
@@ -61,7 +61,7 @@ const Home = () => {
           <Col>
             <h2>Find your carbon footprint</h2>
             <p>paragraph</p>
-            <Button>Login</Button>
+            <Button >Login</Button>
           </Col>
         </Row>
       </div>
@@ -71,7 +71,7 @@ const Home = () => {
           <Col>
           <h2>Find farmers markets</h2>
             <p>paragraph</p>
-            <Button>Search</Button>
+            <Button href={"/farmersmarkets"}>Search</Button>
           </Col>
           <Col>
             <p>image</p>
