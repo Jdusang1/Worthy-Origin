@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
 
-const Home = () => {
+const Facts = () => {
 
   return (
     <>
@@ -31,54 +31,35 @@ const Home = () => {
 
     <Container>
       <div>
-        <h2>DID YOU KNOW?</h2>
-        <p>GRAPH</p>
-        <Button href={"/facts"}>Learn More!</Button>
+        <h2>DISCOVER GREENHOUSE GAS EMISSIONS FOR A SINGLE FOOD ITEM</h2>
+        <h4>search bar goes here</h4>
+        <Button>Search</Button>
       </div>
 
       <div>
         <Row>
-          <h2>TOP CONTRIBUTERS TO GLOBAL WARMING</h2>
+          <h2>Results</h2>
         </Row>
         <Row>
           <Col>
-            Card goes here
+          <h2>image goes here</h2>
           </Col>
           <Col>
-            Card goes here
-          </Col>
-          <Col>
-            Card goes here
-          </Col>
-        </Row>
-      </div>
-
-      <div>
-        <Row>
-          <Col>
-          <p>image</p>
-          </Col>
-          <Col>
-            <h2>Find your carbon footprint</h2>
-            <p>paragraph</p>
-            <Button >Login</Button>
+            <h2>Search Item</h2>
+            <p>text about blah blah blah</p>
           </Col>
         </Row>
       </div>
 
       <div>
-      <Row>
-          <Col>
-          <h2>Find farmers markets</h2>
-            <p>paragraph</p>
-            <Button href={"/farmers-markets"}>Search</Button>
-          </Col>
-          <Col>
-            <p>image</p>
-          </Col>
+        <Row>
+          <h2>Chart Title</h2>
+        </Row>
+        <Row>
+          <h2>Chart goes here</h2>
         </Row>
       </div>
-
+  
       <div>
         <h2>FOOTER GOES HERE</h2>
       </div>
@@ -89,4 +70,4 @@ const Home = () => {
 
 }
 
-export default Home;
+export default Facts;
