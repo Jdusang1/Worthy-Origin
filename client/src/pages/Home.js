@@ -71,7 +71,7 @@ const Home = () => {
           <Col>
           <h2>Find farmers markets</h2>
             <p>paragraph</p>
-            <Button href={"/farmersmarkets"}>Search</Button>
+            <Button href={"/farmers-markets"}>Search</Button>
           </Col>
           <Col>
             <p>image</p>
