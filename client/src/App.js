@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
+import Home from "./pages/Home"
+import FarmersMarkets from "./pages/FarmersMarkets";
+import Facts from "./pages/Facts";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
@@ -9,14 +10,20 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav />
+    
         <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
+          <Route exact path={["/", "/home"]}>
+            <Home />
           </Route>
-          <Route exact path="/books/:id">
-            <Detail />
+
+          <Route exact path="/farmers-markets">
+            <FarmersMarkets />
           </Route>
+
+          <Route exact path="/facts">
+            <Facts />
+          </Route>
+
           <Route>
             <NoMatch />
           </Route>
