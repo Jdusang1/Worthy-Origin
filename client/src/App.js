@@ -5,12 +5,15 @@ import FarmersMarkets from "./pages/FarmersMarkets";
 import Facts from "./pages/Facts";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import MarketsTable from "./components/MarketsTable";
 
 function App() {
   return (
     <Router>
       <div>
-    
+
+
         <Switch>
           <Route exact path={["/", "/home"]}>
             <Home />
@@ -29,6 +32,8 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <MarketsTable />
+      <Footer />
     </Router>
   );
 }

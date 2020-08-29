@@ -1,12 +1,12 @@
 import React from "react";
-import {Container, Col, Row, Button} from "reactstrap"
+import { Container, Col, Row, Button } from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
 
 const FarmersMarkets = () => {
 
   return (
     <>
-      <Jumbotron>
+      {/* <Jumbotron>
       <Row>
         <Col>
           LOGO
@@ -27,28 +27,28 @@ const FarmersMarkets = () => {
           <p>blurb about our site</p>
         </Col>
       </Row>
-      </Jumbotron>
+      </Jumbotron> */}
 
-    <Container>
-      <div>
-        <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
-        <h4>search bar goes here</h4>
-        <Button>Search</Button>
-      </div>
+      <Container>
+        <div>
+          <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
+          <h4>search bar goes here</h4>
+          <Button>Search</Button>
+        </div>
 
-      <div>
-        <Row>
-          <h2>Results</h2>
-        </Row>
-        <Row>
-          <h2>Table goes here</h2>
-        </Row>
-      </div>
-  
-      <div>
-        <h2>FOOTER GOES HERE</h2>
-      </div>
-    </Container>
+        <div>
+          <Row>
+            <h2>Results</h2>
+          </Row>
+          <Row>
+            <h2>Table goes here</h2>
+          </Row>
+        </div>
+
+        <div>
+          <h2>FOOTER GOES HERE</h2>
+        </div>
+      </Container>
     </>
   )
 

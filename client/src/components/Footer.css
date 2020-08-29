@@ -1,0 +1,14 @@
+#footer{
+    background-color: rgb(18, 61, 61);
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+ol{
+    list-style-type: none;
+}
+
+svg{
+    color: white;
+}
