@@ -6,20 +6,21 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import img from "../img/WorthyOrigin.png"
 
 const items = [
   {
-    src: '',
+    src: img,
     altText: 'Chart 1',
     caption: 'Chart 1'
   },
   {
-    src: '',
+    src: img,
     altText: 'Chart 2',
     caption: 'Chart 2'
   },
   {
-    src: '',
+    src: img,
     altText: 'Chart 3',
     caption: 'Chart 3'
   }

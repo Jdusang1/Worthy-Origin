@@ -6,6 +6,42 @@ import SearchBar from "../components/SearchBar";
 import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
 import LocalAPI from "../utils/localAPI";
+import styled from "styled-components";
+
+const grey = "#f9f9f9";
+const white = "ffffff";
+
+const Div = styled.div`
+  div {
+    text-align: center;
+    background-color: ${props => props.color === "grey" ? grey : white};
+    padding: 15px;
+
+  }
+
+  p {
+    width: 60%;
+    margin: 15px auto;
+    font-size: 20px;
+    font-family: "Roboto";
+  }
+
+  h2 {
+   margin: 10px auto;
+   font-family: "Raleway";
+   font-size: 52px;
+
+  }
+
+  .button {
+    background-color: #cb5744;
+    border: none;
+
+  }
+
+  .button:hover {
+  background-color: #ec9a59;
+`
 
 const FarmersMarkets = () => {
 
@@ -47,72 +83,51 @@ const FarmersMarkets = () => {
 
   return (
     <>
-      <Jumbotron>
-        <Row>
-          <Col>
-            LOGO
-        </Col>
-          <Col>
-            LOGIN LINK
-        </Col>
-          <Col>
-            FACTS
-        </Col>
-          <Col>
-            FARMERS MARKET
-        </Col>
-        </Row>
-      </Jumbotron>
+      <Jumbotron/>
 
-      <Container>
-        <div>
-          <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
-          <p>paragraph</p>
-          <SearchBar
-            searchTerm={searchTerm}
-            handleInputChange={handleInputChange}
-            handleFormSubmit={handleFormSubmit}
-          />
-        </div>
+      <Container fluid={true} >
+        <Div color="grey">
+          <div>
+            <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
+            <p>paragraph</p>
+            <SearchBar
+              searchTerm={searchTerm}
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
+            />
+          </div>
+        </Div>
 
-        <div>
-          <Row>
-            <h2>Farmer's Markets in Your Area: </h2>
-          </Row>
-          <Row>
-            {markets.map(market => (
-              <MarketCard
-                key={market.id}
-                marketName={market.marketname}
-                id={market.id}
-                setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market })}
-              />
-            ))}
+        <Div>
 
-          </Row>
-          <Row>
-            <Col>
-              <h3>Click on a market to get more details!</h3>
-            </Col>
-          </Row>
-        </div>
-      </Container>
+          <div>
+            <Row>
+              <h2>Farmer's Markets in Your Area: </h2>
+            </Row>
+            <Row>
+              {markets.map(market => (
+                <MarketCard
+                  key={market.id}
+                  marketName={market.marketname}
+                  id={market.id}
+                  setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market })}
+                />
+              ))}
 
-      {/* <Container>
-        <div>
-          <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
-          <h4>search bar goes here</h4>
-          <Button>Search</Button>
-        </div>
+            </Row>
+            <Row>
+              <Col>
+                <h3>Click on a market to get more details!</h3>
+              </Col>
+            </Row>
+          </div>
+        </Div>
 
-        <div>
-          <MarketTable />
-        </div>
+        
+        <Footer/>
+       
 
-        <Footer />
-
-        <Container /> */}
-      
+      </Container> 
     </>
   )
 
