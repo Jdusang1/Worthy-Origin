@@ -1,8 +1,46 @@
-import React from "react";
-import {Container, Col, Row, Button} from "reactstrap"
+import React,  { useState, useEffect } from "react";
+import {Container, Col, Row } from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
+import SearchBar from "../components/SearchBar";
+import API from "../utils/API";
+import LocalAPI from "../utils/localAPI";
 
 const FarmersMarkets = () => {
+
+  const [marketInfo, setMarketInfo] = useState({
+    searchTerm: "",
+    id: "",
+    marketName: "",
+    markets: [],
+    selectedMarket: null,
+  })
+
+  const { searchTerm, id, marketName, markets, selectedMarket } = marketInfo;
+
+  const marketSearch = searchTerm => {
+    API.getMarkets(searchTerm)
+      .then(({ data }) => setMarketInfo({
+        id: data.id,
+        marketName: data.marketname,
+        markets: data.data,
+        selectedMarket: null,
+        searchTerm: "",
+      }))
+  }
+
+  useEffect(() => {
+    marketSearch(80020)
+  }, []);
+
+  const handleInputChange = event => {
+    setMarketInfo({ ...marketInfo, searchTerm: event.target.value });
+  }
+
+  const handleFormSubmit = event => {
+    event.preventDefault();
+  }
+
+  //TODO: make a second api call to localAPI to get details about selected market
 
   return (
     <>
@@ -32,16 +70,33 @@ const FarmersMarkets = () => {
     <Container>
       <div>
         <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
-        <h4>search bar goes here</h4>
-        <Button>Search</Button>
+            <p>paragraph</p>
+            <SearchBar 
+            searchTerm={searchTerm}
+            handleInputChange={handleInputChange}
+            handleFormSubmit={handleFormSubmit}
+            />
       </div>
 
       <div>
         <Row>
-          <h2>Results</h2>
+          <h2>Farmer's Markets in Your Area: </h2>
         </Row>
         <Row>
-          <h2>Table goes here</h2>
+          <ul>
+            {markets.map(market => (
+              <li key={market.id}>
+                marketName={market.marketname}
+                id={market.id}
+                setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market})}
+              </li>
+            ))}>
+          </ul>
+        </Row>
+        <Row>
+          <Col>
+            <h3>Click on a market to get more details!</h3>
+          </Col>
         </Row>
       </div>
   

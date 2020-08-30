@@ -2,6 +2,7 @@ import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
 import HomeCard from "../components/HomeCard";
 import Jumbotron from "../components/Jumbotron";
+import SearchBar from "../components/SearchBar";
 import ax from "../img/ax.jpg"
 import cows from "../img/cows.jpg";
 import fossilfuels from "../img/fossilfuels.jpg"
