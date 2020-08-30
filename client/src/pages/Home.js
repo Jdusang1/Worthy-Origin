@@ -56,37 +56,23 @@ const Home = () => {
 
   return (
     <>
-<<<<<<< HEAD
       <Jumbotron />
-
-      <Container className="container-fluid">
-
-        <Div color={"grey"}>
-          <div>
-            <h2>DID YOU KNOW?</h2>
-            <p>GRAPH</p>
-            <Button href={"/facts"}>Learn More!</Button>
-          </div>
-=======
-      <Jumbotron/>
 
       <Container fluid={true}>
 
         <Div color={"grey"}>
-        <div>
-          <h2>DID YOU KNOW?</h2>
-          <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from transportation of the product.</p>
-          
-          <Chart/>
-          <Button className="button" href={"/facts"}>Learn More!</Button>
+          <div>
+            <h2>DID YOU KNOW?</h2>
+            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from transportation of the product.</p>
 
-        </div>
->>>>>>> master
+            <Chart />
+            <Button className="button" href={"/facts"}>Learn More!</Button>
+
+          </div>
         </Div>
 
         <Div>
           <div>
-<<<<<<< HEAD
             <Row >
               <h2 >TOP CONTRIBUTORS TO GLOBAL WARMING</h2>
             </Row>
@@ -115,108 +101,44 @@ const Home = () => {
           </div>
         </Div>
 
-        <Div>
+        <Div color={"grey"}>
           <div>
             <Row>
               <Col>
-                <p>image</p>
-              </Col>
-              <Col>
-                <h2>Find your carbon footprint</h2>
-                <p>paragraph</p>
-                <Button >Login</Button>
-              </Col>
-            </Row>
-          </div>
-        </Div>
-
-        <Div>
-          <div>
-            <Row>
-              <Col>
-                <h2>Find farmers markets</h2>
-                <p>paragraph</p>
-                <Button href={"/farmers-markets"}>Search</Button>
-              </Col>
-              <Col>
-                <p>image</p>
-              </Col>
-            </Row>
-          </div>
-        </Div>
-        <MarketTable />
-
-
-      </Container>
-      <Footer />
-=======
-          <Row >
-            <h2 >TOP CONTRIBUTORS TO GLOBAL WARMING</h2>
-          </Row>
-          <Row>
-            <Col>
-              <HomeCard
-                img={ax}
-                text={"Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
-              />
-            </Col>
-            <Col>
-            <HomeCard
-              img={fossilfuels}
-              text={"Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
-
-            />
-            </Col>
-            <Col>
-            <HomeCard
-            img={cows}
-            text={"Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
-
-            />
-            </Col>
-          </Row>
-          </div>
-        </Div>
-
-      <Div color={"grey"}>
-        <div>
-          <Row>
-            <Col>
-              <CircleImage
+                <CircleImage
                   image={groceries}
                 />
-            </Col>
-            <Col>
-              <h2>FIND YOUR CARBON FOOTPRINT</h2>
-              <p>Curious about your carbon footprint for your grocery list? Login to build you list and calculate your total carbon footprint. </p>
-              <Button className="button">Login</Button>
-            </Col>
-          </Row>
-        </div>
-      </Div>  
+              </Col>
+              <Col>
+                <h2>FIND YOUR CARBON FOOTPRINT</h2>
+                <p>Curious about your carbon footprint for your grocery list? Login to build you list and calculate your total carbon footprint. </p>
+                <Button className="button">Login</Button>
+              </Col>
+            </Row>
+          </div>
+        </Div>
 
-      <Div>
-        <div>
-        <Row>
-            <Col>
-            <h2>FIND FARMERS MARKETS</h2>
-              <p>Switching to purchasing more local foods can reduce greenhouse gas emissions. Search for local farmers markets in your area!</p>
-          
-              <Button className="button" href={"/farmers-markets"}>Search</Button>
-           
-            </Col>
-            <Col>
-              <CircleImage image={market} />
-            </Col>
-          </Row>
-        </div>
-      </Div>
+        <Div>
+          <div>
+            <Row>
+              <Col>
+                <h2>FIND FARMERS MARKETS</h2>
+                <p>Switching to purchasing more local foods can reduce greenhouse gas emissions. Search for local farmers markets in your area!</p>
+
+                <Button className="button" href={"/farmers-markets"}>Search</Button>
+
+              </Col>
+              <Col>
+                <CircleImage image={market} />
+              </Col>
+            </Row>
+          </div>
+        </Div>
 
         <div>
           <h2>FOOTER GOES HERE</h2>
         </div>
-    </Container>
->>>>>>> master
+      </Container>
     </>
   )
 
