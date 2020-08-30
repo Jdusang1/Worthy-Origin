@@ -5,7 +5,8 @@ import heroImg from "../../img/heroImage.png"
 
 const JumboWrapper = styled.article`
   text-align:center;
-  background-image: url(${heroImg})
+  background-image: url(${heroImg});
+ 
 `
 
 function MainJumbotron(props) {
