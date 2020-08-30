@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
+import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
 
@@ -7,6 +8,7 @@ const Facts = () => {
 
   return (
     <>
+      <NavBar/>
       <Jumbotron/>
       
 
