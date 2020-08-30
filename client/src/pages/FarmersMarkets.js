@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Container, Col, Row, Button } from "reactstrap"
+import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
@@ -83,6 +84,7 @@ const FarmersMarkets = () => {
 
   return (
     <>
+      <NavBar />
       <Jumbotron/>
 
       <Container fluid={true} >
