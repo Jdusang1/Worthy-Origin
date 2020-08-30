@@ -2,6 +2,7 @@ import React,  { useState, useEffect } from "react";
 import {Container, Col, Row } from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
 import SearchBar from "../components/SearchBar";
+import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
 import LocalAPI from "../utils/localAPI";
 
@@ -19,17 +20,17 @@ const FarmersMarkets = () => {
 
   const marketSearch = searchTerm => {
     API.getMarkets(searchTerm)
-      .then(({ data }) => setMarketInfo({
+      .then(( {data} ) => setMarketInfo({
         id: data.id,
         marketName: data.marketname,
-        markets: data.data,
+        markets: data.results,
         selectedMarket: null,
         searchTerm: "",
       }))
   }
 
   useEffect(() => {
-    marketSearch(80020)
+    marketSearch()
   }, []);
 
   const handleInputChange = event => {
@@ -38,7 +39,8 @@ const FarmersMarkets = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
-  }
+    marketSearch(searchTerm)
+  };
 
   //TODO: make a second api call to localAPI to get details about selected market
 
@@ -83,15 +85,15 @@ const FarmersMarkets = () => {
           <h2>Farmer's Markets in Your Area: </h2>
         </Row>
         <Row>
-          <ul>
             {markets.map(market => (
-              <li key={market.id}>
+              <MarketCard
+                key={market.id}
                 marketName={market.marketname}
                 id={market.id}
                 setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market})}
-              </li>
-            ))}>
-          </ul>
+                />
+            ))}
+
         </Row>
         <Row>
           <Col>
