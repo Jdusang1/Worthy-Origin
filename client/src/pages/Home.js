@@ -136,7 +136,7 @@ const Home = () => {
         </Div>
 
         <div>
-          <h2>FOOTER GOES HERE</h2>
+          <Footer/>
         </div>
       </Container>
     </>
