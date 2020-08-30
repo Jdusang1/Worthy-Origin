@@ -1,6 +1,7 @@
 import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
+import SearchBar from "../components/SearchBar";
 
 const Home = () => {
 
@@ -71,7 +72,7 @@ const Home = () => {
           <Col>
           <h2>Find farmers markets</h2>
             <p>paragraph</p>
-            <Button href={"/farmers-markets"}>Search</Button>
+            <p>link to Farmer's Market component here?</p>
           </Col>
           <Col>
             <p>image</p>
