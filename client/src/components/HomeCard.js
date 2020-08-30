@@ -1,6 +1,7 @@
 import React from "react";
 import {Card, CardImg, CardBody, CardText } from "reactstrap";
 import styled from "styled-components";
+import CircleImage from "./CircleImage";
 
 const CardWrapper = styled.article`
   .card {
@@ -14,8 +15,8 @@ const CardWrapper = styled.article`
 
   img {
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     margin: 10px auto;
     
   }

@@ -7,6 +7,9 @@ import cows from "../img/cows.jpg";
 import fossilfuels from "../img/fossilfuels.jpg"
 import styled from "styled-components"
 import Chart from "../components/WIDchart";
+import market from "../img/farmersMarket.jpg"
+import CircleImage from "../components/CircleImage";
+import groceries from "../img/groceries.jpg"
 
 
 const grey = "#f9f9f9";
@@ -19,17 +22,28 @@ const Div = styled.div`
     padding: 15px;
 
   }
-  h2 {
-   margin: 10px auto;
+
+  p {
+    width: 60%;
+    margin: 15px auto;
+    font-size: 20px;
+    font-family: "Roboto";
   }
 
-  Button {
+  h2 {
+   margin: 10px auto;
+   font-family: "Raleway";
+   font-size: 52px;
+
+  }
+
+  .button {
     background-color: #cb5744;
     border: none;
 
   }
 
-  Button:hover {
+  .button:hover {
   background-color: #ec9a59;
 `
 
@@ -46,10 +60,10 @@ const Home = () => {
         <Div color={"grey"}>
         <div>
           <h2>DID YOU KNOW?</h2>
-          <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from farming alone.</p>
+          <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from transportation of the product.</p>
           
           <Chart/>
-          <Button className="btn"href={"/facts"}>Learn More!</Button>
+          <Button className="button" href={"/facts"}>Learn More!</Button>
 
         </div>
         </Div>
@@ -88,12 +102,14 @@ const Home = () => {
         <div>
           <Row>
             <Col>
-            <p>image</p>
+              <CircleImage
+                  image={groceries}
+                />
             </Col>
             <Col>
-              <h2>Find your carbon footprint</h2>
-              <p>paragraph</p>
-              <Button >Login</Button>
+              <h2>FIND YOUR CARBON FOOTPRINT</h2>
+              <p>Curious about your carbon footprint for your grocery list? Login to build you list and calculate your total carbon footprint. </p>
+              <Button className="button">Login</Button>
             </Col>
           </Row>
         </div>
@@ -103,12 +119,14 @@ const Home = () => {
         <div>
         <Row>
             <Col>
-            <h2>Find farmers markets</h2>
-              <p>paragraph</p>
-              <Button href={"/farmers-markets"}>Search</Button>
+            <h2>FIND FARMERS MARKETS</h2>
+              <p>Switching to purchasing more local foods can reduce greenhouse gas emissions. Search for local farmers markets in your area!</p>
+          
+              <Button className="button" href={"/farmers-markets"}>Search</Button>
+           
             </Col>
             <Col>
-              <p>image</p>
+              <CircleImage image={market} />
             </Col>
           </Row>
         </div>
