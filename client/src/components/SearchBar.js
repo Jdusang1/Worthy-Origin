@@ -11,8 +11,8 @@ const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange }) => {
               name="location" 
               id="location" 
               placeholder="Zip Code" 
-              value={searchTerm}
               onChange={handleInputChange}
+              value={searchTerm}
               />
         </FormGroup>
           <Button>Search</Button>
