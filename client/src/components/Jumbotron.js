@@ -1,15 +1,9 @@
 import React from "react";
-import {Jumbotron} from "reactstrap";
+import { Jumbotron } from "reactstrap";
 import styled from "styled-components";
 import img from "../img/heroImage.png";
 import logo from "../img/WorthyOrigin.png"
 
-<<<<<<< HEAD:client/src/components/Jumbotron/index.js
-const JumboWrapper = styled.article`
-  text-align:center;
-  background-image: url(${heroImg});
- 
-=======
 const JumboWrapper = styled.div`
   .jumbotron {
     text-align:center;
@@ -24,7 +18,6 @@ const JumboWrapper = styled.div`
     color: white;
     font-size: 24px;
   }
->>>>>>> master:client/src/components/Jumbotron.js
 `
 
 function MainJumbotron() {
@@ -32,13 +25,13 @@ function MainJumbotron() {
     <JumboWrapper>
       <div>
         <Jumbotron>
-          <img src={logo} alt="Worthy Origin Logo"/>
+          <img src={logo} alt="Worthy Origin Logo" />
           <hr className="my-2" />
           <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          
+
         </Jumbotron>
-    </div>
-  </JumboWrapper>
+      </div>
+    </JumboWrapper>
   );
 }
 
