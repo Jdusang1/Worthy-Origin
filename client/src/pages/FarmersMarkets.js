@@ -106,12 +106,14 @@ const FarmersMarkets = () => {
             </Row>
             <Row>
               {markets.map(market => (
-                <MarketCard
-                  key={market.id}
-                  marketName={market.marketname}
-                  id={market.id}
-                  setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market })}
-                />
+                <Col>
+                  <MarketCard
+                    key={market.id}
+                    marketName={market.marketname}
+                    id={market.id}
+                    setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market })}
+                  />
+                </Col>
               ))}
 
             </Row>
