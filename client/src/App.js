@@ -4,7 +4,6 @@ import Home from "./pages/Home"
 import FarmersMarkets from "./pages/FarmersMarkets";
 import Facts from "./pages/Facts";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
 
 function App() {
   return (

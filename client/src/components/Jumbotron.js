@@ -4,12 +4,6 @@ import styled from "styled-components";
 import img from "../img/heroImage.png";
 import logo from "../img/WorthyOrigin.png"
 
-<<<<<<< HEAD:client/src/components/Jumbotron/index.js
-const JumboWrapper = styled.article`
-  text-align:center;
-  background-image: url(${heroImg});
- 
-=======
 const JumboWrapper = styled.div`
   .jumbotron {
     text-align:center;
@@ -24,7 +18,6 @@ const JumboWrapper = styled.div`
     color: white;
     font-size: 24px;
   }
->>>>>>> master:client/src/components/Jumbotron.js
 `
 
 function MainJumbotron() {
