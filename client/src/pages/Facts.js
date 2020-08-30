@@ -1,33 +1,14 @@
 import React from "react";
 import {Container, Col, Row, Button} from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
+import FactsCarousel from "../components/Carousel";
 
 const Facts = () => {
 
   return (
     <>
-      <Jumbotron>
-      <Row>
-        <Col>
-          LOGO
-        </Col>
-        <Col>
-          LOGIN LINK
-        </Col>
-        <Col>
-          FACTS
-        </Col>
-        <Col>
-          FARMERS MARKET
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>logo</p>
-          <p>blurb about our site</p>
-        </Col>
-      </Row>
-      </Jumbotron>
+      <Jumbotron/>
+      
 
     <Container>
       <div>
@@ -52,12 +33,7 @@ const Facts = () => {
       </div>
 
       <div>
-        <Row>
-          <h2>Chart Title</h2>
-        </Row>
-        <Row>
-          <h2>Chart goes here</h2>
-        </Row>
+        <FactsCarousel/>
       </div>
   
       <div>
