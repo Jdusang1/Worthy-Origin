@@ -4,22 +4,27 @@ import React from 'react';
 
 import { CardFooter } from 'reactstrap';
 import styled from "styled-components";
+import logo from "../img/WorthyOrigin.png"
 
 const FooterWrapper = styled.div`
 #footer{
     background-color: rgb(18, 61, 61);
     font-size: 16px;
-    text-align: center;
+    // text-align: center;
     
 }
 
 ol{
     list-style-type: none;
+    text-align: center;
 }
 
-svg{
-    color: white;
+img{
+    max-width: 100px;
+    max-height: 100px;
+    align-content: left;
 }
+
 
 
 
@@ -38,9 +43,7 @@ const Footer = () => {
 
                 </ol>
 
-                <svg width="44" height="44" viewBox="0 0 1024 1024">
-                    <path d="../img/WorthyOrigin.png"></path>
-                </svg>
+                <img src={logo} alt="Worthy Origin Logo" />
 
             </CardFooter>
         </FooterWrapper>

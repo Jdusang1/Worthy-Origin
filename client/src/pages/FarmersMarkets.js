@@ -1,11 +1,7 @@
-
+import React, { useState, useEffect } from "react";
 import { Container, Col, Row, Button } from "reactstrap"
 import Jumbotron from "../components/Jumbotron";
-import MarketTable from "../components/MarketTable";
 import Footer from "../components/Footer";
-
-
-
 import SearchBar from "../components/SearchBar";
 import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
@@ -102,21 +98,18 @@ const FarmersMarkets = () => {
         </div>
       </Container>
 
-      <Container>
+      {/* <Container>
         <div>
           <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
           <h4>search bar goes here</h4>
           <Button>Search</Button>
         </div>
-
         <div>
           <MarketTable />
         </div>
-
         <Footer />
+        <Container /> */}
 
-        <Container />
-      
     </>
   )
 
