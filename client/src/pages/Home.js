@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Button} from "reactstrap"
+import { Container, Col, Row, Button } from "reactstrap"
 import HomeCard from "../components/HomeCard";
 import Jumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar"
@@ -142,7 +142,7 @@ const Home = () => {
         </Div>
 
         <div>
-          <Footer/>
+          <Footer />
         </div>
       </Container>
     </>

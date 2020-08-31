@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
@@ -85,7 +85,7 @@ const FarmersMarkets = () => {
   return (
     <>
       <NavBar />
-      <Jumbotron/>
+      <Jumbotron />
 
       <Container fluid={true} >
         <Div color="grey">
@@ -127,11 +127,11 @@ const FarmersMarkets = () => {
           </div>
         </Div>
 
-        
-        <Footer/>
-       
 
-      </Container> 
+        <Footer />
+
+
+      </Container>
     </>
   )
 
