@@ -34,6 +34,7 @@ const Div = styled.div`
   .button {
     background-color: #cb5744;
     border: none;
+    
 
   }
 
