@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,
-  NavLink} from 'reactstrap';
+import {
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem,
+  NavLink
+} from 'reactstrap';
 import styled from "styled-components";
 
-const NavStyle = styled.div `
+const NavStyle = styled.div`
 .navbar{
   background: transparent;
+}
+a {
+  color:white
 }
 `
 
@@ -16,8 +21,8 @@ const NavBar = (props) => {
 
   return (
     <NavStyle>
-    <div>
-        <Navbar color="light" light expand="md" className="fixed-top">
+      <div>
+        <Navbar expand="md" className="fixed-top">
           <NavbarBrand href={"/home"}>HOME</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>

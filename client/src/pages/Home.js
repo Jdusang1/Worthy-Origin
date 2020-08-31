@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Button} from "reactstrap"
+import { Container, Col, Row, Button } from "reactstrap"
 import HomeCard from "../components/HomeCard";
 import Jumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar"
@@ -45,6 +45,9 @@ const Div = styled.div`
   .button {
     background-color: #cb5744;
     border: none;
+    padding: 20px;
+    font-size: 20px;
+
 
   }
 
@@ -115,7 +118,7 @@ const Home = () => {
               <Col>
                 <h2>FIND YOUR CARBON FOOTPRINT</h2>
                 <p>Curious about your carbon footprint for your grocery list? Login to build you list and calculate your total carbon footprint. </p>
-                <Button className="button">Login</Button>
+                <Button className="button" href={"/user"}>Login</Button>
               </Col>
             </Row>
           </div>
@@ -139,7 +142,7 @@ const Home = () => {
         </Div>
 
         <div>
-          <Footer/>
+          <Footer />
         </div>
       </Container>
     </>
