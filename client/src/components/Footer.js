@@ -1,53 +1,57 @@
 
 
-import React from 'react';
+
 
 import { CardFooter } from 'reactstrap';
 import styled from "styled-components";
 import logo from "../img/WorthyOrigin.png"
+import React, { useState } from 'react';
 
 const FooterWrapper = styled.div`
 #footer{
     background-color: rgb(18, 61, 61);
     font-size: 16px;
-    // text-align: center;
+    text-align: center;
     
 }
-
-ol{
-    list-style-type: none;
-    text-align: center;
+ul{
+    list-style-type: none
 }
 
 img{
     max-width: 100px;
     max-height: 100px;
-    align-content: left;
+    align-content: center;
 }
 
-
-
-
+#logo{
+    justify-content: left
+    
+}
 `
 
 
 const Footer = () => {
+
+
+
+
+
     return (
 
         <FooterWrapper>
             <CardFooter className="text-muted" id="footer">
-                <ol>
-                    <li>Our Fearless Leader Kimberly Owens | Styling Master Jessica Owens</li>
-                    <li>The All Knowing Nikki Castle | Paul James the Data Wizard</li>
-                    <li>John</li>
 
-                </ol>
 
-                <img src={logo} alt="Worthy Origin Logo" />
-
+                <div>
+                    <h5 id="one">Our Fearless Leader Kimberly Owens | Styling Master Jessica | The All Knowing Nikki Castle | Paul James the Data Wizard</h5>
+                    <h5 id="three">John Dusang</h5>
+                </div>
+                <a href={"/home"}><img id="logo" src={logo} alt="Worthy Origin Logo" /></a>
             </CardFooter>
         </FooterWrapper>
     )
 }
 
 export default Footer;
+

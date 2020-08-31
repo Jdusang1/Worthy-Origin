@@ -33,9 +33,9 @@ const MarketTable = (props) => {
                     <thead>
                         <tr>
 
-                            <th>MARKET NAME</th>
-                            <th>DESCRIPTION</th>
-                            <th>MILES FROM ZIP</th>
+                            <th>Food Item</th>
+                            <th>Emissions</th>
+                            <th>Car Equivalency</th>
                         </tr>
                     </thead>
                     <tbody>
