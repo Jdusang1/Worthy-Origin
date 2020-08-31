@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home"
 import FarmersMarkets from "./pages/FarmersMarkets";
 import Facts from "./pages/Facts";
+import User from "./pages/User";
 import NoMatch from "./pages/NoMatch";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
 
           <Route exact path="/facts">
             <Facts />
+          </Route>
+
+          <Route exact path="/user">
+            <User />
           </Route>
 
           <Route>

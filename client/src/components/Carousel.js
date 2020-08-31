@@ -7,10 +7,11 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import img from "../img/WorthyOrigin.png"
+import PieChart from "../components/PieChart";
 
 const items = [
   {
-    src: img,
+    src: PieChart,
     altText: 'Chart 1',
     caption: 'Chart 1'
   },
