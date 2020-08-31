@@ -3,6 +3,7 @@ import {Container, Col, Row, Button} from "reactstrap"
 import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
+import Pyramid from "../components/PyramidChart"
 import Footer from "../components/Footer";
 import styled from "styled-components";
 
