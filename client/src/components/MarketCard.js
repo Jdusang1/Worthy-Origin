@@ -1,11 +1,18 @@
 import React from "react";
-import { Card, CardTitle } from "reactstrap";
-import styled from "styled-components";
+import { Card, CardTitle, CardFooter } from "reactstrap";
 
-const MarketCard = ({ marketName }) => {
+const titleStyle = {
+    cursor: "pointer",
+    fontFamily: "Roboto",
+    fontSize: "20px",
+    fontWeight: "bold"
+}
+
+const MarketCard = ({ marketName, getMarketDetails, id }) => {
     return(
-        <Card>
-            <CardTitle>{marketName}</CardTitle>
+        <Card onClick={() => getMarketDetails(id)}>
+            <CardTitle style={titleStyle}>{marketName.slice(4)}</CardTitle>
+            <CardFooter>Distance: {marketName.slice(0, 3)} miles</CardFooter>
         </Card>
     )
 };

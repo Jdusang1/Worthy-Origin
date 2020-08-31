@@ -1,10 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/dbfoods", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(process.env.MONGO_URI ||"mongodb://localhost/dbfoods")
 
 const foodsSeed =
   [
@@ -15165,8 +15162,12 @@ const foodsSeed =
       "ghgEmission": 99
     }
   ];
-db.dbfoods.deleteMany({})
-  .then(() => db.foods.collection.insertMany(foodsSeed))
+
+
+
+db.Foods
+  .remove({})
+  .then(() => db.Foods.collection.insertMany(foodsSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

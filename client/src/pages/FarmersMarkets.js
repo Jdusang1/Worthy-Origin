@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
@@ -8,6 +8,7 @@ import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
 import LocalAPI from "../utils/localAPI";
 import styled from "styled-components";
+import MarketDetails from "../components/MarketDetails";
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -54,7 +55,15 @@ const FarmersMarkets = () => {
     selectedMarket: null,
   })
 
+  const [marketDetails, setMarketDetails] = useState ({
+    address: "",
+    link: "",
+    products: "",
+    schedule: "",
+  })
+
   const { searchTerm, id, marketName, markets, selectedMarket } = marketInfo;
+  const { address, link, products, schedule } = marketDetails;
 
   const marketSearch = searchTerm => {
     API.getMarkets(searchTerm)
@@ -67,9 +76,17 @@ const FarmersMarkets = () => {
       }))
   }
 
-  useEffect(() => {
-    marketSearch()
-  }, []);
+  const getMarketDetails = id => {
+    LocalAPI.getSelectedMarket(id)
+      .then(({data}) => setMarketDetails({
+        address: data.marketdetails.Address,
+        link: data.marketdetails.GoogleLink,
+        products: data.marketdetails.Products,
+        schedule: data.marketdetails.Schedule,
+      }))
+
+  }
+
 
   const handleInputChange = event => {
     setMarketInfo({ ...marketInfo, searchTerm: event.target.value });
@@ -80,12 +97,11 @@ const FarmersMarkets = () => {
     marketSearch(searchTerm)
   };
 
-  //TODO: make a second api call to localAPI to get details about selected market
 
   return (
     <>
       <NavBar />
-      <Jumbotron/>
+      <Jumbotron />
 
       <Container fluid={true} >
         <Div color="grey">
@@ -108,12 +124,12 @@ const FarmersMarkets = () => {
             </Row>
             <Row>
               {markets.map(market => (
-                <Col>
+                <Col md={3} key={market.id}>
                   <MarketCard
-                    key={market.id}
                     marketName={market.marketname}
                     id={market.id}
                     setSelectedMarket={() => setMarketInfo({ ...marketInfo, selectedMarket: market })}
+                    getMarketDetails={getMarketDetails}
                   />
                 </Col>
               ))}
@@ -121,17 +137,27 @@ const FarmersMarkets = () => {
             </Row>
             <Row>
               <Col>
-                <h3>Click on a market to get more details!</h3>
+                <h3>Click on a market to find out more!</h3>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                { products ? (<MarketDetails 
+                  address={address}
+                  schedule={schedule}
+                  products={products}
+                  link={link}
+                />) : ""}
               </Col>
             </Row>
           </div>
         </Div>
 
-        
-        <Footer/>
-       
 
-      </Container> 
+        <Footer />
+
+
+      </Container>
     </>
   )
 

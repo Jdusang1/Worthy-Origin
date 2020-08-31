@@ -49,11 +49,13 @@ const User = () => {
   
 
   const handleInputChange = event => {
+  
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
   
+    
   };
 
   
@@ -85,7 +87,6 @@ const User = () => {
             <Row>
               <h2>Table goes here</h2>
               
-
             </Row>
           </div>
 
