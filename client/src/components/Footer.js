@@ -44,8 +44,8 @@ const Footer = () => {
 
 
                 <div>
-                    <h5 id="one">Our Fearless Leader Kimberly Owens | Styling Master Jessica | The All Knowing Nikki Castle | Paul James the Data Wizard</h5>
-                    <h5 id="three">John Dusang</h5>
+                    <h5 id="one">Our Fearless Leader Kimberly Owens | Styling Master Jessica Edens | The All Knowing Nikki Castle | Paul James the Data Wizard</h5>
+                    <h5 id="three">John Dusang The Sundance Kid</h5>
                 </div>
                 <a href={"/home"}><img id="logo" src={logo} alt="Worthy Origin Logo" /></a>
             </CardFooter>
