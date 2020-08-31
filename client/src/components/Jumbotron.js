@@ -6,6 +6,7 @@ import logo from "../img/WorthyOrigin.png"
 
 const JumboWrapper = styled.div`
   .jumbotron {
+    position:relative;
     text-align:center;
     background-image: url(${img});
     background-size: cover

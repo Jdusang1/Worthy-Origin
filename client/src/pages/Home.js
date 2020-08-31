@@ -1,18 +1,20 @@
 import React from "react";
-import { Container, Col, Row, Button } from "reactstrap"
+import { Container, Col, Row, Button} from "reactstrap"
 import HomeCard from "../components/HomeCard";
 import Jumbotron from "../components/Jumbotron";
-import SearchBar from "../components/SearchBar";
+import NavBar from "../components/Navbar"
+// import SearchBar from "../components/SearchBar";
 import ax from "../img/ax.jpg"
 import cows from "../img/cows.jpg";
 import fossilfuels from "../img/fossilfuels.jpg"
 import styled from "styled-components"
 import Footer from "../components/Footer";
-import MarketTable from "../components/MarketTable";
+// import MarketTable from "../components/MarketTable";
 import Chart from "../components/WIDchart";
 import market from "../img/farmersMarket.jpg"
 import CircleImage from "../components/CircleImage";
 import groceries from "../img/groceries.jpg"
+
 
 
 const grey = "#f9f9f9";
@@ -56,6 +58,7 @@ const Home = () => {
 
   return (
     <>
+      <NavBar />
       <Jumbotron />
 
       <Container fluid={true}>
@@ -136,7 +139,7 @@ const Home = () => {
         </Div>
 
         <div>
-          <h2>FOOTER GOES HERE</h2>
+          <Footer/>
         </div>
       </Container>
     </>
