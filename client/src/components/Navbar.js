@@ -9,6 +9,9 @@ const NavStyle = styled.div`
 .navbar{
   background: transparent;
 }
+a {
+  color:white
+}
 `
 
 const NavBar = (props) => {
@@ -19,7 +22,7 @@ const NavBar = (props) => {
   return (
     <NavStyle>
       <div>
-        <Navbar color="light" light expand="md" className="fixed-top">
+        <Navbar expand="md" className="fixed-top">
           <NavbarBrand href={"/home"}>HOME</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
