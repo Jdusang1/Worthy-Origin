@@ -46,30 +46,7 @@ const Div = styled.div`
 
 const User = () => {
 
-  const [marketInfo, setMarketInfo] = useState({
-    searchTerm: "",
-    id: "",
-    marketName: "",
-    markets: [],
-    selectedMarket: null,
-  })
-
-  const { searchTerm, id, marketName, markets, selectedMarket } = marketInfo;
-
-  const marketSearch = searchTerm => {
-    API.getMarkets(searchTerm)
-      .then(({ data }) => setMarketInfo({
-        id: data.id,
-        marketName: data.marketname,
-        markets: data.results,
-        selectedMarket: null,
-        searchTerm: "",
-      }))
-  }
-
-  useEffect(() => {
-    marketSearch()
-  }, []);
+  
 
   const handleInputChange = event => {
     setMarketInfo({ ...marketInfo, searchTerm: event.target.value });
@@ -80,7 +57,7 @@ const User = () => {
     marketSearch(searchTerm)
   };
 
-  //TODO: make a second api call to localAPI to get details about selected market
+  
 
   return (
     <>
