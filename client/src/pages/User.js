@@ -49,12 +49,12 @@ const User = () => {
   
 
   const handleInputChange = event => {
-    setMarketInfo({ ...marketInfo, searchTerm: event.target.value });
+  
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    marketSearch(searchTerm)
+    
   };
 
   
@@ -70,9 +70,9 @@ const User = () => {
             <h2>BUILD YOUR GROCRY LIST</h2>
             <p>paragraph</p>
             <SearchBar
-              searchTerm={searchTerm}
-              handleInputChange={handleInputChange}
-              handleFormSubmit={handleFormSubmit}
+              // searchTerm={searchTerm}
+              // handleInputChange={handleInputChange}
+              // handleFormSubmit={handleFormSubmit}
             />
           </div>
         </Div>
@@ -86,7 +86,6 @@ const User = () => {
             <Row>
               <h2>Table goes here</h2>
               
-
             </Row>
           </div>
 
