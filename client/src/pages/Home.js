@@ -69,7 +69,7 @@ const Home = () => {
         <Div color={"grey"}>
           <div>
             <h2>DID YOU KNOW?</h2>
-            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from transportation of the product.</p>
+            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions for the lifecycle of each product.</p>
 
             <StackedBar />
             <Button className="button" href={"/facts"}>Learn More!</Button>

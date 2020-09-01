@@ -81,13 +81,14 @@ const Facts = () => {
 
         <Div color={"grey"}>
 
-
-          <FactsCarousel />
+          <Charts/>
+          
 
         </Div>
 
         <Div>
-          <Charts/>
+        <FactsCarousel />
+          
         </Div>
 
         <Footer />

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
+
 import ghgData from "../data/wid.json";
 import styled from "styled-components";
-import Chart from "../components/WIDchart";
-import { PieChart, Pie, Sector, Cell} from 'recharts';
+import {
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Legend
+} from 'recharts';
+
 
 const DropdownWrapper = styled.div`
   .scrollable {
@@ -11,6 +14,13 @@ const DropdownWrapper = styled.div`
   max-height: 200px;
   overflow-x: hidden;
 }
+`
+const ChartWrapper = styled.div`
+  div{
+
+    margin: 10px auto;
+  }
+  
 `
 
 const Charts = () => {
@@ -43,6 +53,37 @@ const Charts = () => {
     console.log(name)
   }
 
+
+const renderPieChart=(
+  //   
+
+      <div style={{ width: '100%', height: 500 }}>
+        <ResponsiveContainer>
+        <BarChart
+  //     
+          data={selected}
+          margin={{
+            top: 10, right: 30, left: 0, bottom: 0,
+          }}
+        >
+          <CartesianGrid  />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Bar type="monotone" dataKey="retail"  stroke="#8884d8" fill="#424b3f" />
+          <Bar type="monotone" dataKey="packaging"  stroke="#82ca9d" fill="#3f5961" />
+          <Bar type="monotone" dataKey="farm"  stroke="#ffc658" fill="#87a6b0" />
+          <Bar type="monotone" dataKey="landUse"  stroke="#ffc658" fill="#cb5744" />
+          <Bar type="monotone" dataKey="animalFeed"  stroke="#ffc658" fill="#ec9a59" />
+          <Bar type="monotone" dataKey="transport"  stroke="#ffc658" fill="#ffc658" />
+          <Bar type="monotone" dataKey="processing"  stroke="#ffc658" fill="#ffc658" />
+      </BarChart>
+          
+        </ResponsiveContainer>
+      </div>
+
+)
+  
   return (
     <>
       <DropdownWrapper>
@@ -58,8 +99,8 @@ const Charts = () => {
                 <DropdownItem 
                   onClick={(e)=> setData(e)}
                   key={item.id}
-                  landUse={item.land_use}
-                  animalFeed={item.animal_feed}
+                  landuse={item.land_use}
+                  animalfeed={item.animal_feed}
                   farm={item.Farm}
                   processing={item.Processing}
                   transport={item.Transport}
@@ -77,7 +118,9 @@ const Charts = () => {
 
       </DropdownWrapper>
     
-
+      <ChartWrapper>
+        {selected ? renderPieChart : <div></div>}
+      </ChartWrapper>        
     </>
 
 
