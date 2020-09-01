@@ -3,9 +3,10 @@ import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
-import Pyramid from "../components/PyramidChart"
+
 import Footer from "../components/Footer";
 import styled from "styled-components";
+import Charts from "../components/Charts";
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -83,6 +84,10 @@ const Facts = () => {
 
           <FactsCarousel />
 
+        </Div>
+
+        <Div>
+          <Charts/>
         </Div>
 
         <Footer />

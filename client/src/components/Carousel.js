@@ -7,16 +7,12 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import img from "../img/WorthyOrigin.png"
-import PieChart from "../components/PieChart";
-import Pyramid from './PyramidChart';
-import Chart from "./WIDchart"
-
 const items = [
   {
     id: 1,
     altText: 'Slide 1',
     caption: 'Slide 1',
-    chart: "this is chart 1"
+    chart: "this is chart 2"
   },
   {
     id: 2,
@@ -62,7 +58,7 @@ const FactsCarousel = (props) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
-        {item.chart}
+        {items.chart}
         <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
