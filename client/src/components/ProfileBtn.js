@@ -1,0 +1,30 @@
+import React from "react";
+import { withAuthenticationRequired } from "@auth0/auth0-react";
+import { Button } from "reactstrap";
+import styled from "styled-components";
+
+const Wrapper = styled.article`
+    .button {
+        background-color: #cb5744;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        font-size: 20px;
+  }
+  .button:hover {
+      color: black;
+  }
+`
+
+const ProfileButton = () => {
+
+  return (
+      <Wrapper>
+          <Button className="button" href={"/user"}>Go to your list</Button>
+      </Wrapper>
+  );
+};
+
+export default ProfileButton;

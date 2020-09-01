@@ -8,7 +8,7 @@ const StyleWrapper = styled.article `
     }
     .card:hover {
         border: 4px solid #11343e;
-        box-shadow: 5px 5px #b5875e;
+        box-shadow: 0px 0px 10px #b5875e;
     }
 
     .card-title {

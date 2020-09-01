@@ -14,6 +14,9 @@ import Chart from "../components/WIDchart";
 import market from "../img/farmersMarket.jpg"
 import CircleImage from "../components/CircleImage";
 import groceries from "../img/groceries.jpg"
+import LoginButton from "../components/LoginBtn";
+import ProfileButton from "../components/ProfileBtn";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 
@@ -58,6 +61,8 @@ const Div = styled.div`
 
 
 const Home = () => {
+
+  const { isAuthenticated } = useAuth0();
 
   return (
     <>
@@ -117,8 +122,8 @@ const Home = () => {
               </Col>
               <Col>
                 <h2>FIND YOUR CARBON FOOTPRINT</h2>
-                <p>Curious about your carbon footprint for your grocery list? Login to build you list and calculate your total carbon footprint. </p>
-                <Button className="button" href={"/user"}>Login</Button>
+                <p>Curious about your carbon footprint for your grocery list? Login to build your list and calculate your total carbon footprint. </p>
+                {isAuthenticated ? <ProfileButton/> : <LoginButton /> }
               </Col>
             </Row>
           </div>
