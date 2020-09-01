@@ -5,13 +5,23 @@ import FarmersMarkets from "./pages/FarmersMarkets";
 import Facts from "./pages/Facts";
 import User from "./pages/User";
 import NoMatch from "./pages/NoMatch";
+import { useAuth0 } from "@auth0/auth0-react";
+import history from "./utils/history";
 
-function App() {
+const App = () => {
+  // const { isLoading, error } = useAuth0();
+
+  // if (error) {
+  //   return <div>Oops... {error.message}</div>;
+  // }
+
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
+
   return (
-
-    <Router>
+    <Router history={history}>
       <div>
-        
         <Switch>
           <Route exact path={["/", "/home"]}>
             <Home />

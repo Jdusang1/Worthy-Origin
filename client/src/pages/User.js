@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Container, Col, Row, Button } from "reactstrap"
+import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
@@ -43,6 +44,7 @@ const Div = styled.div`
 
 const User = () => {
 
+  const { user, isAuthenticated } = useAuth0();
   const [groceryItem, setGroceryItem] = useState({
     searchTerm: "",
     id: "",
@@ -66,14 +68,20 @@ const User = () => {
   
 
   return (
+      isAuthenticated && (
     <>
       <NavBar />
       <Jumbotron/>
-
+      
       <Container fluid={true} >
         <Div color="grey">
           <div>
-            <h2>BUILD YOUR GROCRY LIST</h2>
+            <img 
+            src={user.picture} 
+            alt={user.name} 
+            className="rounded-circle"/>  
+            <h1>Welcome back, {user.name}!</h1>
+            <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
               searchTerm={searchTerm}
@@ -125,10 +133,11 @@ const User = () => {
        
 
       </Container> 
-    </>
-  )
+     </>
+    )
+  );
 
 
 }
 
-export default User;
+export default withAuthenticationRequired(User);
