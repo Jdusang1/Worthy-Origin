@@ -5,9 +5,6 @@ import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
-import MarketCard from "../components/MarketCard";
-import API from "../utils/API";
-import LocalAPI from "../utils/localAPI";
 import styled from "styled-components";
 
 const grey = "#f9f9f9";
@@ -48,6 +45,15 @@ const Div = styled.div`
 const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
+  const [groceryItem, setGroceryItem] = useState({
+    searchTerm: "",
+    id: "",
+    ghg: "",
+    country: ""
+  })
+
+  const {searchTerm, id, ghg, country} = groceryItem;
+  
 
   const handleInputChange = event => {
   
@@ -55,6 +61,7 @@ const User = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
+  
     
   };
 
@@ -77,9 +84,12 @@ const User = () => {
             <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
-              // searchTerm={searchTerm}
-              // handleInputChange={handleInputChange}
-              // handleFormSubmit={handleFormSubmit}
+              searchTerm={searchTerm}
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
+              placeholder={"Food Item"}
+              name={"item"}
+              button={"Add"}
             />
           </div>
         </Div>

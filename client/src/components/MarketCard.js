@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyleWrapper = styled.article `
     .card {
-        border: 3px solid #bf5a41;
+        border: 1px solid #bf5a41;
     }
     .card:hover {
         border: 4px solid #11343e;
