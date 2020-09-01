@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
+import SearchBar from "../components/SearchBar";
 
 import Footer from "../components/Footer";
 import styled from "styled-components";
@@ -46,6 +47,23 @@ const Div = styled.div`
 
 const Facts = () => {
 
+  const [itemInfo, setItemInfo] = useState({
+    searchTerm: "",
+    id: "",
+    ghg: "",
+    country: ""
+  })
+
+  const {searchTerm, id, ghg, country} = itemInfo;
+
+  const handleInputChange = event => {
+    setItemInfo({ ...itemInfo, searchTerm: event.target.value });
+  }
+
+  const handleFormSubmit = event => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <NavBar />
@@ -56,8 +74,14 @@ const Facts = () => {
         <Div color={"grey"}>
           <div>
             <h2>DISCOVER GREENHOUSE GAS EMISSIONS FOR A SINGLE FOOD ITEM</h2>
-            <h4>search bar goes here</h4>
-            <Button>Search</Button>
+            <SearchBar
+              searchTerm={searchTerm}
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
+              placeholder={"Food Item"}
+              name={"item"}
+              button={"Search"}
+            />
           </div>
         </Div>
 

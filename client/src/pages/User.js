@@ -43,6 +43,14 @@ const Div = styled.div`
 
 const User = () => {
 
+  const [groceryItem, setGroceryItem] = useState({
+    searchTerm: "",
+    id: "",
+    ghg: "",
+    country: ""
+  })
+
+  const {searchTerm, id, ghg, country} = groceryItem;
   
 
   const handleInputChange = event => {
@@ -68,9 +76,12 @@ const User = () => {
             <h2>BUILD YOUR GROCRY LIST</h2>
             <p>paragraph</p>
             <SearchBar
-              // searchTerm={searchTerm}
-              // handleInputChange={handleInputChange}
-              // handleFormSubmit={handleFormSubmit}
+              searchTerm={searchTerm}
+              handleInputChange={handleInputChange}
+              handleFormSubmit={handleFormSubmit}
+              placeholder={"Food Item"}
+              name={"item"}
+              button={"Add"}
             />
           </div>
         </Div>

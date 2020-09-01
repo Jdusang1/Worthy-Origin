@@ -114,6 +114,9 @@ const FarmersMarkets = () => {
               searchTerm={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
+              placeholder={"Zip Code"}
+              name={"location"}
+              button={"Search"}
             />
           </div>
         </Div>

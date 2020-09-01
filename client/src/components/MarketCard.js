@@ -4,11 +4,15 @@ import styled from "styled-components";
 
 const StyleWrapper = styled.article `
     .card {
-        border: 3px solid #bf5a41;
+        border: 1px solid #bf5a41;
     }
     .card:hover {
-        border: 4px solid #11343e;
-        box-shadow: 5px 5px #b5875e;
+        border: 2px solid #11343e;
+        
+        box-shadow: 0 4px 8px 0 #b5875e, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   
+   
     }
 
     .card-title {
