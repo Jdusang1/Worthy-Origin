@@ -1,475 +1,475 @@
 [
   {
     "name": "Wheat & Rye (Bread)",
-    "Land use change": 0.1,
-    "Animal Feed": 0,
+    "land_use": 0.1, 
+    "animal_feed": 0,
     "Farm": 0.8,
     "Processing": 0.2,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0.1,
-    "": ""
+    "id": "1"
   },
   {
     "name": "Maize (Meal)",
-    "Land use change": 0.3,
-    "Animal Feed": 0,
+    "land_use": 0.3,
+    "animal_feed": 0,
     "Farm": 0.5,
     "Processing": 0.1,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "2"
   },
   {
     "name": "Barley (Beer)",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0.1,
     "Transport": 0,
     "Packging": 0.5,
     "Retail": 0.3,
-    "": ""
+    "id": "3"
   },
   {
     "name": "Oatmeal",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 1.4,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "4"
   },
   {
     "name": "Rice",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 3.6,
     "Processing": 0.1,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0.1,
-    "": ""
+    "id": "5"
   },
   {
     "name": "Potatoes",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "6"
   },
   {
     "name": "Cassava",
-    "Land use change": 0.6,
-    "Animal Feed": 0,
+    "land_use": 0.6,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "7"
   },
   {
     "name": "Cane Sugar",
-    "Land use change": 1.2,
-    "Animal Feed": 0,
+    "land_use": 1.2,
+    "animal_feed": 0,
     "Farm": 0.5,
     "Processing": 0,
     "Transport": 0.8,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "8"
   },
   {
     "name": "Beet Sugar",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.5,
     "Processing": 0.2,
     "Transport": 0.6,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "9"
   },
   {
     "name": "Other Pulses",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 1.1,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0.4,
     "Retail": 0,
-    "": ""
+    "id": "10"
   },
   {
     "name": "Peas",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.7,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "11"
   },
   {
     "name": "Nuts",
-    "Land use change": -2.1,
-    "Animal Feed": 0,
+    "land_use": -2.1,
+    "animal_feed": 0,
     "Farm": 2.1,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "12"
   },
   {
     "name": "Groundnuts",
-    "Land use change": 0.4,
-    "Animal Feed": 0,
+    "land_use": 0.4,
+    "animal_feed": 0,
     "Farm": 1.4,
     "Processing": 0.4,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "13"
   },
   {
     "name": "Soymilk",
-    "Land use change": 0.2,
-    "Animal Feed": 0,
+    "land_use": 0.2,
+    "animal_feed": 0,
     "Farm": 0.1,
     "Processing": 0.2,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0.3,
-    "": ""
+    "id": "14"
   },
   {
     "name": "Tofu",
-    "Land use change": 1,
-    "Animal Feed": 0,
+    "land_use": 1,
+    "animal_feed": 0,
     "Farm": 0.5,
     "Processing": 0.8,
     "Transport": 0.2,
     "Packging": 0.2,
     "Retail": 0.3,
-    "": ""
+    "id": "15"
   },
   {
     "name": "Soybean Oil",
-    "Land use change": 3.1,
-    "Animal Feed": 0,
+    "land_use": 3.1,
+    "animal_feed": 0,
     "Farm": 1.5,
     "Processing": 0.3,
     "Transport": 0.3,
     "Packging": 0.8,
     "Retail": 0,
-    "": ""
+    "id": "16"
   },
   {
     "name": "Palm Oil",
-    "Land use change": 3.1,
-    "Animal Feed": 0,
+    "land_use": 3.1,
+    "animal_feed": 0,
     "Farm": 2.1,
     "Processing": 1.3,
     "Transport": 0.2,
     "Packging": 0.9,
     "Retail": 0,
-    "": ""
+    "id": "17"
   },
   {
     "name": "Sunflower Oil",
-    "Land use change": 0.1,
-    "Animal Feed": 0,
+    "land_use": 0.1,
+    "animal_feed": 0,
     "Farm": 2.1,
     "Processing": 0.2,
     "Transport": 0.2,
     "Packging": 0.9,
     "Retail": 0,
-    "": ""
+    "id": "18"
   },
   {
     "name": "Rapeseed Oil",
-    "Land use change": 0.2,
-    "Animal Feed": 0,
+    "land_use": 0.2,
+    "animal_feed": 0,
     "Farm": 2.3,
     "Processing": 0.2,
     "Transport": 0.2,
     "Packging": 0.8,
     "Retail": 0,
-    "": ""
+    "id": "19"
   },
   {
     "name": "Olive Oil",
-    "Land use change": -0.4,
-    "Animal Feed": 0,
+    "land_use": -0.4,
+    "animal_feed": 0,
     "Farm": 4.3,
     "Processing": 0.7,
     "Transport": 0.5,
     "Packging": 0.9,
     "Retail": 0,
-    "": ""
+    "id": "20"
   },
   {
     "name": "Tomatoes",
-    "Land use change": 0.4,
-    "Animal Feed": 0,
+    "land_use": 0.4,
+    "animal_feed": 0,
     "Farm": 0.7,
     "Processing": 0,
     "Transport": 0.2,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "21"
   },
   {
     "name": "Onions & Leeks",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "22"
   },
   {
     "name": "Root Vegetables",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "23"
   },
   {
     "name": "Brassicas",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.3,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "24"
   },
   {
     "name": "Other Vegetables",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0.1,
     "Transport": 0.2,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "25"
   },
   {
     "name": "Citrus Fruit",
-    "Land use change": -0.1,
-    "Animal Feed": 0,
+    "land_use": -0.1,
+    "animal_feed": 0,
     "Farm": 0.3,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "26"
   },
   {
     "name": "Bananas",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.3,
     "Processing": 0.1,
     "Transport": 0.3,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "27"
   },
   {
     "name": "Apples",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.2,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "28"
   },
   {
     "name": "Berries & Grapes",
-    "Land use change": 0,
-    "Animal Feed": 0,
+    "land_use": 0,
+    "animal_feed": 0,
     "Farm": 0.7,
     "Processing": 0,
     "Transport": 0.2,
     "Packging": 0.2,
     "Retail": 0,
-    "": ""
+    "id": "29"
   },
   {
     "name": "Wine",
-    "Land use change": -0.1,
-    "Animal Feed": 0,
+    "land_use": -0.1,
+    "animal_feed": 0,
     "Farm": 0.6,
     "Processing": 0.1,
     "Transport": 0.1,
     "Packging": 0.7,
     "Retail": 0,
-    "": ""
+    "id": "30"
   },
   {
     "name": "Other Fruit",
-    "Land use change": 0.1,
-    "Animal Feed": 0,
+    "land_use": 0.1,
+    "animal_feed": 0,
     "Farm": 0.4,
     "Processing": 0,
     "Transport": 0.2,
     "Packging": 0,
     "Retail": 0,
-    "": ""
+    "id": "31"
   },
   {
     "name": "Coffee",
-    "Land use change": 3.7,
-    "Animal Feed": 0,
+    "land_use": 3.7,
+    "animal_feed": 0,
     "Farm": 10.4,
     "Processing": 0.6,
     "Transport": 0.1,
     "Packging": 1.6,
     "Retail": 0.1,
-    "": ""
+    "id": "32"
   },
   {
     "name": "Dark Chocolate",
-    "Land use change": 14.3,
-    "Animal Feed": 0,
+    "land_use": 14.3,
+    "animal_feed": 0,
     "Farm": 3.7,
     "Processing": 0.2,
     "Transport": 0.1,
     "Packging": 0.4,
     "Retail": 0,
-    "": ""
+    "id": "33"
   },
   {
     "name": "Beef (beef herd)",
-    "Land use change": 16.3,
-    "Animal Feed": 1.9,
+    "land_use": 16.3,
+    "animal_feed": 1.9,
     "Farm": 39.4,
     "Processing": 1.3,
     "Transport": 0.3,
     "Packging": 0.2,
     "Retail": 0.2,
-    "": ""
+    "id": "34"
   },
   {
     "name": "Beef (dairy herd)",
-    "Land use change": 0.9,
-    "Animal Feed": 2.5,
+    "land_use": 0.9,
+    "animal_feed": 2.5,
     "Farm": 15.7,
     "Processing": 1.1,
     "Transport": 0.4,
     "Packging": 0.3,
     "Retail": 0.2,
-    "": ""
+    "id": "35"
   },
   {
     "name": "Lamb & Mutton",
-    "Land use change": 0.5,
-    "Animal Feed": 2.4,
+    "land_use": 0.5,
+    "animal_feed": 2.4,
     "Farm": 19.5,
     "Processing": 1.1,
     "Transport": 0.5,
     "Packging": 0.3,
     "Retail": 0.2,
-    "": ""
+    "id": "36"
   },
   {
     "name": "Pig Meat",
-    "Land use change": 1.5,
-    "Animal Feed": 2.9,
+    "land_use": 1.5,
+    "animal_feed": 2.9,
     "Farm": 1.7,
     "Processing": 0.3,
     "Transport": 0.3,
     "Packging": 0.3,
     "Retail": 0.2,
-    "": ""
+    "id": "37"
   },
   {
     "name": "Poultry Meat",
-    "Land use change": 2.5,
-    "Animal Feed": 1.8,
+    "land_use": 2.5,
+    "animal_feed": 1.8,
     "Farm": 0.7,
     "Processing": 0.4,
     "Transport": 0.3,
     "Packging": 0.2,
     "Retail": 0.2,
-    "": ""
+    "id": "38"
   },
   {
     "name": "Milk",
-    "Land use change": 0.5,
-    "Animal Feed": 0.2,
+    "land_use": 0.5,
+    "animal_feed": 0.2,
     "Farm": 1.5,
     "Processing": 0.1,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0.3,
-    "": ""
+    "id": "39"
   },
   {
     "name": "Cheese",
-    "Land use change": 4.5,
-    "Animal Feed": 2.3,
+    "land_use": 4.5,
+    "animal_feed": 2.3,
     "Farm": 13.1,
     "Processing": 0.7,
     "Transport": 0.1,
     "Packging": 0.2,
     "Retail": 0.3,
-    "": ""
+    "id": "40"
   },
   {
     "name": "Eggs",
-    "Land use change": 0.7,
-    "Animal Feed": 2.2,
+    "land_use": 0.7,
+    "animal_feed": 2.2,
     "Farm": 1.3,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0.2,
     "Retail": 0,
-    "": ""
+    "id": "41"
   },
   {
     "name": "Fish (farmed)",
-    "Land use change": 0.5,
-    "Animal Feed": 0.8,
+    "land_use": 0.5,
+    "animal_feed": 0.8,
     "Farm": 3.6,
     "Processing": 0,
     "Transport": 0.1,
     "Packging": 0.1,
     "Retail": 0,
-    "": ""
+    "id": "42"
   },
   {
     "name": "Shrimps (farmed)",
-    "Land use change": 0.2,
-    "Animal Feed": 2.5,
+    "land_use": 0.2,
+    "animal_feed": 2.5,
     "Farm": 8.4,
     "Processing": 0,
     "Transport": 0.2,
     "Packging": 0.3,
     "Retail": 0.2,
-    "": ""
+    "id": "43"
   }
 ]

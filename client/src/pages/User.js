@@ -4,9 +4,6 @@ import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
-import MarketCard from "../components/MarketCard";
-import API from "../utils/API";
-import LocalAPI from "../utils/localAPI";
 import styled from "styled-components";
 
 const grey = "#f9f9f9";
@@ -54,6 +51,7 @@ const User = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
+  
     
   };
 

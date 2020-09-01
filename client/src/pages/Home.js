@@ -10,7 +10,7 @@ import fossilfuels from "../img/fossilfuels.jpg"
 import styled from "styled-components"
 import Footer from "../components/Footer";
 // import MarketTable from "../components/MarketTable";
-import Chart from "../components/WIDchart";
+import StackedBar from "../components/StackedBar";
 import market from "../img/farmersMarket.jpg"
 import CircleImage from "../components/CircleImage";
 import groceries from "../img/groceries.jpg"
@@ -69,9 +69,9 @@ const Home = () => {
         <Div color={"grey"}>
           <div>
             <h2>DID YOU KNOW?</h2>
-            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions from transportation of the product.</p>
+            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions for the lifecycle of each product.</p>
 
-            <Chart />
+            <StackedBar />
             <Button className="button" href={"/facts"}>Learn More!</Button>
 
           </div>
