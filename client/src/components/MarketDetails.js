@@ -36,10 +36,3 @@ const MarketDetails = ({address, products, schedule, link }) => {
 };
 
 export default MarketDetails;
-
-
-// const headerStyle = {
-//     fontSize: "40px",
-//     textDecoration: "underline",
-//     fontFamily: "Raleway"
-// }
