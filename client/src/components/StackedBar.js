@@ -31,8 +31,8 @@ const StackedBar = () => {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-              <Area dataKey="Land use change" fill="#526254" stackId="a" />
-              <Area dataKey="Animal Feed" fill="#424b3f" stackId="a" />
+              <Area dataKey="land_use" fill="#526254" stackId="a" />
+              <Area dataKey="animal_feed" fill="#424b3f" stackId="a" />
               <Area dataKey="Farm" fill="#3f5961" stackId="a" />
               <Area dataKey="Processing" fill="#87a6b0" stackId="a" />
               <Area dataKey="Transport" fill="#cb5744" stackId="a" />

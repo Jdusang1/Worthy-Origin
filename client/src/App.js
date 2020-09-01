@@ -8,9 +8,10 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
+
     <Router>
       <div>
-    
+        
         <Switch>
           <Route exact path={["/", "/home"]}>
             <Home />
