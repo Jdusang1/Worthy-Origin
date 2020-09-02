@@ -34,5 +34,45 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+
+  createUser: function (req, res) {
+    db.Users
+      .create({ userName: "" })
+      .then(dbUser => console.log(dbUser))
+      .catch(err => res.status(422).json(err));
+  },
+
+  getUser: function (req, res) {
+    db.Users
+      .find({ userName: "" })
+      .then(dbUser => console.log(dbUser))
+      .catch(err => res.status(422).json(err));
+
+  },
+
+  addItem: function (req, res) {
+    db.Foods.findOne(req.params.id)
+      .then(({ _id }) => db.Users.findOneAndUpdate({}, { $push: { groceryList: _id } }, { new: true }))
+      .then(res => res.json(res))
+      .catch(err => res.status(422).json(err));
+
+  },
+
+  populateList: function (req, res) {
+    db.Users.find({})
+      .populate("groceryList")
+      .then(dbUser => {
+        res.json(dbUser);
+      })
+      .catch(err => {
+        res.json(err);
+      });
   }
+
+
+
+
+
+
 };
