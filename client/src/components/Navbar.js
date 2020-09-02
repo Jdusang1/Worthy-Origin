@@ -1,36 +1,54 @@
-import React, { useState } from 'react';
-import {
-  Collapse, 
-  Navbar, 
-  NavbarToggler, 
-  NavbarBrand, 
-  Nav, 
-  NavItem,
-  NavLink, 
-  Button,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+import React, { useState, useRef, useEffect } from 'react';
+import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, 
+  NavItem, NavLink, Button, UncontrolledDropdown,DropdownToggle,
+  DropdownMenu,DropdownItem,} from 'reactstrap';
 import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 
 
 const NavStyle = styled.div`
-.navbar{
-  background: transparent;
-}
 a {
   color:white
 }
 .dropdown-profile {
   color: black;
 }
+.blue{
+  background-color:#2b2e39 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.transparent{
+  background-color:transparent !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 `
 
-const NavBar = (props) => {
+const NavBar = () => {
+  const [navBackground, setNavBackground] = useState()
+  const navRef = useRef()
+  navRef.current = navBackground
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 330
+      if (navRef.current !== show) {
+        console.log(window.scrollY)
+        setNavBackground(show)
+      }
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   const [isOpen, setIsOpen] = useState(false);
   const {
     user,
@@ -49,7 +67,12 @@ const NavBar = (props) => {
   return (
     <NavStyle>
       <div>
-        <Navbar expand="md" className="fixed-top">
+        <Navbar 
+        expand="md"
+        // className="fixed-top" 
+        className={navBackground ? 'blue' : 'transparent'}
+        style={{ transition: '1s ease' }}
+        >
           <NavbarBrand href={"/home"}>HOME</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
