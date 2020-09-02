@@ -7,6 +7,9 @@ import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
 import FoodTable from "../components/FoodTable";
 import API from "../utils/API";
+import Grocerylist from "../components/GroceryList";
+import Conversion from "../utils/Conversion";
+
 
 
 
@@ -48,37 +51,39 @@ const Div = styled.div`
 const User = () => {
 
 
-  const [listItem, setListItem] = useState({
-    product: "",
-    id: "",
-    ghgEmission: "",
-    carEquivalency: ""
+  // const [listItem, setListItem] = useState({
+  //   product: "",
+  //   id: "",
+  //   ghgEmission: "",
+  //   carEquivalency: ""
 
 
-  })
+  // })
 
   const [searchResults, setSearchResults] = useState([])
 
 
   const [searchTerm, setSearchTerm] = useState("");
 
+  const [groceryList, setGroceryList] = useState([])
 
 
 
 
 
-  const [groceries, dispatch] = useReducer((prevItem, action) => {
-    switch (action.type) {
-      case "add":
-        return [action.payload, ...prevItem];
-      case "remove":
-        return prevItem.filter(listItem => listItem.listItemId !== action.id);
-      default:
-        return prevItem;
-    }
-  }, []);
 
-  const { product, id, ghgEmission, carEquivalency, } = listItem;
+  // const [groceries, dispatch] = useReducer((prevItem, action) => {
+  //   switch (action.type) {
+  //     case "add":
+  //       return [action.payload, ...prevItem];
+  //     case "remove":
+  //       return prevItem.filter(listItem => listItem.listItemId !== action.id);
+  //     default:
+  //       return prevItem;
+  //   }
+  // }, []);
+
+  // const { product, id, ghgEmission, carEquivalency, } = listItem;
 
   // const productRef = useRef();
   // const ghgEmissionRef = useRef();
@@ -97,21 +102,29 @@ const User = () => {
       .then((data) => setSearchResults(data.data));
 
 
+  }
 
-    // const item = {
+  const addToGroceryLIst = (event, id) => {
+    eventPreventDefault();
 
-
-
-
-    //   product: current.value,
-    //   ghgEmission: current.value,
-    //   carEquivalency: current.value,
-
-
-    // dispatch({ type: "add", payload: item });
-    // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
   }
+
+
+
+  // const item = {
+
+
+
+
+  //   product: current.value,
+  //   ghgEmission: current.value,
+  //   carEquivalency: current.value,
+
+
+  // dispatch({ type: "add", payload: item });
+  // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
+
 
 
 
@@ -137,15 +150,48 @@ const User = () => {
 
         <Div>
 
-        <Row>
+          <div>
+            <Row>
+              <h2>GROCERIES </h2>
+            </Row>
+            <Row>
+              {product ? (
+                <Grocerylist
+                  product={product}
+                  ghgEmission={ghgEmission}
+                  carEquivalency={carEquivalency}
+                />) : ""}
+            </Row>
+          </div>
+
+
+          <Row>
             <Div>
               <div>
                 <Row>
-                  <h2>Results</h2>
+                  <h2>Results For: {searchTerm}</h2>
+
+
                 </Row>
                 <Row>
-                  
-                  
+                  {searchResults.map(result => (
+                    <Col md={3} key={result._id}>
+                      <Card
+                        id={result._id}
+                        product={result.product}
+                        country={result.country}
+                        ghgEmission={result.ghgEmission}
+                      >
+                        <p>{result.product}</p>
+                        <p>Country Origin: {result.country}</p>
+                        <p>Ghg Emissions: {result.ghgEmission}</p>
+                        <Button>Add Product to List</Button>
+                      </Card>
+
+
+                    </Col>
+
+                  ))}
                 </Row>
               </div>
 
