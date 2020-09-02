@@ -1,10 +1,10 @@
 const db = require("../models");
 
-// Defining methods for the FoodssController
+// Defining methods for the FoodsController
 module.exports = {
   findAll: function (req, res) {
     db.Foods
-      .find(req.query)
+      .find({ product: req.params.search })
       .sort({ product: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
@@ -15,6 +15,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
   create: function (req, res) {
     db.Foods
       .create(req.body)

@@ -1,11 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import { Container, Col, Row, Button } from "reactstrap"
-import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
+import FoodTable from "../components/FoodTable";
+import API from "../utils/API";
+
+
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -44,52 +47,90 @@ const Div = styled.div`
 
 const User = () => {
 
-  const { user, isAuthenticated } = useAuth0();
-  const [groceryItem, setGroceryItem] = useState({
-    searchTerm: "",
+
+  const [listItem, setListItem] = useState({
+    product: "",
     id: "",
-    ghg: "",
-    country: ""
+    ghgEmission: "",
+    carEquivalency: ""
+
+
   })
 
-  const {searchTerm, id, ghg, country} = groceryItem;
-  
+  const [searchResults, setSearchResults] = useState([])
+
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+
+
+
+
+
+  const [groceries, dispatch] = useReducer((prevItem, action) => {
+    switch (action.type) {
+      case "add":
+        return [action.payload, ...prevItem];
+      case "remove":
+        return prevItem.filter(listItem => listItem.listItemId !== action.id);
+      default:
+        return prevItem;
+    }
+  }, []);
+
+  const { product, id, ghgEmission, carEquivalency, } = listItem;
+
+  // const productRef = useRef();
+  // const ghgEmissionRef = useRef();
+  // const carEquivalency = useRef();
+
 
   const handleInputChange = event => {
-  
+    setSearchTerm(event.target.value);
+
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-  
-    
-  };
 
-  
+    API.getFood(searchTerm)
+      .then((data) => setSearchResults(data.data));
+
+
+
+    // const item = {
+
+
+
+
+    //   product: current.value,
+    //   ghgEmission: current.value,
+    //   carEquivalency: current.value,
+
+
+    // dispatch({ type: "add", payload: item });
+    // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
+
+  }
+
+
+
+
 
   return (
-      isAuthenticated && (
     <>
       <NavBar />
-      <Jumbotron/>
-      
+      <Jumbotron />
+
       <Container fluid={true} >
         <Div color="grey">
           <div>
-            <img 
-            src={user.picture} 
-            alt={user.name} 
-            className="rounded-circle"/>  
-            <h1>Welcome back, {user.name}!</h1>
-            <h2>BUILD YOUR GROCERY LIST</h2>
+            <h2>BUILD YOUR GROCRY LIST</h2>
             <p>paragraph</p>
             <SearchBar
-              searchTerm={searchTerm}
+              product={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
-              placeholder={"Food Item"}
-              name={"item"}
-              button={"Add"}
             />
           </div>
         </Div>
@@ -101,21 +142,21 @@ const User = () => {
               <h2>GROCERIES </h2>
             </Row>
             <Row>
-              <h2>Table goes here</h2>
-              
+              <FoodTable />
+
             </Row>
           </div>
 
 
-            <Row>
-              <Div>
+          <Row>
+            <Div>
               <div>
                 <Row>
                   <h2>Results</h2>
                 </Row>
                 <Row>
                   <Col>
-                  <h2>image goes here</h2>
+                    <h2>image goes here</h2>
                   </Col>
                   <Col>
                     <h2>Search Item</h2>
@@ -125,19 +166,18 @@ const User = () => {
               </div>
 
             </Div>
-            </Row>
+          </Row>
         </Div>
 
-        
-        <Footer/>
-       
 
-      </Container> 
-     </>
-    )
-  );
+        <Footer />
+
+
+      </Container>
+    </>
+  )
 
 
 }
 
-export default withAuthenticationRequired(User);
+export default User;
