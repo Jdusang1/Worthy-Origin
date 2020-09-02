@@ -22,6 +22,8 @@ const JumboWrapper = styled.div`
 `
 
 function MainJumbotron() {
+  
+
   return (
     <JumboWrapper>
       <div>

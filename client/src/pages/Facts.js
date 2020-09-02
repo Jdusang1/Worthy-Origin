@@ -4,7 +4,7 @@ import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
 import SearchBar from "../components/SearchBar";
-
+import Converter from "../utils/Conversion";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import Charts from "../components/Charts";
@@ -62,13 +62,17 @@ const Facts = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
+    // if (searchTerm) {
+    //   API.getItem()
+    //     .then(res=> setItemInfo(res.data))
+    //     .catch(err => console.log(err))
+    // }
   };
 
   return (
     <>
       <NavBar />
       <Jumbotron />
-
 
       <Container fluid={true}>
         <Div color={"grey"}>
@@ -96,7 +100,8 @@ const Facts = () => {
               </Col>
               <Col>
                 <h2>Search Item</h2>
-                <p>text about blah blah blah</p>
+                <p><strong>Search Item</strong> produces <strong>GHG</strong> kg CO2.</p>
+                <p>That is equivalent to <Converter ghg={40}/> miles driven!</p>
               </Col>
             </Row>
           </div>
