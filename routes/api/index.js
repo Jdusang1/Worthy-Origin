@@ -1,7 +1,10 @@
 const router = require("express").Router();
-const bookRoutes = require("./books");
+const foodRoutes = require("./foods");
 
-// Book routes
-router.use("/books", bookRoutes);
+// Food routes
+router.use("/foods", foodRoutes);
+router.get("/", (req, res) => {
+    res.send("You hit /api!")
+})
 
 module.exports = router;
