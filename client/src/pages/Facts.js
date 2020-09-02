@@ -46,9 +46,8 @@ const Div = styled.div`
   `
 
 const Facts = () => {
-
+  const [searchTerm, setSearchTerm] = useState("")
   const [itemInfo, setItemInfo] = useState({
-    searchTerm: "",
     id: "",
     ghg: "",
     country: ""
@@ -57,16 +56,19 @@ const Facts = () => {
   const {searchTerm, id, ghg, country} = itemInfo;
 
   const handleInputChange = event => {
-    setItemInfo({ ...itemInfo, searchTerm: event.target.value });
+    setItemInfo(event.target.value );
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    // if (searchTerm) {
-    //   API.getItem()
-    //     .then(res=> setItemInfo(res.data))
-    //     .catch(err => console.log(err))
-    // }
+    if (searchTerm) {
+      API.getFood(searchTerm)
+        .then(res => setItemInfo({
+          id: res.data[0]._id,
+          
+        })
+        .catch(err => console.log(err))
+    }
   };
 
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useReducer } from "react";
-import { Container, Col, Row, Button } from "reactstrap"
+import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
@@ -125,7 +125,7 @@ const User = () => {
       <Container fluid={true} >
         <Div color="grey">
           <div>
-            <h2>BUILD YOUR GROCRY LIST</h2>
+            <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
               product={searchTerm}
@@ -136,6 +136,21 @@ const User = () => {
         </Div>
 
         <Div>
+
+        <Row>
+            <Div>
+              <div>
+                <Row>
+                  <h2>Results</h2>
+                </Row>
+                <Row>
+                  
+                  
+                </Row>
+              </div>
+
+            </Div>
+          </Row>
 
           <div>
             <Row>
@@ -148,25 +163,7 @@ const User = () => {
           </div>
 
 
-          <Row>
-            <Div>
-              <div>
-                <Row>
-                  <h2>Results</h2>
-                </Row>
-                <Row>
-                  <Col>
-                    <h2>image goes here</h2>
-                  </Col>
-                  <Col>
-                    <h2>Search Item</h2>
-                    <p>text about blah blah blah</p>
-                  </Col>
-                </Row>
-              </div>
-
-            </Div>
-          </Row>
+          
         </Div>
 
 
