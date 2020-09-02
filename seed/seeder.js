@@ -1,7 +1,7 @@
-let mongoose = require("mongoose");
-let db = require("../models");
+const mongoose = require("mongoose");
+const db = require("../models");
 
-mongoose.connect(process.env.MONGO_URI ||"mongodb://localhost/dbfoods")
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/dbfoods")
 
 const foodsSeed =
   [
@@ -1572,12 +1572,6 @@ const foodsSeed =
       "ghgEmission": 0.7
     },
     {
-      "reference": "product",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
       "reference": "FAO (2014)",
       "product": "Maize",
       "country": "Angola",
@@ -2530,24 +2524,6 @@ const foodsSeed =
       "product": "Beer (Fat Tire® Amber Ale)",
       "country": "United States of America",
       "ghgEmission": 1.5
-    },
-    {
-      "reference": "product",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
-      "reference": "Barley",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
-      "reference": "product",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
     },
     {
       "reference": "FAO (2014)",
@@ -10320,24 +10296,6 @@ const foodsSeed =
       "ghgEmission": 0.4
     },
     {
-      "reference": "product",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
-      "reference": "Stone fruit (Prunus ssp.)",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
-      "reference": "product",
-      "product": "product",
-      "country": "product",
-      "ghgEmission": "product"
-    },
-    {
       "reference": "Yan et al. (2016)",
       "product": "Peaches",
       "country": "China",
@@ -15166,7 +15124,7 @@ const foodsSeed =
 
 
 db.Foods
-  .remove({})
+  .deleteMany({})
   .then(() => db.Foods.collection.insertMany(foodsSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -15176,4 +15134,3 @@ db.Foods
     console.error(err);
     process.exit(1);
   });
-
