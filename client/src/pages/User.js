@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
@@ -6,10 +6,9 @@ import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
-import FoodTable from "../components/FoodTable";
 import API from "../utils/API";
 import Grocerylist from "../components/GroceryList";
-import Conversion from "../utils/Conversion";
+
 
 
 
@@ -52,13 +51,6 @@ const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
 
-  // const [listItem, setListItem] = useState({
-  //   product: "",
-  //   id: "",
-  //   ghgEmission: "",
-  //   carEquivalency: ""
-  // })
-
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -79,34 +71,17 @@ const User = () => {
               })
             } else {
               console.log("yay user found", dbUser)
-              API.populateList(dbUser.data._id)
-              .then(res => console.log(res))
+              API.populateList(dbUser.data.id)
+              .then(res => {
+                console.log(res)
+                setGroceryList(res.data.groceryList);
+              })
             }
           })
   
       .catch(err => console.log(err));
   }, []) 
   
-
-
-  // const [groceries, dispatch] = useReducer((prevItem, action) => {
-  //   switch (action.type) {
-  //     case "add":
-  //       return [action.payload, ...prevItem];
-  //     case "remove":
-  //       return prevItem.filter(listItem => listItem.listItemId !== action.id);
-  //     default:
-  //       return prevItem;
-  //   }
-  // }, []);
-
-  // const { product, id, ghgEmission, carEquivalency, } = listItem;
-
-  // const productRef = useRef();
-  // const ghgEmissionRef = useRef();
-  // const carEquivalency = useRef();
-
-
   const handleInputChange = event => {
     setSearchTerm(event.target.value);
   }
@@ -123,24 +98,15 @@ const User = () => {
   const addToGroceryList = (event, id) => {
     event.preventDefault();
     API.addItem(id, currentUser)
-      .then(res=> console.log(res))
+      .then(res=> {
+        API.populateList(currentUser)
+              .then(res => {
+                console.log(res)
+                setGroceryList(res.data.groceryList);
+              })
+      })
       .catch(err => console.log(err))
   }
-
-
-
-  // const item = {
-
-
-
-
-  //   product: current.value,
-  //   ghgEmission: current.value,
-  //   carEquivalency: current.value,
-
-
-  // dispatch({ type: "add", payload: item });
-  // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
   return (
     isAuthenticated && (
@@ -176,12 +142,13 @@ const User = () => {
               <h2>GROCERIES </h2>
             </Row>
             <Row>
-              {/* {groceryList ? (
-                <Grocerylist
-                  product={searchTerm}
-                  ghgEmission={ghgEmission}
-                  carEquivalency={carEquivalency}
-                />) : ""} */}
+              {groceryList.length ? (
+                
+                  <Grocerylist
+                    list={groceryList}
+                  />
+                
+               ) : ""}
             </Row>
           </div>
 
@@ -213,7 +180,6 @@ const User = () => {
                           </Button>
                       </Card>
 
-
                     </Col>
 
                   ))}
@@ -223,18 +189,6 @@ const User = () => {
             </Div>
           </Row>
 
-          <div>
-            <Row>
-              <h2>GROCERIES </h2>
-            </Row>
-            <Row>
-              <FoodTable />
-
-            </Row>
-          </div>
-
-
-          
         </Div>
 
         <Footer />
