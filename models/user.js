@@ -15,7 +15,13 @@ const userSchema = new Schema({
             ref: "Foods"
 
         }
-    ]
+    ],
+
+    id: {
+        type: String,
+        unique: true,
+        required: true
+    }
 
 
 });
