@@ -53,56 +53,41 @@ const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
 
-<<<<<<< HEAD
-  const [listItem, setListItem] = useState({
-    product: "",
-    id: "",
-    ghgEmission: "",
-    carEquivalency: ""
-
-
-  })
-=======
   // const [listItem, setListItem] = useState({
   //   product: "",
   //   id: "",
   //   ghgEmission: "",
   //   carEquivalency: ""
   // })
->>>>>>> master
 
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
-<<<<<<< HEAD
-  // const [groceryList, setGroceryList] = useState([]);
-=======
   const [groceryList, setGroceryList] = useState([]);
   const currentUser = user.sub;
 
   // => if user then populate else => create user
   useEffect(() => {
-  
-        API.getUser(currentUser)
-          .then(dbUser => {
-            if (!dbUser.data) {
-              console.log("user not found")
-              API.createUser({
-                username: user.email,
-                id: user.sub,
-                groceries: []
-              })
-            } else {
-              console.log("yay user found", dbUser)
-              API.populateList(dbUser._id)
-              .then(res => console.log(res))
-            }
+
+    API.getUser(currentUser)
+      .then(dbUser => {
+        if (!dbUser.data) {
+          console.log("user not found")
+          API.createUser({
+            username: user.email,
+            id: user.sub,
+            groceries: []
           })
-  
+        } else {
+          console.log("yay user found", dbUser)
+          API.populateList(dbUser._id)
+            .then(res => console.log(res))
+        }
+      })
+
       .catch(err => console.log(err));
-  }, []) 
-  
->>>>>>> master
+  }, [])
+
 
 
   // const [groceries, dispatch] = useReducer((prevItem, action) => {
