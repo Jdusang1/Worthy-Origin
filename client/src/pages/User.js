@@ -68,10 +68,6 @@ const User = () => {
   const [groceryList, setGroceryList] = useState([])
 
 
-
-
-
-
   // const [groceries, dispatch] = useReducer((prevItem, action) => {
   //   switch (action.type) {
   //     case "add":
@@ -105,7 +101,7 @@ const User = () => {
   }
 
   const addToGroceryLIst = (event, id) => {
-    eventPreventDefault();
+    event.preventDefault();
 
 
   }
@@ -125,11 +121,6 @@ const User = () => {
   // dispatch({ type: "add", payload: item });
   // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
-
-
-
-
-
   return (
     <>
       <NavBar />
@@ -144,6 +135,9 @@ const User = () => {
               product={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
+              placeholder={"Food Item"}
+              name={"item"}
+              button={"Search"}
             />
           </div>
         </Div>
@@ -155,12 +149,12 @@ const User = () => {
               <h2>GROCERIES </h2>
             </Row>
             <Row>
-              {product ? (
+              {/* {groceryList ? (
                 <Grocerylist
-                  product={product}
+                  product={searchTerm}
                   ghgEmission={ghgEmission}
                   carEquivalency={carEquivalency}
-                />) : ""}
+                />) : ""} */}
             </Row>
           </div>
 
@@ -180,7 +174,7 @@ const User = () => {
                         id={result._id}
                         product={result.product}
                         country={result.country}
-                        ghgEmission={result.ghgEmission}
+                        ghgemission={result.ghgEmission}
                       >
                         <p>{result.product}</p>
                         <p>Country Origin: {result.country}</p>
@@ -197,6 +191,19 @@ const User = () => {
 
             </Div>
           </Row>
+
+          <div>
+            <Row>
+              <h2>GROCERIES </h2>
+            </Row>
+            <Row>
+              <FoodTable />
+
+            </Row>
+          </div>
+
+
+          
         </Div>
 
 
