@@ -1,91 +1,41 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-import img from "../img/WorthyOrigin.png"
+import React from 'react';
+import { UncontrolledCarousel } from 'reactstrap';
+import region from "../img/annualbyregion.png";
+import change from "../img/changeInCO2.png";
+import trade from "../img/co2intrade.png";
+import country from "../img/co2percountry.png";
+
 const items = [
   {
-    id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1',
-    chart: "this is chart 2"
+    src: region,
+    altText: "annual co2 by region",
+    caption: "",
+    header: "",
+    key: "1"
   },
   {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    chart: "this is chart 2"
+    src: change,
+    altText: "change in co2",
+    caption: "",
+    header: "",
+    key: "2"
   },
   {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    chart: "this is chart 3"
+    src: trade,
+    altText: "CO2 in trade",
+    caption: "",
+    header: "",
+    key: "3"
+  },
+  {
+    src: country,
+    altText: "CO2 per country",
+    caption: "",
+    header: "",
+    key: "4"
   }
 ];
 
-const FactsCarousel = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        className="custom-tag"
-        tag="div"
-        key={item.id}
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-      >
-        {items.chart}
-        <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
-
-  return (
-    <div>
-      <style>
-        {
-          `.custom-tag {
-              max-width: 100%;
-              height: 500px;
-            }`
-        }
-      </style>
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
-    </div>
-  );
-}
+const FactsCarousel = () => <UncontrolledCarousel items={items} autoPlay={false} />;
 
 export default FactsCarousel;

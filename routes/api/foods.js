@@ -6,15 +6,14 @@ router.route("/")
   .get(foodsController.findAll)
   .post(foodsController.create);
 
-// Matches with "/api/books/:id"
-router
-  .route("/:search")
+// Matches with "/api/foods/:search"
+router.route("/:search")
   .get(foodsController.findAll)
   .put(foodsController.update)
   .delete(foodsController.remove);
 
-// router
-//   .route("/:food")
-//   .get(foodsController.findAll)
+// router.route("/:id")
+//   .get(foodsController.addItem)
 
-module.exports = router;
+
+  module.exports = router;

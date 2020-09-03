@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useReducer } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
-import { Container, Col, Row, Button } from "reactstrap"
+import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
@@ -8,6 +8,9 @@ import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
 import FoodTable from "../components/FoodTable";
 import API from "../utils/API";
+import Grocerylist from "../components/GroceryList";
+import Conversion from "../utils/Conversion";
+
 
 
 const grey = "#f9f9f9";
@@ -49,30 +52,33 @@ const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
 
-  const [listItem, setListItem] = useState({
-    product: "",
-    id: "",
-    ghgEmission: "",
-    carEquivalency: ""
+  // const [listItem, setListItem] = useState({
+  //   product: "",
+  //   id: "",
+  //   ghgEmission: "",
+  //   carEquivalency: ""
 
 
-  })
+  // })
 
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
-  const [groceries, dispatch] = useReducer((prevItem, action) => {
-    switch (action.type) {
-      case "add":
-        return [action.payload, ...prevItem];
-      case "remove":
-        return prevItem.filter(listItem => listItem.listItemId !== action.id);
-      default:
-        return prevItem;
-    }
-  }, []);
+  const [groceryList, setGroceryList] = useState([])
 
-  const { product, id, ghgEmission, carEquivalency, } = listItem;
+
+  // const [groceries, dispatch] = useReducer((prevItem, action) => {
+  //   switch (action.type) {
+  //     case "add":
+  //       return [action.payload, ...prevItem];
+  //     case "remove":
+  //       return prevItem.filter(listItem => listItem.listItemId !== action.id);
+  //     default:
+  //       return prevItem;
+  //   }
+  // }, []);
+
+  // const { product, id, ghgEmission, carEquivalency, } = listItem;
 
   // const productRef = useRef();
   // const ghgEmissionRef = useRef();
@@ -90,18 +96,29 @@ const User = () => {
     API.getFood(searchTerm)
       .then((data) => setSearchResults(data.data));
 
-    // const item = {
-
-    //   product: current.value,
-    //   ghgEmission: current.value,
-    //   carEquivalency: current.value,
-
-
-    // dispatch({ type: "add", payload: item });
-    // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
   }
 
+  const addToGroceryLIst = (event, id) => {
+    event.preventDefault();
+
+
+  }
+
+
+
+  // const item = {
+
+
+
+
+  //   product: current.value,
+  //   ghgEmission: current.value,
+  //   carEquivalency: current.value,
+
+
+  // dispatch({ type: "add", payload: item });
+  // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
   return (
     isAuthenticated && (
@@ -123,11 +140,62 @@ const User = () => {
               product={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
+              placeholder={"Food Item"}
+              name={"item"}
+              button={"Search"}
             />
           </div>
         </Div>
 
         <Div>
+
+          <div>
+            <Row>
+              <h2>GROCERIES </h2>
+            </Row>
+            <Row>
+              {/* {groceryList ? (
+                <Grocerylist
+                  product={searchTerm}
+                  ghgEmission={ghgEmission}
+                  carEquivalency={carEquivalency}
+                />) : ""} */}
+            </Row>
+          </div>
+
+
+          <Row>
+            <Div>
+              <div>
+                <Row>
+                  <h2>Results For: {searchTerm}</h2>
+
+
+                </Row>
+                <Row>
+                  {searchResults.map(result => (
+                    <Col md={3} key={result._id}>
+                      <Card
+                        id={result._id}
+                        product={result.product}
+                        country={result.country}
+                        ghgemission={result.ghgEmission}
+                      >
+                        <p>{result.product}</p>
+                        <p>Country Origin: {result.country}</p>
+                        <p>Ghg Emissions: {result.ghgEmission}</p>
+                        <Button>Add Product to List</Button>
+                      </Card>
+
+
+                    </Col>
+
+                  ))}
+                </Row>
+              </div>
+
+            </Div>
+          </Row>
 
           <div>
             <Row>
@@ -140,25 +208,7 @@ const User = () => {
           </div>
 
 
-          <Row>
-            <Div>
-              <div>
-                <Row>
-                  <h2>Results</h2>
-                </Row>
-                <Row>
-                  <Col>
-                    <h2>image goes here</h2>
-                  </Col>
-                  <Col>
-                    <h2>Search Item</h2>
-                    <p>text about blah blah blah</p>
-                  </Col>
-                </Row>
-              </div>
-
-            </Div>
-          </Row>
+          
         </Div>
 
         <Footer />
