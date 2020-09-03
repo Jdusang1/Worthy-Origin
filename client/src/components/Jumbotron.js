@@ -21,13 +21,15 @@ const JumboWrapper = styled.div`
   }
 `
 
+
+
 function MainJumbotron() {
   
 
   return (
     <JumboWrapper>
       <div>
-        <Jumbotron>
+        <Jumbotron className="backgroundImg">
           <img src={logo} alt="Worthy Origin Logo" />
           <hr className="my-2" />
           <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

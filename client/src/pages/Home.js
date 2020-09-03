@@ -17,6 +17,7 @@ import groceries from "../img/groceries.jpg"
 import LoginButton from "../components/LoginBtn";
 import ProfileButton from "../components/ProfileBtn";
 import { useAuth0 } from "@auth0/auth0-react";
+import ReactTooltip from 'react-tooltip';
 
 
 
@@ -28,34 +29,38 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
-
   }
-
   p {
     width: 60%;
     margin: 15px auto;
     font-size: 20px;
     font-family: "Roboto";
   }
-
   h2 {
-   margin: 10px auto;
-   font-family: "Raleway";
-   font-size: 52px;
-
+    margin: 10px auto;
+    font-family: "Raleway";
+    font-size: 52px;
   }
-
   .button {
     background-color: #cb5744;
     border: none;
     padding: 20px;
     font-size: 20px;
-
-
   }
-
   .button:hover {
   background-color: #ec9a59;
+  }
+  a{
+    background-color:none;
+  }
+  .extraClass{
+    font-size: 14px;
+    background-color: #143d3d;
+    max-width: 200px;
+    text-align: left;
+    opacity:.98;
+  }
+
 `
 
 
@@ -74,10 +79,12 @@ const Home = () => {
         <Div color={"grey"}>
           <div>
             <h2>DID YOU KNOW?</h2>
-            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of greenhouse gas emissions for the lifecycle of each product.</p>
+            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of <a data-for='custom-color-no-arrow' data-tip='Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planets average temperature rise by increasing the greenhouse effect.'>greenhouse gas emissions</a>  for the lifecycle of each product.</p>
 
             <StackedBar />
             <Button className="button" href={"/facts"}>Learn More!</Button>
+
+            <ReactTooltip id='custom-color-no-arrow' className='extraClass' textColor='#e7d8d6' effect='solid'/>
 
           </div>
         </Div>
@@ -91,7 +98,9 @@ const Home = () => {
               <Col>
                 <HomeCard
                   img={ax}
-                  text={"Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
+                  text={
+                    
+                    "Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
                 />
               </Col>
               <Col>
@@ -152,7 +161,6 @@ const Home = () => {
       </Container>
     </>
   )
-
 
 }
 
