@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useReducer } from "react";
+import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
@@ -9,7 +10,6 @@ import FoodTable from "../components/FoodTable";
 import API from "../utils/API";
 import Grocerylist from "../components/GroceryList";
 import Conversion from "../utils/Conversion";
-
 
 
 
@@ -50,6 +50,7 @@ const Div = styled.div`
 
 const User = () => {
 
+  const { user, isAuthenticated } = useAuth0();
 
   // const [listItem, setListItem] = useState({
   //   product: "",
@@ -61,8 +62,6 @@ const User = () => {
   // })
 
   const [searchResults, setSearchResults] = useState([])
-
-
   const [searchTerm, setSearchTerm] = useState("");
 
   const [groceryList, setGroceryList] = useState([])
@@ -122,6 +121,7 @@ const User = () => {
   // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
   return (
+    isAuthenticated && (
     <>
       <NavBar />
       <Jumbotron />
@@ -129,6 +129,11 @@ const User = () => {
       <Container fluid={true} >
         <Div color="grey">
           <div>
+          <img 
+            src={user.picture} 
+            alt={user.name} 
+            className="rounded-circle"/>  
+            <h1>Welcome back, {user.name}!</h1>
             <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
@@ -206,15 +211,12 @@ const User = () => {
           
         </Div>
 
-
         <Footer />
-
 
       </Container>
     </>
+    )
   )
-
-
 }
 
-export default User;
+export default withAuthenticationRequired(User);
