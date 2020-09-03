@@ -6,15118 +6,15256 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/dbfoods")
 const foodsSeed =
   [
     {
-      "reference": "Narayanaswamy et al. (2004)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Australia",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Bread"
     },
     {
-      "reference": "Moudrý Jr et al. (2013b)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Czech Republic",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Bread"
     },
     {
-      "reference": "Moudrý Jr et al. (2013b)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Czech Republic",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "France",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat and rye bread",
+      "reference": "Wheat and rye bread",
       "country": "France",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "France",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Bread"
     },
     {
-      "reference": "Braschkat et al. (2003)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Germany",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bread"
     },
     {
-      "reference": "Braschkat et al. (2003)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Germany",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Bread"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Germany",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Italy",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Bread"
     },
     {
-      "reference": "Korsaeth et al. (2012)",
-      "product": "Wheat and rye bread",
+      "reference": "Wheat and rye bread",
       "country": "Norway",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat and rye bread",
+      "reference": "Wheat and rye bread",
       "country": "Portugal",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Portugal",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Bread"
     },
     {
-      "reference": "Kulak et al. (2015)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Spain",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Bread"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Wheat bread",
+      "reference": "Wheat bread",
       "country": "Switzerland",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bread"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Wheat",
       "country": "Albania",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Barton et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Barton et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Biswas et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Biswas et al. (2010)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Brock et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Eady et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Grant et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Maraseni and Cockfield (2011)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Muir et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Muir et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Muir et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ridoutt et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ridoutt et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ridoutt et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang and Dalal (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang and Dalal (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang and Dalal (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang and Dalal (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Belarus",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Belgium",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Bolivia (Plurinational State of)",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Bosnia and Herzegovina",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Burundi",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Canada",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Canada",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Canada",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Canada",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Canada",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Huerta et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Chile",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Huerta et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Chile",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ha et al. (2015)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wang et al. (2016b)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Wheat flour",
+      "reference": "Wheat flour",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "China",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Croatia",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Croatia",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Croatia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Christoforou et al. (2016)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Cyprus",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Czech Republic",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Rye"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Czech Republic",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Rye"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Democratic People's Republic of Korea",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Denmark",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Denmark",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Denmark",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Denmark",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Denmark",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Mogensen et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Egypt",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Eritrea",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Estonia",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Estonia",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Estonia",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Ethiopia",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Rajaniemi et al. (2011)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Finland",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Rye"
     },
     {
-      "reference": "Rajaniemi et al. (2011)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Finland",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Soft wheat",
+      "reference": "Soft wheat",
       "country": "France",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Soft wheat",
+      "reference": "Soft wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Soft wheat",
+      "reference": "Soft wheat",
       "country": "France",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Soft wheat",
+      "reference": "Soft wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Naudin et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Naudin et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "van der Werf et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Germany",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Germany",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Germany",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Rye"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Germany",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Zygouras et al. (2005); Achten and van Acker (2016)",
-      "product": "Wheat flour",
+      "reference": "Wheat flour",
       "country": "Greece",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Aryal et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Aryal et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Pathak et al. (2012a); Pathak et al. (2012b)",
-      "product": "Wheat flour",
+      "reference": "Wheat flour",
       "country": "India",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Pathak et al. (2012a); Pathak et al. (2012b)",
-      "product": "Wheat flour",
+      "reference": "Wheat flour",
       "country": "India",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sapkota et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sapkota et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "India",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Fallahpour et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Fallahpour et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ghahderijani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ghahderijani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ghahderijani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Ghahderijani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Mirasi et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sami et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Soltani et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Ireland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Ireland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Ireland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Goglio et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Goglio et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Tamburini et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Japan",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Japan",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Kenya",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Kyrgyzstan",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Latvia",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Latvia",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Latvia",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Lithuania",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Lithuania",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Lithuania",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Luxembourg",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Luxembourg",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Luxembourg",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Dendooven et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Mexico",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Dendooven et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Mexico",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Dendooven et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Mexico",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Mongolia",
-      "ghgEmission": 56
+      "ghgEmission": 56,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Mozambique",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sah et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Nepal",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sah et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Nepal",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Sah et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Nepal",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Winter Wheat",
+      "reference": "Winter Wheat",
       "country": "Netherlands",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Spring Wheat",
+      "reference": "Spring Wheat",
       "country": "Netherlands",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Netherlands",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Niger",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Norway",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Rye"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Norway",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Norway",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Korsaeth et al. (2012)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Norway",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Korsaeth et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Norway",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Roer et al. (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Norway",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Pakistan",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Borzęcka-Walker et al. (2011)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Poland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Poland",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Poland",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Rye",
+      "reference": "Rye",
       "country": "Poland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Rye"
     },
     {
-      "reference": "Rosado et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Portugal",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Rwanda",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Slovenia",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Slovenia",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Slovenia",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Spain",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Sudan (former)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Bernesson et al. (2006)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Sweden",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Sweden",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Sweden",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Tidåker et al. (2007)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Charles et al. (2006)",
-      "product": "Winter bread wheat",
+      "reference": "Winter bread wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rye",
+      "reference": "Winter rye",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Rye"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Spring wheat",
+      "reference": "Spring wheat",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Uganda",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "Glithero et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Guo (2012)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Punter et al. (2004)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Punter et al. (2004)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Röder et al. (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Williams et al. (2006); Williams et al. (2010)",
-      "product": "Bread wheat",
+      "reference": "Bread wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Williams et al. (2006); Williams et al. (2010)",
-      "product": "Bread wheat",
+      "reference": "Bread wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Winter bread wheat",
+      "reference": "Winter bread wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Spring bread wheat",
+      "reference": "Spring bread wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Bread wheat",
+      "reference": "Bread wheat",
       "country": "United Kingdom",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 13.1
+      "ghgEmission": 13.1,
+      "genre": "Wheat"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wheat"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wheat"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wheat"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Winter wheat",
+      "reference": "Winter wheat",
       "country": "United States of America",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wheat"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United States of America",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "United States of America",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Uzbekistan",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Wheat",
+      "reference": "Wheat",
       "country": "Zimbabwe",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Wheat"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Angola",
-      "ghgEmission": 27.4
+      "ghgEmission": 27.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Argentina",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Argentina",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Maraseni et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Australia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Belarus",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Belgium",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Bolivia (Plurinational State of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Brazil",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Brazil",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Brazil",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Maize"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Brazil",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Burundi",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Cambodia",
-      "ghgEmission": 7.2
+      "ghgEmission": 7.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Cameroon",
-      "ghgEmission": 12.4
+      "ghgEmission": 12.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Jayasundara et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Canada",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Canada",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Canada",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Ma et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Canada",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Ma et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Canada",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Central African Republic",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Ha et al. (2015)",
-      "product": "Summer maize",
+      "reference": "Summer maize",
       "country": "China",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Wang et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Wang et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Yang and Chen (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Summer maize",
+      "reference": "Summer maize",
       "country": "China",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Summer maize",
+      "reference": "Summer maize",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Summer maize",
+      "reference": "Summer maize",
       "country": "China",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Summer maize",
+      "reference": "Summer maize",
       "country": "China",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Costa Rica",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Côte d'Ivoire",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Cuba",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Christoforou et al. (2016)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Cyprus",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Denmark",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Egypt",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "El Salvador",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Eritrea",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Ethiopia",
-      "ghgEmission": 8
+      "ghgEmission": 8,
+      "genre": "Maize"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "van der Werf et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "France",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Gabon",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Germany",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Hungary",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "India",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Sami et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 5.1
+      "ghgEmission": 5.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Goglio et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Noya et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Kenya",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Kyrgyzstan",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Madagascar",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Malawi",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Mali",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Dendooven et al. (2012); Govaerts et al. (2005); Beuchelt et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Mexico",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Dendooven et al. (2012); Govaerts et al. (2005); Beuchelt et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Mexico",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Mexico",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Mozambique",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Namibia",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Nigeria",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Nigeria",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Panama",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Maize"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Peru",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Philippines",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Poland",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Portugal",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Portugal",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Portugal",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Portugal",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Teixeira et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Portugal",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Republic of Moldova",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Romania",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Russian Federation",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Rwanda",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Senegal",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Serbia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Sierra Leone",
-      "ghgEmission": 12.7
+      "ghgEmission": 12.7,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Slovenia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Somalia",
-      "ghgEmission": 5.2
+      "ghgEmission": 5.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "South Africa",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "South Africa",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Sri Lanka",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Maize"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Thailand",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Thailand",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Togo",
-      "ghgEmission": 9.1
+      "ghgEmission": 9.1,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Uganda",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Ukraine",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 10
+      "ghgEmission": 10,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 15.9
+      "ghgEmission": 15.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Plassmann et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 11
+      "ghgEmission": 11,
+      "genre": "Maize"
     },
     {
-      "reference": "Plassmann et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 10.9
+      "ghgEmission": 10.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Plassmann et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 6.5
+      "ghgEmission": 6.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Maize"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Maize"
     },
     {
-      "reference": "Archer and Halvorson (2010)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Archer and Halvorson (2010)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Grassini and Cassman (2012)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Kim et al. (2009)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "Murphy and Kendall (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Maize"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Uzbekistan",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Venezuela (Bolivarian Republic of)",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Zambia",
-      "ghgEmission": 72.3
+      "ghgEmission": 72.3,
+      "genre": "Maize"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Maize",
+      "reference": "Maize",
       "country": "Zimbabwe",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Maize"
     },
     {
-      "reference": "Narayanaswamy et al. (2004)",
-      "product": "Beer",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Beer",
       "country": "Australia",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beer"
     },
     {
-      "reference": "Lalonde et al. (2013)",
-      "product": "Beer (Vashon Brewing Company)",
+      "reference": "Beer (Vashon Brewing Company)",
       "country": "United States of America",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Beer"
     },
     {
-      "reference": "Lalonde et al. (2013)",
-      "product": "Beer (Vortex IPA, Fort George Brewery)",
+      "reference": "Beer (Vortex IPA, Fort George Brewery)",
       "country": "United States of America",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Beer"
     },
     {
-      "reference": "Lalonde et al. (2013)",
-      "product": "Beer (Pinnacle Peak Pale Ale, Harmon Brewing Company)",
+      "reference": "Beer (Pinnacle Peak Pale Ale, Harmon Brewing Company)",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Beer"
     },
     {
-      "reference": "Lalonde et al. (2013)",
-      "product": "Beer (HUB Lager, Hopworks Urban Brewery)",
+      "reference": "Beer (HUB Lager, Hopworks Urban Brewery)",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Beer"
     },
     {
-      "reference": "Lalonde et al. (2013)",
-      "product": "Beer (Horn Blonde Ale, RAM Brewery)",
+      "reference": "Beer (Horn Blonde Ale, RAM Brewery)",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Beer"
     },
     {
-      "reference": "The Climate Conservancy (2008)",
-      "product": "Beer (Fat Tire® Amber Ale)",
+      "reference": "Beer (Fat Tire® Amber Ale)",
       "country": "United States of America",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beer"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Algeria",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Eady et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Maraseni and Cockfield (2011)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Belarus",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Barley"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Belgium",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Belgium",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Bosnia and Herzegovina",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Bulgaria",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Gan et al. (2012a)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Canada",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Gan et al. (2012a)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Canada",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Christoforou et al. (2016)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Cyprus",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Czech Republic",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Dalgaard et al. (2008)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Denmark",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Denmark",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Denmark",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Mogensen et al. (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Niero et al. (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Denmark",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Rajaniemi et al. (2011)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Finland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Summer malting barley",
+      "reference": "Summer malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter malting barley",
+      "reference": "Winter malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter malting barley",
+      "reference": "Winter malting barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "France",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "van der Werf et al. (2005)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Germany",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Germany",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Germany",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Hungary",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "Fallahpour et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Fallahpour et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Mobtaker et al. (2010); Mobtaker et al. (2013)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Ireland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Morocco",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Norway",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "Korsaeth et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Norway",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Barley"
     },
     {
-      "reference": "Roer et al. (2012)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Norway",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Poland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Republic of Moldova",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Romania",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Russian Federation",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Serbia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Slovakia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Bartzas et al. (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Spain",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Spain",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Sweden",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Sweden",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Sweden",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Sweden",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Summer barley",
+      "reference": "Summer barley",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Tunisia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Turkey",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Ukraine",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Barley"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "United Kingdom",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Barley"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Spring barley",
+      "reference": "Spring barley",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Winter barley",
+      "reference": "Winter barley",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Barley"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Barley",
+      "reference": "Barley",
       "country": "Uzbekistan",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Barley"
     },
     {
-      "reference": "Eady et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Oats"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peeled oats",
+      "reference": "Peeled oats",
       "country": "Belgium",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Oats"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Canada",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Oats"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Finland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Oats"
     },
     {
-      "reference": "Rajaniemi et al. (2011)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Finland",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Oats"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peeled oats",
+      "reference": "Peeled oats",
       "country": "Netherlands",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Oats"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Norway",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Oats"
     },
     {
-      "reference": "Korsaeth et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Norway",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Oats"
     },
     {
-      "reference": "Roer et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Norway",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Oats"
     },
     {
-      "reference": "Rosado et al. (2013)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Portugal",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Oats"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Oats"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Sweden",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Oats"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Oats"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "United States of America",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Oats"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "United States of America",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oats"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "United States of America",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Oats"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Oats",
+      "reference": "Oats",
       "country": "United States of America",
-      "ghgEmission": 4.3
+      "ghgEmission": 4.3,
+      "genre": "Oats"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Chen et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Rice"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Liu et al. (2016)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Wang et al. (2010)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 6.4
+      "ghgEmission": 6.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Xue et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Rice"
     },
     {
-      "reference": "Xue et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Xue et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2015a)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2015b)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2015b)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Yan et al. (2015b)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "China",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Rice"
     },
     {
-      "reference": "Datta et al. (2011)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 8.4
+      "ghgEmission": 8.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Gathorne-Hardy et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Gathorne-Hardy et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 6.9
+      "ghgEmission": 6.9,
+      "genre": "Rice"
     },
     {
-      "reference": "Pathak et al. (2012a); Pathak et al. (2012b)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Pathak et al. (2012a); Pathak et al. (2012b)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Pathak et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Pathak et al. (2013)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Rice"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Saharawat et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "India",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Mohammadi et al. (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Mohammadi et al. (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Mohammadi et al. (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Rice"
     },
     {
-      "reference": "Fusi et al. (2014a)",
-      "product": "Long grain rice",
+      "reference": "Long grain rice",
       "country": "Italy",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Fusi et al. (2014a)",
-      "product": "Long grain rice",
+      "reference": "Long grain rice",
       "country": "Italy",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Blengini and Busto (2009)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Italy",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Blengini and Busto (2009)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Italy",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Rice"
     },
     {
-      "reference": "Harada et al. (2007)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Rice"
     },
     {
-      "reference": "Harada et al. (2007)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Harada et al. (2007)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Hatcho et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Hatcho et al. (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono and Hayashi (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono and Hayashi (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono and Hayashi (2012)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono et al. (2009)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono et al. (2009)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Rice"
     },
     {
-      "reference": "Hokazono et al. (2009)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Koga and Tajima (2011)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Koga and Tajima (2011)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Japan",
-      "ghgEmission": 7.8
+      "ghgEmission": 7.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Bautista and Saito (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Philippines",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Rice"
     },
     {
-      "reference": "Bautista and Saito (2015)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Philippines",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Aguilera et al. (2015a)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Spain",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Rice"
     },
     {
-      "reference": "Aguilera et al. (2015a)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "Spain",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Rice"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 9.3
+      "ghgEmission": 9.3,
+      "genre": "Rice"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Thanawong et al. (2014)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Rice"
     },
     {
-      "reference": "Thanawong et al. (2014)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 13.5
+      "ghgEmission": 13.5,
+      "genre": "Rice"
     },
     {
-      "reference": "Thanawong et al. (2014)",
-      "product": "Jasmine rice",
+      "reference": "Jasmine rice",
       "country": "Thailand",
-      "ghgEmission": 14.4
+      "ghgEmission": 14.4,
+      "genre": "Rice"
     },
     {
-      "reference": "Brodt et al. (2014)",
-      "product": "Rice",
+      "reference": "Rice",
       "country": "United States of America",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Rice"
     },
     {
-      "reference": "Phong et al. (2011)",
-      "product": "Rice",
-      "country": "Viet Nam",
-      "ghgEmission": 4.2
+      "reference": "Rice",
+      "country": "Vietnam",
+      "ghgEmission": 4.2,
+      "genre": "Rice"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Australia",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Norton et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Norton et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Australia",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Norton et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Sandaña and Kalazich (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Sandaña and Kalazich (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "China",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "China",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "China",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "China",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Christoforou et al. (2016)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Cyprus",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Moudrý Jr et al. (2013a)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Moudrý Jr et al. (2013a)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Knudsen et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "France",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Germany",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Germany",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Germany",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "India",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bakhtiari et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Khoshnevisan et al. (2014b)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Khoshnevisan et al. (2014b)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Khoshnevisan et al. (2014b)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Israel",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Israel",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Japan",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Uchida and Hayashi (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Japan",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Uchida and Hayashi (2012)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "Japan",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Netherlands",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Netherlands",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort and Hillier (2011)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Netherlands",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Haverkort and Hillier (2011)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Netherlands",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Netherlands",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Norway",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Cayambe et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Flores et al. (2016)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "Philippines",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Flores et al. (2016)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "Philippines",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Flores et al. (2016)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "Philippines",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Borzęcka-Walker et al. (2011)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Poland",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Peru",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Cayambe et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Peru",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Russian Federation",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Mattsson and Wallén (2003)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Sweden",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Röös et al. (2010)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "Ukraine",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Hillier et al. (2009)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sweet potatoes",
+      "reference": "Sweet potatoes",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Sweet potatoes"
     },
     {
-      "reference": "Zaher et al. (2016)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Potatoes"
     },
     {
-      "reference": "Zaher et al. (2016)",
-      "product": "Potatoes",
+      "reference": "Potatoes",
       "country": "United States of America",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Potatoes"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Angola",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Argentina",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Benin",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Brazil",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Burkina Faso",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Burundi",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Cambodia",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Cameroon",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Central African Republic",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Chad",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "China",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Colombia",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Congo",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Costa Rica",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Côte d'Ivoire",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Cuba",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Democratic Republic of the Congo",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Ecuador",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Gabon",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Ghana",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Guinea",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Guinea-Bissau",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "India",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Indonesia",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Kenya",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Liberia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Madagascar",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Malawi",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Mali",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Mozambique",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Cassava"
     },
     {
-      "reference": "BMZ Federal Ministry for Economic Cooperation and Development (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Nigeria",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Nigeria",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Paraguay",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Peru",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Philippines",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Rwanda",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Senegal",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Sierra Leone",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Somalia",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Sri Lanka",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Sudan (former)",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Thailand",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "Silalertruksa and Gheewala (2009)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Thailand",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Thailand",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Thailand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Togo",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Uganda",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Venezuela (Bolivarian Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
-      "country": "Viet Nam",
-      "ghgEmission": 1.1
+      "reference": "Cassava",
+      "country": "Vietnam",
+      "ghgEmission": 1.1,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Zambia",
-      "ghgEmission": 36.2
+      "ghgEmission": 36.2,
+      "genre": "Cassava"
     },
     {
-      "reference": "FAO (2014)",
-      "product": "Cassava",
+      "reference": "Cassava",
       "country": "Zimbabwe",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Cassava"
     },
     {
-      "reference": "Acreche and Valeiro (2013); Hun et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Argentina",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Acreche and Valeiro (2013); Hun et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Argentina",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Mele et al. (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Argentina",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Renouf et al. (2011); Renouf et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Renouf et al. (2011); Renouf et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Renouf et al. (2011); Renouf et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Australia",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "de Figueiredo et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Brazil",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "de Figueiredo and La Scala Jr (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Brazil",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "de Figueiredo and La Scala Jr (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Brazil",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Brazil",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Brazil",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "China",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Soam et al. (2015)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "India",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Soam et al. (2015)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "India",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Indonesia",
-      "ghgEmission": 4.8
+      "ghgEmission": 4.8,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Uchida and Hayashi (2012)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Japan",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Dunkelberg et al. (2014)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Malawi",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Plassmann et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mauritius",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Ramjeawon (2004)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mauritius",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "García et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mexico",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "García et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mexico",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "García et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mexico",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "García et al. (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Mexico",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Khatiwada and Silveira (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Nepal",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Pakistan",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Mashoko et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "South Africa",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "van der Laan et al. (2015)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "South Africa",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Sudan (former)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Silalertruksa et al. (2017)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Thailand",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Yuttitham et al. (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Thailand",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Yuttitham et al. (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Thailand",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Yuttitham et al. (2011)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Thailand",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "United States of America",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Plassmann et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Zambia",
-      "ghgEmission": 47.6
+      "ghgEmission": 47.6,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Plassmann et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Zambia",
-      "ghgEmission": 21.6
+      "ghgEmission": 21.6,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Plassmann et al. (2010)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Zambia",
-      "ghgEmission": 21.7
+      "ghgEmission": 21.7,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Zambia",
-      "ghgEmission": 17.3
+      "ghgEmission": 17.3,
+      "genre": "Sugar cane"
     },
     {
-      "reference": "de Oliveira Bordonal et al. (2013)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Brazil",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Sugar"
     },
     {
-      "reference": "de Oliveira Bordonal et al. (2013)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Brazil",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Sugar"
     },
     {
-      "reference": "de Oliveira Bordonal et al. (2013)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Brazil",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Sugar"
     },
     {
-      "reference": "Macedo et al. (2004)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Brazil",
-      "ghgEmission": 5.2
+      "ghgEmission": 5.2,
+      "genre": "Sugar"
     },
     {
-      "reference": "Tsiropoulos et al. (2014)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Brazil",
-      "ghgEmission": 4.8
+      "ghgEmission": 4.8,
+      "genre": "Sugar"
     },
     {
-      "reference": "Tsiropoulos et al. (2014)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "India",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar"
     },
     {
-      "reference": "Frieden et al. (2011)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Indonesia",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Sugar"
     },
     {
-      "reference": "Khatiwada et al. (2016)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Indonesia",
-      "ghgEmission": 14.5
+      "ghgEmission": 14.5,
+      "genre": "Sugar"
     },
     {
-      "reference": "Sefeedpari et al. (2014)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Sugar"
     },
     {
-      "reference": "Nakashima and Ishikawa (2016)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Japan",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Sugar"
     },
     {
-      "reference": "Nakashima and Ishikawa (2016)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Japan",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sugar"
     },
     {
-      "reference": "Nakashima and Ishikawa (2016)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Japan",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar"
     },
     {
-      "reference": "Frieden et al. (2011)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Mexico",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Sugar"
     },
     {
-      "reference": "Nguyen and Hermansen (2012)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "Thailand",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar"
     },
     {
-      "reference": "Eshton and Katima (2015)",
-      "product": "Sugar cane",
+      "reference": "Sugar cane",
       "country": "United Republic of Tanzania",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Sugar"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "China",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Brentrup et al. (2001)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Germany",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Brentrup et al. (2001)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Germany",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Brentrup et al. (2001)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Germany",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Germany",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Netherlands",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Netherlands",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Flysjö et al. (2008)",
-      "product": "Sugar",
+      "reference": "Sugar",
       "country": "Sweden",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Christoforou et al. (2016)",
-      "product": "Sugar beet",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Sugar beet",
       "country": "Cyprus",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "France",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "France",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Salehi et al. (2014)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Yousefi et al. (2014)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Japan",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Japan",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Uchida and Hayashi (2012)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Japan",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Netherlands",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Netherlands",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "Switzerland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Tzilivakis et al. (2005)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United Kingdom",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Sugar beet",
+      "reference": "Sugar beet",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Sugar beet"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Chickpeas",
+      "reference": "Chickpeas",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Beans"
     },
     {
-      "reference": "Eady et al. (2012)",
-      "product": "Lupins",
+      "reference": "Lupins",
       "country": "Australia",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beans"
     },
     {
-      "reference": "Maraseni and Cockfield (2011)",
-      "product": "Chickpeas",
+      "reference": "Chickpeas",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Lupins",
+      "reference": "Lupins",
       "country": "Australia",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Beans"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Lupins",
+      "reference": "Lupins",
       "country": "Belgium",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Chickpeas",
+      "reference": "Chickpeas",
       "country": "Canada",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Chickpeas",
+      "reference": "Chickpeas",
       "country": "Canada",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Beans"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Canada",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Beans"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Canada",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "MacWilliam et al. (2014)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Canada",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Canada",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Faba beans",
+      "reference": "Faba beans",
       "country": "France",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Beans"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Faba beans",
+      "reference": "Faba beans",
       "country": "France",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Spring faba beans",
+      "reference": "Spring faba beans",
       "country": "France",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Faba beans",
+      "reference": "Faba beans",
       "country": "France",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Faba beans",
+      "reference": "Faba beans",
       "country": "France",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Faba beans",
+      "reference": "Faba beans",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Lupins",
+      "reference": "Lupins",
       "country": "Germany",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beans"
     },
     {
-      "reference": "Abeliotis et al. (2013)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Greece",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Pratibha et al. (2015)",
-      "product": "Pigeon peas",
+      "reference": "Pigeon peas",
       "country": "India",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Pratibha et al. (2015)",
-      "product": "Pigeon peas",
+      "reference": "Pigeon peas",
       "country": "India",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Pratibha et al. (2015)",
-      "product": "Pigeon peas",
+      "reference": "Pigeon peas",
       "country": "India",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Moraditochaee et al. (2014)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Adzuki bean",
+      "reference": "Adzuki bean",
       "country": "Japan",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Beans"
     },
     {
-      "reference": "Koga et al. (2006); Nakashima (2010)",
-      "product": "Adzuki bean",
+      "reference": "Adzuki bean",
       "country": "Japan",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Beans"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Brown beans",
+      "reference": "Brown beans",
       "country": "Netherlands",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Beans"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "Netherlands",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Beans"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "Netherlands",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "Netherlands",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Beans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Beans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "Switzerland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "Turkey",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Beans"
     },
     {
-      "reference": "Glithero et al. (2012)",
-      "product": "Winter field beans",
+      "reference": "Winter field beans",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Beans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Beans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "United Kingdom",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Beans"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "United Kingdom",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Beans"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Field beans",
+      "reference": "Field beans",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Lentils",
+      "reference": "Lentils",
       "country": "United States of America",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Beans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Australia",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Peas"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Belgium",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Peas"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Canada",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Peas"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Canada",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Peas"
     },
     {
-      "reference": "Gan et al. (2011)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Canada",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Peas"
     },
     {
-      "reference": "MacWilliam et al. (2014)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "Canada",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Spring peas",
+      "reference": "Spring peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter peas",
+      "reference": "Winter peas",
       "country": "France",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter peas",
+      "reference": "Winter peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter peas",
+      "reference": "Winter peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Peas"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Naudin et al. (2014)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Peas"
     },
     {
-      "reference": "Naudin et al. (2014)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Peas"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Peas"
     },
     {
-      "reference": "Nguyen et al. (2012b)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Peas"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Peas"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Peas"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Germany",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Peas"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Germany",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Peas"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Netherlands",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Peas"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Netherlands",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Peas"
     },
     {
-      "reference": "Rosado et al. (2015)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Portugal",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Peas"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Spain",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Peas"
     },
     {
-      "reference": "Flysjö et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Peas"
     },
     {
-      "reference": "Flysjö et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Sweden",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Peas"
     },
     {
-      "reference": "Flysjö et al. (2008)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Sweden",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Peas"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Peas"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Peas"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "Australia",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Nuts"
     },
     {
-      "reference": "de Figueirêdo et al. (2016)",
-      "product": "Cashew nuts",
+      "reference": "Cashew nuts",
       "country": "Brazil",
-      "ghgEmission": 10.9
+      "ghgEmission": 10.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "de Figueirêdo et al. (2016)",
-      "product": "Cashew nuts",
+      "reference": "Cashew nuts",
       "country": "Brazil",
-      "ghgEmission": 23.7
+      "ghgEmission": 23.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "China",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Bartzas et al. (2016)",
-      "product": "Pistachios",
+      "reference": "Pistachios",
       "country": "Greece",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Nuts"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Cashew nuts",
+      "reference": "Cashew nuts",
       "country": "India",
-      "ghgEmission": -3.4
+      "ghgEmission": -3.4,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2013)",
-      "product": "Hazelnuts",
+      "reference": "Hazelnuts",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": -8.1
+      "ghgEmission": -8.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Salehi et al. (2016)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Hazelnuts",
+      "reference": "Hazelnuts",
       "country": "Italy",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Nuts"
     },
     {
-      "reference": "Rosa et al. (2017)",
-      "product": "Chestnuts",
+      "reference": "Chestnuts",
       "country": "Portugal",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Nuts"
     },
     {
-      "reference": "Rosa et al. (2017)",
-      "product": "Chestnuts",
+      "reference": "Chestnuts",
       "country": "Portugal",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Almonds, Hazelnuts, Carob",
+      "reference": "Almonds, Hazelnuts, Carob",
       "country": "Spain",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Almonds, Hazelnuts, Carob",
+      "reference": "Almonds, Hazelnuts, Carob",
       "country": "Spain",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Walnuts",
+      "reference": "Walnuts",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Kendall et al. (2015)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "United States of America",
-      "ghgEmission": -2.9
+      "ghgEmission": -2.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Marvinney et al. (2014)",
-      "product": "Walnuts",
+      "reference": "Walnuts",
       "country": "United States of America",
-      "ghgEmission": -0.2
+      "ghgEmission": -0.2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Marvinney et al. (2014)",
-      "product": "Pistachios",
+      "reference": "Pistachios",
       "country": "United States of America",
-      "ghgEmission": -4.1
+      "ghgEmission": -4.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "United States of America",
-      "ghgEmission": -1.4
+      "ghgEmission": -1.4,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "United States of America",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "United States of America",
-      "ghgEmission": -2
+      "ghgEmission": -2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Almonds",
+      "reference": "Almonds",
       "country": "United States of America",
-      "ghgEmission": -1.2
+      "ghgEmission": -1.2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Walnuts",
+      "reference": "Walnuts",
       "country": "United States of America",
-      "ghgEmission": -0.3
+      "ghgEmission": -0.3,
+      "genre": "Nuts"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Walnuts",
+      "reference": "Walnuts",
       "country": "United States of America",
-      "ghgEmission": -2.1
+      "ghgEmission": -2.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Argentina",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Argentina",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Maraseni et al. (2007)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Australia",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Brazil",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Nuts"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Nuts"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Nuts"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Nuts"
     },
     {
-      "reference": "Yang et al. (2014)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "China",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "India",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Nuts"
     },
     {
-      "reference": "Schmidt (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "India",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nikkhah et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nikkhah et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Nuts"
     },
     {
-      "reference": "Nikkhah et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Nuts"
     },
     {
-      "reference": "McCarty et al. (2012)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Nuts"
     },
     {
-      "reference": "McCarty et al. (2012)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Nuts"
     },
     {
-      "reference": "McCarty et al. (2012)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "McCarty et al. (2012)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Nuts"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Nuts"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Torres et al. (2015)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Peanuts",
+      "reference": "Peanuts",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Nuts"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Dalgaard et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013); Cavalett and Ortega (2009)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Cavalett and Ortega (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Maciel et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Matsuura et al. (2016)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "India",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Thailand",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Pollack and Greig (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Tofu"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Tofu"
     },
     {
-      "reference": "Dalgaard et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Tofu"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Tofu"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Tofu"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Tofu"
     },
     {
-      "reference": "Castanheira and Freire (2013); Cavalett and Ortega (2009)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Tofu"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Cavalett and Ortega (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 7.1
+      "ghgEmission": 7.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 4.8
+      "ghgEmission": 4.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Tofu"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 6
+      "ghgEmission": 6,
+      "genre": "Tofu"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Tofu"
     },
     {
-      "reference": "Maciel et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Tofu"
     },
     {
-      "reference": "Matsuura et al. (2016)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Tofu"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Tofu"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Tofu"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Tofu"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Tofu"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Tofu"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Tofu"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Tofu"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "India",
-      "ghgEmission": 7.6
+      "ghgEmission": 7.6,
+      "genre": "Tofu"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Tofu"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Tofu"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Tofu"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Thailand",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Tofu"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Tofu"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Tofu"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Pollack and Greig (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Tofu"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Tofu"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Tofu"
     },
     {
-      "reference": "Dalgaard et al. (2008)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "Argentina",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "China",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Oil"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "Brazil",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Nguyen et al. (2012b); Prudêncio da Silva et al. (2010)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "Brazil",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Oil"
     },
     {
-      "reference": "van der Werf et al. (2005)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "Brazil",
-      "ghgEmission": 21.3
+      "ghgEmission": 21.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Rajaeifar et al. (2014b); Mousavi-Avval et al. (2011a)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Stephenson et al. (2010)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "South Africa",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Krieger and Knowlton (2014)",
-      "product": "Soybean oil",
+      "reference": "Soybean oil",
       "country": "United States of America",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 5.9
+      "ghgEmission": 5.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Argentina",
-      "ghgEmission": 7.8
+      "ghgEmission": 7.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013); Cavalett and Ortega (2009)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 12.5
+      "ghgEmission": 12.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Castanheira and Freire (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 15.1
+      "ghgEmission": 15.1,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Cavalett and Ortega (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 17.5
+      "ghgEmission": 17.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 10.9
+      "ghgEmission": 10.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "de Alvarenga (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 10.5
+      "ghgEmission": 10.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 14.4
+      "ghgEmission": 14.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 10.8
+      "ghgEmission": 10.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Maciel et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Matsuura et al. (2016)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 12.8
+      "ghgEmission": 12.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 11.2
+      "ghgEmission": 11.2,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Raucci et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 8.9
+      "ghgEmission": 8.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Brazil",
-      "ghgEmission": 20.4
+      "ghgEmission": 20.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Canada",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Cheng et al. (2015)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 7
+      "ghgEmission": 7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Knudsen et al. (2010)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "China",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "India",
-      "ghgEmission": 19
+      "ghgEmission": 19,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Switzerland",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "Thailand",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Adom et al. (2012)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Jungbluth et al. (2007)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Soybeans"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Soybeans",
+      "reference": "Soybeans",
       "country": "United States of America",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Soybeans"
     },
     {
-      "reference": "de Souza et al. (2010)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Brazil",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Achten et al. (2010)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Cameroon",
-      "ghgEmission": 6.7
+      "ghgEmission": 6.7,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Castanheira et al. (2014)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Colombia",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Garcia-Nunez (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Colombia",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Mathews and Ardiyanto (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Indonesia",
-      "ghgEmission": 7.4
+      "ghgEmission": 7.4,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Siregar et al. (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Indonesia",
-      "ghgEmission": 10
+      "ghgEmission": 10,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Choo et al. (2011)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Pehnelt and Vietze (2013b)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Schmidt (2010); Nguyen et al. (2012b)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Stichnothe and Schuchardt (2011)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Stichnothe and Schuchardt (2011)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Yee et al. (2009); de Souza et al. (2010)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Yusoff and Hansen (2007); de Souza et al. (2010); Dalgaard et al. (2008)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Malaysia",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Pleanjai and Gheewala (2009); de Souza et al. (2010)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Thailand",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Saswattecha et al. (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Thailand",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Saswattecha et al. (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Thailand",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Saswattecha et al. (2015)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Thailand",
-      "ghgEmission": -0.3
+      "ghgEmission": -0.3,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Thamsiriroj and Murphy (2009)",
-      "product": "Palm oil",
+      "reference": "Palm oil",
       "country": "Thailand",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Palm Oil"
     },
     {
-      "reference": "Delivand and Gnansounou (2013)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Brazil",
-      "ghgEmission": 5.1
+      "ghgEmission": 5.1,
+      "genre": "Palm"
     },
     {
-      "reference": "Bessou et al. (2016)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 9
+      "ghgEmission": 9,
+      "genre": "Palm"
     },
     {
-      "reference": "Frieden et al. (2011)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 11.9
+      "ghgEmission": 11.9,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 12.5
+      "ghgEmission": 12.5,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 8.8
+      "ghgEmission": 8.8,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 9.3
+      "ghgEmission": 9.3,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 14.2
+      "ghgEmission": 14.2,
+      "genre": "Palm"
     },
     {
-      "reference": "Harsono et al. (2012)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 8.9
+      "ghgEmission": 8.9,
+      "genre": "Palm"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 8.2
+      "ghgEmission": 8.2,
+      "genre": "Palm"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Indonesia",
-      "ghgEmission": 13
+      "ghgEmission": 13,
+      "genre": "Palm"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Palm fruit",
+      "reference": "Palm fruit",
       "country": "Malaysia",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Palm"
     },
     {
-      "reference": "Spinelli et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Italy",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Spinelli et al. (2013)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Italy",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2017); Figueiredo et al. (2012)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Portugal",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Stephenson et al. (2010)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "South Africa",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Stephenson et al. (2010)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "South Africa",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Hetherington (2014)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Spain",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Schmidt (2015)",
-      "product": "Sunflower oil",
+      "reference": "Sunflower oil",
       "country": "Ukraine",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Oil"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Argentina",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Matsuura et al. (2016)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Brazil",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Iriarte et al. (2010)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Chile",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "China",
-      "ghgEmission": 4.3
+      "ghgEmission": 4.3,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "France",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "France",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "France",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "France",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "France",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Küstermann et al. (2008)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Germany",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Goglio et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Spugnoli et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Spugnoli et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 4.3
+      "ghgEmission": 4.3,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Spugnoli et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Spugnoli et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Spugnoli et al. (2012)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Italy",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Spain",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Switzerland",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Sunflower seeds",
+      "reference": "Sunflower seeds",
       "country": "Ukraine",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Sunflower seed"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Canola oil",
+      "reference": "Canola oil",
       "country": "Australia",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Grant et al. (2008)",
-      "product": "Canola oil",
+      "reference": "Canola oil",
       "country": "Australia",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Narayanaswamy et al. (2004)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Australia",
-      "ghgEmission": 7.8
+      "ghgEmission": 7.8,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Rustandi and Wu (2010)",
-      "product": "Canola oil",
+      "reference": "Canola oil",
       "country": "Australia",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Meul et al. (2012)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Belgium",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "China",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Schmidt (2010)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Denmark",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "France",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Hetherington (2014)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Germany",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Pehnelt and Vietze (2013a)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Germany",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Thamsiriroj and Murphy (2009)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Ireland",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "D'Avino et al. (2015)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Italy",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Pehnelt and Vietze (2013a)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Poland",
-      "ghgEmission": 4.3
+      "ghgEmission": 4.3,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Pehnelt and Vietze (2013a)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Romania",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Stephenson et al. (2010)",
-      "product": "Canola oil",
+      "reference": "Canola oil",
       "country": "South Africa",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Esteban et al. (2011)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Spain",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Bernesson et al. (2004)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "Sweden",
-      "ghgEmission": 6.3
+      "ghgEmission": 6.3,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Mortimer and Elsayed (2006)",
-      "product": "Rapeseed oil",
+      "reference": "Rapeseed oil",
       "country": "United Kingdom",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Rapeseed"
     },
     {
-      "reference": "Eady et al. (2012)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Australia",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Australia",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Gan et al. (2012b)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Gan et al. (2012b)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Oil"
     },
     {
-      "reference": "Gan et al. (2012b)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "MacWilliam et al. (2016)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Oil"
     },
     {
-      "reference": "MacWilliam et al. (2016)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oil"
     },
     {
-      "reference": "MacWilliam et al. (2016)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 7.9
+      "ghgEmission": 7.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 3.2
+      "ghgEmission": 3.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Pelletier et al. (2008)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Canada",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Oil"
     },
     {
-      "reference": "Iriarte et al. (2010)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Chile",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Oil"
     },
     {
-      "reference": "Dalgaard et al. (2008)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Denmark",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Mogensen et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Denmark",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Carrouée et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "France",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "France",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "France",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "France",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "van der Werf (2004)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "France",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "France",
-      "ghgEmission": 4.1
+      "ghgEmission": 4.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Germany",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2008)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Germany",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Neufeldt and Schäfer (2008)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Germany",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Queirós et al. (2015); Jungbluth et al. (2007)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Germany",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Germany",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Oil"
     },
     {
-      "reference": "Khojastehpour et al. (2015)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 7.1
+      "ghgEmission": 7.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Khojastehpour et al. (2015)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Mohammadi et al. (2014)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Palmieri et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Italy",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Palmieri et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Italy",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Palmieri et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Italy",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Palmieri et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Italy",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Palmieri et al. (2014)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Italy",
-      "ghgEmission": 13.6
+      "ghgEmission": 13.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Bonesmo et al. (2012)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Norway",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Queirós et al. (2015); Borzęcka-Walker et al. (2013)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "Poland",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Sweden",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Sweden",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Sweden",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Spring rapeseed",
+      "reference": "Spring rapeseed",
       "country": "Sweden",
-      "ghgEmission": 4.8
+      "ghgEmission": 4.8,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Spring rapeseed",
+      "reference": "Spring rapeseed",
       "country": "Sweden",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Flysjö et al. (2008); Sikfoder.se (2015)",
-      "product": "Spring rapeseed",
+      "reference": "Spring rapeseed",
       "country": "Sweden",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Switzerland",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Switzerland",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Switzerland",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Oil"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "Switzerland",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Khojastehpour et al. (2015)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "Turkey",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Glithero et al. (2012)",
-      "product": "Winter rapeseed",
+      "reference": "Winter rapeseed",
       "country": "United Kingdom",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Williams et al. (2006); Williams et al. (2010)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "United Kingdom",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Williams et al. (2006); Williams et al. (2010)",
-      "product": "Rapeseed",
+      "reference": "Rapeseed",
       "country": "United Kingdom",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Oil"
     },
     {
-      "reference": "Camargo et al. (2013)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "United States of America",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Gustafson et al. (2014)",
-      "product": "Canola",
+      "reference": "Canola",
       "country": "United States of America",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Avraamides and Fatta (2006)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Cyprus",
-      "ghgEmission": 12.3
+      "ghgEmission": 12.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Busset et al. (2012); OiLCA (2016)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "France",
-      "ghgEmission": 6.3
+      "ghgEmission": 6.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Nileas Group, Peza Union and Mirabello Union (2012)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Greece",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Georgiou et al. (2006)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Greece",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Rajaeifar et al. (2014a)",
-      "product": "Olive oil",
+      "reference": "Olive oil",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Apolio (2010)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Italy",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Assoproli Bari (2014)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Italy",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Iraldo et al. (2014)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Italy",
-      "ghgEmission": 4.8
+      "ghgEmission": 4.8,
+      "genre": "Oil"
     },
     {
-      "reference": "Fantozzi et al. (2015)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Italy",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Monini S.p.A. (2013)",
-      "product": "Extra virgin olive oil (\"GranFruttato\")",
+      "reference": "Extra virgin olive oil (\"GranFruttato\")",
       "country": "Italy",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Oil"
     },
     {
-      "reference": "Rinaldi et al. (2014)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Italy",
-      "ghgEmission": 20.3
+      "ghgEmission": 20.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2013a)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "Portugal",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2013a)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "Portugal",
-      "ghgEmission": 10.7
+      "ghgEmission": 10.7,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2013a)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "Portugal",
-      "ghgEmission": 3.9
+      "ghgEmission": 3.9,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2013a)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "Portugal",
-      "ghgEmission": 7.4
+      "ghgEmission": 7.4,
+      "genre": "Oil"
     },
     {
-      "reference": "Figueiredo et al. (2013a)",
-      "product": "Virgin olive oil",
+      "reference": "Virgin olive oil",
       "country": "Portugal",
-      "ghgEmission": 11.3
+      "ghgEmission": 11.3,
+      "genre": "Oil"
     },
     {
-      "reference": "Cortés (2006)",
-      "product": "Extra virgin olive oil",
+      "reference": "Extra virgin olive oil",
       "country": "Spain",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Oil"
     },
     {
-      "reference": "Kaltsas et al. (2007)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Greece",
-      "ghgEmission": 5.1
+      "ghgEmission": 5.1,
+      "genre": "Olives"
     },
     {
-      "reference": "De Gennaro et al. (2012)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Italy",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Olives"
     },
     {
-      "reference": "De Gennaro et al. (2012)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Italy",
-      "ghgEmission": 6.9
+      "ghgEmission": 6.9,
+      "genre": "Olives"
     },
     {
-      "reference": "Pergola et al. (2013a)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Italy",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Olives"
     },
     {
-      "reference": "Pergola et al. (2013a)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Italy",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Olives"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Spain",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Olives"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Olives",
+      "reference": "Olives",
       "country": "Spain",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Olives"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Page et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Page et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Page et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Page et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Australia",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Theurl et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Austria",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Theurl et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Austria",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 9.8
+      "ghgEmission": 9.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 14.4
+      "ghgEmission": 14.4,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 15.9
+      "ghgEmission": 15.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 14.7
+      "ghgEmission": 14.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 9.3
+      "ghgEmission": 9.3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 27
+      "ghgEmission": 27,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 8.5
+      "ghgEmission": 8.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 29
+      "ghgEmission": 29,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Perrin (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Benin",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Dias et al. (2017)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Canada",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "He et al. (2016)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "He et al. (2016)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "China",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "China",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Bojacá et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Colombia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Czech Republic",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Czech Republic",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Denmark",
-      "ghgEmission": 4.5
+      "ghgEmission": 4.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Denmark",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Denmark",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Denmark",
-      "ghgEmission": 6.7
+      "ghgEmission": 6.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Boulard et al. (2011); Payen et al. (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "France",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "France",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "France",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "France",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Torrellas et al. (2012b)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Hungary",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Torrellas et al. (2012b)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Hungary",
-      "ghgEmission": 6.2
+      "ghgEmission": 6.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Khoshnevisan et al. (2014a)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Mirasi et al. (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Del Borghi et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Tamburini et al. (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Italy",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Theurl et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Payen et al. (2015)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Morocco",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Antón et al. (2010)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Torrellas et al. (2012b)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Vermeulen and van der Lans (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Vermeulen and van der Lans (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Vermeulen and van der Lans (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Vermeulen and van der Lans (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Netherlands",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Muñoz et al. (2007)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Muñoz et al. (2007)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Tomatoes (round/globe)",
+      "reference": "Tomatoes (round/globe)",
       "country": "Spain",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Theurl et al. (2014)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Torrellas et al. (2012b)",
-      "product": "Tomatoes (loose classic)",
+      "reference": "Tomatoes (loose classic)",
       "country": "Spain",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (vine)",
+      "reference": "Tomatoes (vine)",
       "country": "Spain",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (loose classic)",
+      "reference": "Tomatoes (loose classic)",
       "country": "Spain",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (baby plum)",
+      "reference": "Tomatoes (baby plum)",
       "country": "Spain",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Spain",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Sweden",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Tomatoes (round/globe)",
+      "reference": "Tomatoes (round/globe)",
       "country": "Sweden",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Tomatoes (round/globe)",
+      "reference": "Tomatoes (round/globe)",
       "country": "Sweden",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Tomatoes (vine)",
+      "reference": "Tomatoes (vine)",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Karakaya and Özilgen (2011)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "Turkey",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (vine)",
+      "reference": "Tomatoes (vine)",
       "country": "United Kingdom",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (loose classic)",
+      "reference": "Tomatoes (loose classic)",
       "country": "United Kingdom",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Tomatoes (baby plum)",
+      "reference": "Tomatoes (baby plum)",
       "country": "United Kingdom",
-      "ghgEmission": 6.7
+      "ghgEmission": 6.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United Kingdom",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Brodt et al. (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Brodt et al. (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Brodt et al. (2013)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Jones et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Jones et al. (2012)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Tomatoes",
+      "reference": "Tomatoes",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Tomatoes"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Onions"
     },
     {
-      "reference": "Norton et al. (2008)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Australia",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "de Backer et al. (2009)",
-      "product": "Leeks",
+      "reference": "Leeks",
       "country": "Belgium",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "de Backer et al. (2009)",
-      "product": "Leeks",
+      "reference": "Leeks",
       "country": "Belgium",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Onions"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Denmark",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Denmark",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Onions"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "India",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Onions"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Onions"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Onions"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Leeks",
+      "reference": "Leeks",
       "country": "Netherlands",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Onions"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Leeks",
+      "reference": "Leeks",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Onions"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Netherlands",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Onions"
     },
     {
-      "reference": "Saunders et al. (2006)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "New Zealand",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Onions"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Onions"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Onions"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Onions"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Leeks",
+      "reference": "Leeks",
       "country": "Sweden",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Onions"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Saunders et al. (2006)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Onions"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Onions"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Onions"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Spring onions",
+      "reference": "Spring onions",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Onions"
     },
     {
-      "reference": "Gretz et al. (2011)",
-      "product": "Onions",
+      "reference": "Onions",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Onions"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Denmark",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Denmark",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Denmark",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Denmark",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Italy",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Bunched carrots",
+      "reference": "Bunched carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Bunched carrots",
+      "reference": "Bunched carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Winter carrots",
+      "reference": "Winter carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Winter carrots",
+      "reference": "Winter carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Netherlands",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Parsnip",
+      "reference": "Parsnip",
       "country": "Sweden",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Celeriac",
+      "reference": "Celeriac",
       "country": "Sweden",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Swede",
+      "reference": "Swede",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Fogelberg and Carlsson-Kanyama (2006)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Röös and Karlsson (2013)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Sweden",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "United Kingdom",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Celeriac",
+      "reference": "Celeriac",
       "country": "United Kingdom",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Celeriac",
+      "reference": "Celeriac",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Carrots",
+      "reference": "Carrots",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Root Vegetables"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Broccoli",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Broccoli",
       "country": "Australia",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Norton et al. (2008)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Australia",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "China",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Chinese cabbage",
+      "reference": "Chinese cabbage",
       "country": "China",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Pakchoi",
+      "reference": "Pakchoi",
       "country": "China",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Czech Republic",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Moudrý Jr et al. (2013c)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Czech Republic",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Koga et al. (2006)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Japan",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Chinese cabbage",
+      "reference": "Chinese cabbage",
       "country": "Netherlands",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Chinese cabbage",
+      "reference": "Chinese cabbage",
       "country": "Netherlands",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Martínez-Blanco et al. (2014)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "Spain",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Spain",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Spain",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Spain",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Sweden",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "Sweden",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Sweden",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Nemecek et al. (2005)",
-      "product": "Cabbage",
+      "reference": "Cabbage",
       "country": "Switzerland",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Cabbages and other brassicas"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "Switzerland",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "Switzerland",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Savoy cabbage",
+      "reference": "Savoy cabbage",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Savoy cabbage",
+      "reference": "Savoy cabbage",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Cabbage"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Cauliflower",
+      "reference": "Cauliflower",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Cauliflower"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "United Kingdom",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Broccoli",
+      "reference": "Broccoli",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Broccoli"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Courgette",
+      "reference": "Courgette",
       "country": "Australia",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Squash"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Pumpkins",
+      "reference": "Pumpkins",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Squash"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Australia",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "China",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Yan et al. (2014)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Denmark",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Halberg et al. (2006)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Denmark",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Schäfer and Blanke (2012)",
-      "product": "Hokkaido pumpkins",
+      "reference": "Hokkaido pumpkins",
       "country": "Germany",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Squash"
     },
     {
-      "reference": "Schäfer and Blanke (2012)",
-      "product": "Hokkaido pumpkins",
+      "reference": "Hokkaido pumpkins",
       "country": "Germany",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Squash"
     },
     {
-      "reference": "Schäfer and Blanke (2012)",
-      "product": "Hokkaido pumpkins",
+      "reference": "Hokkaido pumpkins",
       "country": "Germany",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Squash"
     },
     {
-      "reference": "Bolandnazar et al. (2014)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Khoshnevisan et al. (2014a)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2013)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2013)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Pishgar-Komleh et al. (2013)",
-      "product": "Cucumber",
+      "reference": "Cucumber",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Cucumber"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Pumpkins",
+      "reference": "Pumpkins",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Squash"
     },
     {
-      "reference": "Hall et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Australia",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Maraseni et al. (2012)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Australia",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Maraseni et al. (2012)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Australia",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Foteinis and Chatzisymeon (2016)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Greece",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Foteinis and Chatzisymeon (2016)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Greece",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Bartzas et al. (2015)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Italy",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Bartzas et al. (2015)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Italy",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Fusi et al. (2016)",
-      "product": "Lambs lettuce",
+      "reference": "Lambs lettuce",
       "country": "Italy",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Lo Giudice et al. (2014)",
-      "product": "Artichokes",
+      "reference": "Artichokes",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Artichokes"
     },
     {
-      "reference": "Tamburini et al. (2015)",
-      "product": "Chicory",
+      "reference": "Chicory",
       "country": "Italy",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Chicory"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Bartzas et al. (2015)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Artichokes",
+      "reference": "Artichokes",
       "country": "Spain",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Artichokes"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Endive",
+      "reference": "Endive",
       "country": "Spain",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Endive",
+      "reference": "Endive",
       "country": "Spain",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Endive",
+      "reference": "Endive",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Romero-Gámez et al. (2014)",
-      "product": "Endive",
+      "reference": "Endive",
       "country": "Spain",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Iceberg lettuce",
+      "reference": "Iceberg lettuce",
       "country": "Sweden",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Wongwai et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Thailand",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Wongwai et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Thailand",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "Uganda",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United Kingdom",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Emery and Brown (2016)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United States of America",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Plawecki et al. (2014)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Iceberg lettuce",
+      "reference": "Iceberg lettuce",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Lettuce",
+      "reference": "Lettuce",
       "country": "United States of America",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Lettuce"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "French beans and Runner beans",
+      "reference": "French beans and Runner beans",
       "country": "Australia",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Green beans"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Peas",
+      "reference": "Peas",
       "country": "Australia",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Green beans"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Green beans",
+      "reference": "Green beans",
       "country": "China",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Green beans"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "Kenya",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Green beans"
     },
     {
-      "reference": "Romero-Gámez et al. (2012)",
-      "product": "Green beans",
+      "reference": "Green beans",
       "country": "Spain",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Green beans"
     },
     {
-      "reference": "Romero-Gámez et al. (2012)",
-      "product": "Green beans",
+      "reference": "Green beans",
       "country": "Spain",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Green beans"
     },
     {
-      "reference": "Romero-Gámez et al. (2012)",
-      "product": "Green beans",
+      "reference": "Green beans",
       "country": "Spain",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Green beans"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "French and Sim beans",
+      "reference": "French and Sim beans",
       "country": "Uganda",
-      "ghgEmission": 12.3
+      "ghgEmission": 12.3,
+      "genre": "Green beans"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "United Kingdom",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Green beans"
     },
     {
-      "reference": "Milà i Canals et al. (2008)",
-      "product": "Runner beans",
+      "reference": "Runner beans",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Green beans"
     },
     {
-      "reference": "Knudsen et al. (2011)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Brazil",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Knudsen et al. (2011)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Brazil",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Knudsen et al. (2011)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Brazil",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Brazil",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Yan et al. (2016)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "China",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Citrus"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Chinese orange",
+      "reference": "Chinese orange",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Tangerine",
+      "reference": "Tangerine",
       "country": "China",
-      "ghgEmission": 0
+      "ghgEmission": 0,
+      "genre": "Citrus"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2014)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2014)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Citrus"
     },
     {
-      "reference": "Lo Giudice et al. (2013)",
-      "product": "Blood oranges",
+      "reference": "Blood oranges",
       "country": "Italy",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Pergola et al. (2013b)",
-      "product": "Lemons",
+      "reference": "Lemons",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Citrus"
     },
     {
-      "reference": "Pergola et al. (2013b)",
-      "product": "Lemons",
+      "reference": "Lemons",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Pergola et al. (2013b)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Italy",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Citrus"
     },
     {
-      "reference": "Pergola et al. (2013b)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Citrus",
+      "reference": "Citrus",
       "country": "Italy",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Bessou et al. (2016)",
-      "product": "Clementine",
+      "reference": "Clementine",
       "country": "Morocco",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Citrus"
     },
     {
-      "reference": "Koch and Salou (2015); Basset-Mens et al. (2014)",
-      "product": "Clementine",
+      "reference": "Clementine",
       "country": "Morocco",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Mandarin",
+      "reference": "Mandarin",
       "country": "Peru",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Citrus"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Mandarins, Oranges",
+      "reference": "Mandarins, Oranges",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Mandarins, Oranges",
+      "reference": "Mandarins, Oranges",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Doublet et al. (2013a)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Mandarin",
+      "reference": "Mandarin",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Citrus"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Lemons",
+      "reference": "Lemons",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Ribal et al. (2016)",
-      "product": "Citrus",
+      "reference": "Citrus",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Citrus"
     },
     {
-      "reference": "Ribal et al. (2016)",
-      "product": "Citrus",
+      "reference": "Citrus",
       "country": "Spain",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Dwivedi et al. (2012)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "United States of America",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Citrus"
     },
     {
-      "reference": "Dwivedi et al. (2012)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Citrus"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "United States of America",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "Vellinga et al. (2013)",
-      "product": "Oranges",
+      "reference": "Oranges",
       "country": "United States of America",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Citrus"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Bananas"
     },
     {
-      "reference": "Yan et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "China",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Bananas"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Colombia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bananas"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Colombia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bananas"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Costa Rica",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Bananas"
     },
     {
-      "reference": "Luske (2010)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Costa Rica",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Bananas"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Costa Rica",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bananas"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Bananas"
     },
     {
-      "reference": "Graefe et al. (2011)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bananas"
     },
     {
-      "reference": "Iriarte et al. (2014)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Bananas"
     },
     {
-      "reference": "Roibás et al. (2015); Roibás et al. (2016)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Bananas"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Ecuador",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Bananas"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Guadeloupe",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Bananas"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "India",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Bananas"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Panama",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Bananas"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Peru",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Bananas"
     },
     {
-      "reference": "Soni et al. (2013)",
-      "product": "Bananas",
+      "reference": "Bananas",
       "country": "Thailand",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Bananas"
     },
     {
-      "reference": "Keyes et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Canada",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Keyes et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Canada",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Chile",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "China",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Yan et al. (2016)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Xu and Lan (2016)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Kehagias et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Greece",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Kehagias et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Greece",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Kehagias et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Greece",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2016)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Alaphilippe et al. (2016)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "France",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Germany",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Germany",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Apples"
     },
     {
-      "reference": "Cerutti et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Cerutti et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Cerutti et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Tamburini et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Italy",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Milà i Canals (2003)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Saunders et al. (2006)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "New Zealand",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Peru",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Apples"
     },
     {
-      "reference": "Figueiredo et al. (2013b)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Portugal",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Figueiredo et al. (2013b)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Portugal",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Figueiredo et al. (2013b)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Portugal",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Spain",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Spain",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Hayer et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Mouron et al. (2006)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Switzerland",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Saunders et al. (2006)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Apples"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United Kingdom",
-      "ghgEmission": 0.2
+      "ghgEmission": 0.2,
+      "genre": "Apples"
     },
     {
-      "reference": "Cerutti et al. (2013)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Apples"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Apples"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Apples"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Apples",
+      "reference": "Apples",
       "country": "United States of America",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Apples"
     },
     {
-      "reference": "Cordes et al. (2016)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "Chile",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Berries"
     },
     {
-      "reference": "Cordes et al. (2016)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "Chile",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Berries"
     },
     {
-      "reference": "Cordes et al. (2016)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "Chile",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Cordes et al. (2016)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "Chile",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Berries"
     },
     {
-      "reference": "Cordes et al. (2016)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "Chile",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Khoshnevisan et al. (2013)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Khoshnevisan et al. (2013)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Netherlands",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Berries"
     },
     {
-      "reference": "Bos et al. (2014)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Netherlands",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Peru",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Foster et al. (2014)",
-      "product": "Raspberries",
+      "reference": "Raspberries",
       "country": "Spain",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Berries"
     },
     {
-      "reference": "REWE Group (2009)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Spain",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Berries"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Spain",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Berries"
     },
     {
-      "reference": "Davis et al. (2011)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Sweden",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "Switzerland",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Lillywhite et al. (2007)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Berries"
     },
     {
-      "reference": "Foster et al. (2014)",
-      "product": "Raspberries",
+      "reference": "Raspberries",
       "country": "United Kingdom",
-      "ghgEmission": 8.4
+      "ghgEmission": 8.4,
+      "genre": "Berries"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Warner et al. (2010)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United Kingdom",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Tabatabaie and Murthy (2016)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Tabatabaie and Murthy (2016)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Berries"
     },
     {
-      "reference": "Tabatabaie and Murthy (2016)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Berries"
     },
     {
-      "reference": "Tabatabaie and Murthy (2016)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Berries"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Berries"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Strawberries",
+      "reference": "Strawberries",
       "country": "United States of America",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Berries"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "United States of America",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Berries"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Blueberries",
+      "reference": "Blueberries",
       "country": "United States of America",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Berries"
     },
     {
-      "reference": "Point et al. (2012)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Canada",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "France",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wine"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "France",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Wine"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "France",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wine"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "France",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Rouault et al. (2016)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "France",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Bartocci et al. (2017)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "Italy",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wine"
     },
     {
-      "reference": "Bartocci et al. (2017)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "Italy",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Wine"
     },
     {
-      "reference": "Bosco et al. (2011)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Bosco et al. (2011)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Wine"
     },
     {
-      "reference": "Bosco et al. (2011)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Italy",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wine"
     },
     {
-      "reference": "Bosco et al. (2011)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Bosco et al. (2013)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wine"
     },
     {
-      "reference": "Carta (2009) in Vázquez-Rowe et al. (2013)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wine"
     },
     {
-      "reference": "Carta (2009) in Vázquez-Rowe et al. (2013)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Italy",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Falcone et al. (2016)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Italy",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Falcone et al. (2016)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Italy",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Falcone et al. (2016)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Italy",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Falcone et al. (2016)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Italy",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Fusi et al. (2014b)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Italy",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wine"
     },
     {
-      "reference": "Rugani et al. (2009) in Vázquez-Rowe et al. (2013)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Italy",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wine"
     },
     {
-      "reference": "Neto et al. (2013)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Portugal",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Comandaru et al. (2012)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Romania",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wine"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "Spain",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Aguilera et al. (2015b)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "Spain",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Meneses et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Spain",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Vázquez-Rowe et al. (2012a)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Spain",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Vázquez-Rowe et al. (2012b)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Spain",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wine"
     },
     {
-      "reference": "Villanueva-Rey et al. (2014)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Spain",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Villanueva-Rey et al. (2014)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Spain",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Villanueva-Rey et al. (2014)",
-      "product": "Wine",
+      "reference": "Wine",
       "country": "Spain",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "Red wine",
+      "reference": "Red wine",
       "country": "Switzerland",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Wine"
     },
     {
-      "reference": "Wettstein et al. (2016)",
-      "product": "White wine",
+      "reference": "White wine",
       "country": "Switzerland",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Wine"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "United States of America",
-      "ghgEmission": 1.1
+      "ghgEmission": 1.1,
+      "genre": "Wine"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "United States of America",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Venkat (2012)",
-      "product": "Wine grapes",
+      "reference": "Wine grapes",
       "country": "United States of America",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Wine"
     },
     {
-      "reference": "Liu et al. (2010)",
-      "product": "Chinese pear",
+      "reference": "Chinese pear",
       "country": "China",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Pears"
     },
     {
-      "reference": "Liu et al. (2010)",
-      "product": "Chinese pear",
+      "reference": "Chinese pear",
       "country": "China",
-      "ghgEmission": 0
+      "ghgEmission": 0,
+      "genre": "Pears"
     },
     {
-      "reference": "Liu et al. (2010)",
-      "product": "Chinese pear",
+      "reference": "Chinese pear",
       "country": "China",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Pears"
     },
     {
-      "reference": "Liu et al. (2010)",
-      "product": "Chinese pear",
+      "reference": "Chinese pear",
       "country": "China",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Pears"
     },
     {
-      "reference": "Liu et al. (2010)",
-      "product": "Chinese pear",
+      "reference": "Chinese pear",
       "country": "China",
-      "ghgEmission": 0.1
+      "ghgEmission": 0.1,
+      "genre": "Pears"
     },
     {
-      "reference": "Yan et al. (2016)",
-      "product": "Pears",
+      "reference": "Pears",
       "country": "China",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Pears"
     },
     {
-      "reference": "Tamburini et al. (2015)",
-      "product": "Pears",
+      "reference": "Pears",
       "country": "Italy",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Pears"
     },
     {
-      "reference": "Figueiredo et al. (2013b)",
-      "product": "Pears",
+      "reference": "Pears",
       "country": "Portugal",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Pears"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Pears",
+      "reference": "Pears",
       "country": "Switzerland",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Pears"
     },
     {
-      "reference": "Yan et al. (2016)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "China",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Peach / Nectarine",
+      "reference": "Peach / Nectarine",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Peach / Nectarine",
+      "reference": "Peach / Nectarine",
       "country": "France",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Litskas et al. (2011)",
-      "product": "Sweet cherries",
+      "reference": "Sweet cherries",
       "country": "Greece",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Litskas et al. (2011)",
-      "product": "Sweet cherries",
+      "reference": "Sweet cherries",
       "country": "Greece",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Michos et al. (2012)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Greece",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Michos et al. (2012)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Greece",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Michos et al. (2012)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Greece",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Qasemi-Kordkheili and Nabavi-Pelesaraei (2014)",
-      "product": "Nectarines",
+      "reference": "Nectarines",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.3
+      "ghgEmission": 0.3,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "De Menna et al. (2015)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Italy",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Ingrao et al. (2015)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Italy",
-      "ghgEmission": 1.2
+      "ghgEmission": 1.2,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Peru",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Nemecek et al. (2011a)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "South Africa",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "Vinyes et al. (2015)",
-      "product": "Peaches",
+      "reference": "Peaches",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Stone fruit"
     },
     {
-      "reference": "ALCAS (2012)",
-      "product": "Avocado",
+      "reference": "Avocado",
       "country": "Australia",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Avocados"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Avocado",
+      "reference": "Avocado",
       "country": "Israel",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Avocados"
     },
     {
-      "reference": "Astier et al. (2014)",
-      "product": "Avocado",
+      "reference": "Avocado",
       "country": "Mexico",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Avocados"
     },
     {
-      "reference": "Astier et al. (2014)",
-      "product": "Avocado",
+      "reference": "Avocado",
       "country": "Mexico",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Avocados"
     },
     {
-      "reference": "Bartl et al. (2012)",
-      "product": "Avocado",
+      "reference": "Avocado",
       "country": "Peru",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Avocados"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Pineapples",
+      "reference": "Pineapples",
       "country": "Costa Rica",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Pineapples"
     },
     {
-      "reference": "Ingwersen (2012)",
-      "product": "Pineapples",
+      "reference": "Pineapples",
       "country": "Costa Rica",
-      "ghgEmission": 0.4
+      "ghgEmission": 0.4,
+      "genre": "Pineapples"
     },
     {
-      "reference": "Cudjoe Adebah et al. (2010)",
-      "product": "Pineapples",
+      "reference": "Pineapples",
       "country": "Ghana",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Pineapples"
     },
     {
-      "reference": "Cudjoe Adebah et al. (2010)",
-      "product": "Pineapples",
+      "reference": "Pineapples",
       "country": "Ghana",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Pineapples"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Pineapples",
+      "reference": "Pineapples",
       "country": "Ghana",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Pineapples"
     },
     {
-      "reference": "Zeus (2011)",
-      "product": "Kiwi",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Kiwi",
       "country": "Greece",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2016b)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2016b)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.5
+      "ghgEmission": 0.5,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2016b)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Nikkhah et al. (2016)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Stoessel et al. (2012)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "Italy",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Müller et al. (2015)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Müller et al. (2015)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Müller et al. (2015)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Müller et al. (2015)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 0.9
+      "ghgEmission": 0.9,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Mithraratne et al. (2010)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Mithraratne et al. (2010)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 1.6
+      "ghgEmission": 1.6,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Mithraratne et al. (2010)",
-      "product": "Kiwi",
+      "reference": "Kiwi",
       "country": "New Zealand",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Kiwi"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Melon",
+      "reference": "Melon",
       "country": "Australia",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Melons"
     },
     {
-      "reference": "Maraseni et al. (2010)",
-      "product": "Watermelon",
+      "reference": "Watermelon",
       "country": "Australia",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Melons"
     },
     {
-      "reference": "de Figueirêdo et al. (2013)",
-      "product": "Canary melon",
+      "reference": "Canary melon",
       "country": "Brazil",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Melons"
     },
     {
-      "reference": "Khoshnevisan et al. (2015)",
-      "product": "Watermelon",
+      "reference": "Watermelon",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.8
+      "ghgEmission": 0.8,
+      "genre": "Melons"
     },
     {
-      "reference": "Mohammadi-Barsari et al. (2016)",
-      "product": "Watermelon",
+      "reference": "Watermelon",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 0.7
+      "ghgEmission": 0.7,
+      "genre": "Melons"
     },
     {
-      "reference": "Nabavi-Pelesaraei et al. (2016a)",
-      "product": "Watermelon",
+      "reference": "Watermelon",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 1
+      "ghgEmission": 1,
+      "genre": "Melons"
     },
     {
-      "reference": "Martin-Gorriz et al. (2014)",
-      "product": "Melon",
+      "reference": "Melon",
       "country": "Spain",
-      "ghgEmission": 0.6
+      "ghgEmission": 0.6,
+      "genre": "Melons"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Brazil",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Coffee"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Brazil",
-      "ghgEmission": 7.4
+      "ghgEmission": 7.4,
+      "genre": "Coffee"
     },
     {
-      "reference": "Andrade et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Colombia",
-      "ghgEmission": 15.6
+      "ghgEmission": 15.6,
+      "genre": "Coffee"
     },
     {
-      "reference": "Andrade et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Colombia",
-      "ghgEmission": 9.9
+      "ghgEmission": 9.9,
+      "genre": "Coffee"
     },
     {
-      "reference": "Andrade et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Colombia",
-      "ghgEmission": 11.4
+      "ghgEmission": 11.4,
+      "genre": "Coffee"
     },
     {
-      "reference": "Segura and Andrade (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 7.1
+      "ghgEmission": 7.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "Segura and Andrade (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Coffee"
     },
     {
-      "reference": "Segura and Andrade (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 7.6
+      "ghgEmission": 7.6,
+      "genre": "Coffee"
     },
     {
-      "reference": "Segura and Andrade (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 7.1
+      "ghgEmission": 7.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Costa Rica",
-      "ghgEmission": 9.7
+      "ghgEmission": 9.7,
+      "genre": "Coffee"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Indonesia",
-      "ghgEmission": 84.6
+      "ghgEmission": 84.6,
+      "genre": "Coffee"
     },
     {
-      "reference": "Maina et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Kenya",
-      "ghgEmission": 29.3
+      "ghgEmission": 29.3,
+      "genre": "Coffee"
     },
     {
-      "reference": "Maina et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Kenya",
-      "ghgEmission": 30.1
+      "ghgEmission": 30.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "Maina et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Kenya",
-      "ghgEmission": 31
+      "ghgEmission": 31,
+      "genre": "Coffee"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Kenya",
-      "ghgEmission": 21.2
+      "ghgEmission": 21.2,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Nicaragua",
-      "ghgEmission": 37.9
+      "ghgEmission": 37.9,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Nicaragua",
-      "ghgEmission": 31.4
+      "ghgEmission": 31.4,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Nicaragua",
-      "ghgEmission": 34.4
+      "ghgEmission": 34.4,
+      "genre": "Coffee"
     },
     {
-      "reference": "Noponen et al. (2012)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Nicaragua",
-      "ghgEmission": 29.1
+      "ghgEmission": 29.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "Rahn et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Nicaragua",
-      "ghgEmission": 64.1
+      "ghgEmission": 64.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "van Rikxoort et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "El Salvador",
-      "ghgEmission": 20.5
+      "ghgEmission": 20.5,
+      "genre": "Coffee"
     },
     {
-      "reference": "van Rikxoort et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Guatemala",
-      "ghgEmission": 19.1
+      "ghgEmission": 19.1,
+      "genre": "Coffee"
     },
     {
-      "reference": "van Rikxoort et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Colombia",
-      "ghgEmission": 33.4
+      "ghgEmission": 33.4,
+      "genre": "Coffee"
     },
     {
-      "reference": "van Rikxoort et al. (2014)",
-      "product": "Coffee beans",
+      "reference": "Coffee beans",
       "country": "Colombia",
-      "ghgEmission": 28.5
+      "ghgEmission": 28.5,
+      "genre": "Coffee"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Coffee beans",
-      "country": "Viet Nam",
-      "ghgEmission": 6.5
+      "reference": "Coffee beans",
+      "country": "Vietnam",
+      "ghgEmission": 6.5,
+      "genre": "Coffee"
     },
     {
-      "reference": "Neira (2016)",
-      "product": "Chocolate",
+      "reference": "Chocolate",
       "country": "Ecuador",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Chocolate"
     },
     {
-      "reference": "Neira (2016)",
-      "product": "Chocolate",
+      "reference": "Chocolate",
       "country": "Ecuador",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Chocolate"
     },
     {
-      "reference": "Ntiamoah and Afrane (2008)",
-      "product": "Chocolate",
+      "reference": "Chocolate",
       "country": "Ghana",
-      "ghgEmission": -3.7
+      "ghgEmission": -3.7,
+      "genre": "Chocolate"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Cocoa",
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "reference",
+      "country": "reference",
+      "ghgEmission": "reference",
+      "genre": "reference"
+    },
+    {
+      "reference": "Cocoa",
       "country": "Brazil",
-      "ghgEmission": 10.7
+      "ghgEmission": 10.7,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Schroth et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Brazil",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Ortiz-Rodríguez et al. (2014)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Colombia",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Ortiz-Rodríguez et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Colombia",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Ortiz-Rodríguez et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Colombia",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Côte d'Ivoire",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Eitner et al. (2012)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ecuador",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Afrane et al. (2013); Borg and Selmer (2012)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ghana",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Afrane et al. (2013); Borg and Selmer (2012)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ghana",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Afrane et al. (2013); Borg and Selmer (2012)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ghana",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ghana",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Wiltshire et al. (2009)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Ghana",
-      "ghgEmission": -3.9
+      "ghgEmission": -3.9,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Nemecek et al. (2015)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Indonesia",
-      "ghgEmission": 257.9
+      "ghgEmission": 257.9,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Utomo et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Indonesia",
-      "ghgEmission": 134
+      "ghgEmission": 134,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Utomo et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Indonesia",
-      "ghgEmission": 119.1
+      "ghgEmission": 119.1,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Utomo et al. (2016)",
-      "product": "Cocoa",
+      "reference": "Cocoa",
       "country": "Indonesia",
-      "ghgEmission": 116.6
+      "ghgEmission": 116.6,
+      "genre": "Cocoa beans"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 49.2
+      "ghgEmission": 49.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 51.6
+      "ghgEmission": 51.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 50.9
+      "ghgEmission": 50.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 61.6
+      "ghgEmission": 61.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 44.4
+      "ghgEmission": 44.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Ridoutt et al. (2011); Ridoutt et al. (2012); Ridoutt et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 45.1
+      "ghgEmission": 45.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 44.6
+      "ghgEmission": 44.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 38
+      "ghgEmission": 38,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 41.4
+      "ghgEmission": 41.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 50.5
+      "ghgEmission": 50.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 50.2
+      "ghgEmission": 50.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 46.4
+      "ghgEmission": 46.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 44.9
+      "ghgEmission": 44.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 52.4
+      "ghgEmission": 52.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Australia",
-      "ghgEmission": 50.3
+      "ghgEmission": 50.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 93.7
+      "ghgEmission": 93.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 167.8
+      "ghgEmission": 167.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Cardoso et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 206.5
+      "ghgEmission": 206.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Cardoso et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 126.2
+      "ghgEmission": 126.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Cardoso et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 86.4
+      "ghgEmission": 86.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Cardoso et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 93.6
+      "ghgEmission": 93.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Cardoso et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 85.5
+      "ghgEmission": 85.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg et al. (2009)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 112.8
+      "ghgEmission": 112.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Dick et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 205.3
+      "ghgEmission": 205.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Dick et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 55.8
+      "ghgEmission": 55.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Mazzetto et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 374.2
+      "ghgEmission": 374.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Mazzetto et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 266.4
+      "ghgEmission": 266.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Mazzetto et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 145.3
+      "ghgEmission": 145.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Mazzetto et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 111.7
+      "ghgEmission": 111.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Mazzetto et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 77.9
+      "ghgEmission": 77.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Pashei Kamali et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 187.4
+      "ghgEmission": 187.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Pashei Kamali et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 86.6
+      "ghgEmission": 86.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Pashei Kamali et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 432
+      "ghgEmission": 432,
+      "genre": "Meat"
     },
     {
-      "reference": "Pashei Kamali et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 171.8
+      "ghgEmission": 171.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Schroeder et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 131
+      "ghgEmission": 131,
+      "genre": "Meat"
     },
     {
-      "reference": "Siqueira and Duru (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 100.5
+      "ghgEmission": 100.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Brazil",
-      "ghgEmission": 142.3
+      "ghgEmission": 142.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Alemu et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 75.7
+      "ghgEmission": 75.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Alemu et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 86.7
+      "ghgEmission": 86.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Alemu et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 93.8
+      "ghgEmission": 93.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Basarab et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 51
+      "ghgEmission": 51,
+      "genre": "Meat"
     },
     {
-      "reference": "Basarab et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 48.2
+      "ghgEmission": 48.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Basarab et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 82.4
+      "ghgEmission": 82.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Basarab et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 78
+      "ghgEmission": 78,
+      "genre": "Meat"
     },
     {
-      "reference": "Beauchemin et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 52
+      "ghgEmission": 52,
+      "genre": "Meat"
     },
     {
-      "reference": "Legesse et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 53.5
+      "ghgEmission": 53.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 41.1
+      "ghgEmission": 41.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 43.7
+      "ghgEmission": 43.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Celis et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Chile",
-      "ghgEmission": 104.8
+      "ghgEmission": 104.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Celis et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Chile",
-      "ghgEmission": 77.3
+      "ghgEmission": 77.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 57.5
+      "ghgEmission": 57.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 44.1
+      "ghgEmission": 44.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2012a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 44
+      "ghgEmission": 44,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2012a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 43.9
+      "ghgEmission": 43.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2012a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 43.6
+      "ghgEmission": 43.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2012a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 42
+      "ghgEmission": 42,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 47.9
+      "ghgEmission": 47.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 48.2
+      "ghgEmission": 48.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 48.1
+      "ghgEmission": 48.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 47.1
+      "ghgEmission": 47.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 48
+      "ghgEmission": 48,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 45.2
+      "ghgEmission": 45.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 48.7
+      "ghgEmission": 48.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 48.3
+      "ghgEmission": 48.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 46.6
+      "ghgEmission": 46.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 51.5
+      "ghgEmission": 51.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Veysset et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 53.6
+      "ghgEmission": 53.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Veysset et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 55.7
+      "ghgEmission": 55.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Veysset et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 50.3
+      "ghgEmission": 50.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Veysset et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 50.8
+      "ghgEmission": 50.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 295.7
+      "ghgEmission": 295.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 306.2
+      "ghgEmission": 306.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 225.7
+      "ghgEmission": 225.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 248.7
+      "ghgEmission": 248.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 365.4
+      "ghgEmission": 365.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 315.2
+      "ghgEmission": 315.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 278.4
+      "ghgEmission": 278.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Widi et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Indonesia",
-      "ghgEmission": 309.2
+      "ghgEmission": 309.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Casey and Holden (2006a); Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Ireland",
-      "ghgEmission": 36.5
+      "ghgEmission": 36.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Casey and Holden (2006a); Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Ireland",
-      "ghgEmission": 36.7
+      "ghgEmission": 36.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Casey and Holden (2006a); Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Ireland",
-      "ghgEmission": 35.1
+      "ghgEmission": 35.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Foley et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Ireland",
-      "ghgEmission": 46
+      "ghgEmission": 46,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Darelius (2000)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 43.2
+      "ghgEmission": 43.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Nilsson (2004b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 50.2
+      "ghgEmission": 50.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 55.8
+      "ghgEmission": 55.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Switzerland",
-      "ghgEmission": 57.3
+      "ghgEmission": 57.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Switzerland",
-      "ghgEmission": 55.9
+      "ghgEmission": 55.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Schroeder et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 47.6
+      "ghgEmission": 47.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Schroeder et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 49.1
+      "ghgEmission": 49.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Capper (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 38.7
+      "ghgEmission": 38.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Capper (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 44.9
+      "ghgEmission": 44.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Capper (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 62.9
+      "ghgEmission": 62.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Pelletier et al. (2010)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 61.6
+      "ghgEmission": 61.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Pelletier et al. (2010)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 62.5
+      "ghgEmission": 62.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Pelletier et al. (2010)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 71.8
+      "ghgEmission": 71.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Phetteplace et al. (2001)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 76.6
+      "ghgEmission": 76.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Roop et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 78.7
+      "ghgEmission": 78.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Roop et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 56.4
+      "ghgEmission": 56.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Rotz et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 36.3
+      "ghgEmission": 36.3,
+      "genre": "Meat"
     },
     {
-      "reference": "White et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 48
+      "ghgEmission": 48,
+      "genre": "Meat"
     },
     {
-      "reference": "White et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United States of America",
-      "ghgEmission": 49
+      "ghgEmission": 49,
+      "genre": "Meat"
     },
     {
-      "reference": "Picasso et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Uruguay",
-      "ghgEmission": 74.3
+      "ghgEmission": 74.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Picasso et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Uruguay",
-      "ghgEmission": 64.9
+      "ghgEmission": 64.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Picasso et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Uruguay",
-      "ghgEmission": 55.9
+      "ghgEmission": 55.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Picasso et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Uruguay",
-      "ghgEmission": 74.6
+      "ghgEmission": 74.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Picasso et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Uruguay",
-      "ghgEmission": 65.4
+      "ghgEmission": 65.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Jayasundara and Wagner-Riddle (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 10.7
+      "ghgEmission": 10.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Mc Geough et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Canada",
-      "ghgEmission": 9.6
+      "ghgEmission": 9.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 21.9
+      "ghgEmission": 21.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 27.8
+      "ghgEmission": 27.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 20.6
+      "ghgEmission": 20.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 32
+      "ghgEmission": 32,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 20.4
+      "ghgEmission": 20.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 20.7
+      "ghgEmission": 20.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 25.6
+      "ghgEmission": 25.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "China",
-      "ghgEmission": 19.6
+      "ghgEmission": 19.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 21.6
+      "ghgEmission": 21.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 19.6
+      "ghgEmission": 19.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 33
+      "ghgEmission": 33,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 24.4
+      "ghgEmission": 24.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Denmark",
-      "ghgEmission": 23.2
+      "ghgEmission": 23.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 73.9
+      "ghgEmission": 73.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 55
+      "ghgEmission": 55,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 53.2
+      "ghgEmission": 53.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 46.7
+      "ghgEmission": 46.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 51.8
+      "ghgEmission": 51.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "France",
-      "ghgEmission": 46
+      "ghgEmission": 46,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Germany",
-      "ghgEmission": 35.8
+      "ghgEmission": 35.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Huerta et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Mexico",
-      "ghgEmission": 26.8
+      "ghgEmission": 26.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Huerta et al. (2016)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Mexico",
-      "ghgEmission": 41.9
+      "ghgEmission": 41.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Netherlands",
-      "ghgEmission": 40.7
+      "ghgEmission": 40.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Netherlands",
-      "ghgEmission": 14.9
+      "ghgEmission": 14.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Norway",
-      "ghgEmission": 43.4
+      "ghgEmission": 43.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Norway",
-      "ghgEmission": 47.2
+      "ghgEmission": 47.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Norway",
-      "ghgEmission": 45.8
+      "ghgEmission": 45.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Doublet et al. (2013b)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Romania",
-      "ghgEmission": 19.8
+      "ghgEmission": 19.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Darelius (2000)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 38.2
+      "ghgEmission": 38.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Darelius (2000)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 36.9
+      "ghgEmission": 36.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Darelius (2000)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 38.1
+      "ghgEmission": 38.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 39.7
+      "ghgEmission": 39.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 32.6
+      "ghgEmission": 32.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Mogensen et al. (2015)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Sweden",
-      "ghgEmission": 24.5
+      "ghgEmission": 24.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Switzerland",
-      "ghgEmission": 33.7
+      "ghgEmission": 33.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "Switzerland",
-      "ghgEmission": 36.3
+      "ghgEmission": 36.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 26.6
+      "ghgEmission": 26.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 23.6
+      "ghgEmission": 23.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 19
+      "ghgEmission": 19,
+      "genre": "Meat"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 17.2
+      "ghgEmission": 17.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Beef",
+      "reference": "Beef",
       "country": "United Kingdom",
-      "ghgEmission": 43
+      "ghgEmission": 43,
+      "genre": "Meat"
     },
     {
-      "reference": "Bell et al. (2012)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 45.2
+      "ghgEmission": 45.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Bell et al. (2012)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 61.6
+      "ghgEmission": 61.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Bell et al. (2012)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 49
+      "ghgEmission": 49,
+      "genre": "Meat"
     },
     {
-      "reference": "Bell et al. (2012)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 57.3
+      "ghgEmission": 57.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Biswas et al. (2010)",
-      "product": "Mutton",
+      "reference": "Mutton",
       "country": "Australia",
-      "ghgEmission": 32
+      "ghgEmission": 32,
+      "genre": "Meat"
     },
     {
-      "reference": "Biswas et al. (2010)",
-      "product": "Mutton",
+      "reference": "Mutton",
       "country": "Australia",
-      "ghgEmission": 29.8
+      "ghgEmission": 29.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Goat and kid meat",
+      "reference": "Goat and kid meat",
       "country": "Australia",
-      "ghgEmission": 21.8
+      "ghgEmission": 21.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 37
+      "ghgEmission": 37,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 29
+      "ghgEmission": 29,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 28.8
+      "ghgEmission": 28.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 34.3
+      "ghgEmission": 34.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 34.7
+      "ghgEmission": 34.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 34.2
+      "ghgEmission": 34.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 55.4
+      "ghgEmission": 55.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 26.2
+      "ghgEmission": 26.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015c)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Australia",
-      "ghgEmission": 31.7
+      "ghgEmission": 31.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 39.5
+      "ghgEmission": 39.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 45.2
+      "ghgEmission": 45.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 44.1
+      "ghgEmission": 44.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 40.5
+      "ghgEmission": 40.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 39.3
+      "ghgEmission": 39.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Australia",
-      "ghgEmission": 36.7
+      "ghgEmission": 36.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Dakpo et al. (2013)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "France",
-      "ghgEmission": 72.1
+      "ghgEmission": 72.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Dakpo et al. (2013)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "France",
-      "ghgEmission": 67.9
+      "ghgEmission": 67.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Dollé et al. (2011)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "France",
-      "ghgEmission": 56.8
+      "ghgEmission": 56.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Dollé et al. (2011)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "France",
-      "ghgEmission": 38.7
+      "ghgEmission": 38.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Dollé et al. (2011)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "France",
-      "ghgEmission": 40.8
+      "ghgEmission": 40.8,
+      "genre": "Meat"
     },
     {
-      "reference": "O'Brien et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Ireland",
-      "ghgEmission": 43.1
+      "ghgEmission": 43.1,
+      "genre": "Meat"
     },
     {
-      "reference": "O'Brien et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Ireland",
-      "ghgEmission": 58.4
+      "ghgEmission": 58.4,
+      "genre": "Meat"
     },
     {
-      "reference": "O'Brien et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Ireland",
-      "ghgEmission": 40.2
+      "ghgEmission": 40.2,
+      "genre": "Meat"
     },
     {
-      "reference": "O'Brien et al. (2016a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Ireland",
-      "ghgEmission": 47.6
+      "ghgEmission": 47.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "Netherlands",
-      "ghgEmission": 61.1
+      "ghgEmission": 61.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "New Zealand",
-      "ghgEmission": 47.3
+      "ghgEmission": 47.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "New Zealand",
-      "ghgEmission": 24.5
+      "ghgEmission": 24.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Wallman et al. (2011)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "Sweden",
-      "ghgEmission": 37
+      "ghgEmission": 37,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2015a)",
-      "product": "Lamb and mutton",
+      "reference": "Lamb and mutton",
       "country": "United Kingdom",
-      "ghgEmission": 45.7
+      "ghgEmission": 45.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Lamb",
+      "reference": "Lamb",
       "country": "United Kingdom",
-      "ghgEmission": 29.1
+      "ghgEmission": 29.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2010)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Australia",
-      "ghgEmission": 16.6
+      "ghgEmission": 16.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2010)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Australia",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Winkler et al. (2016)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Austria",
-      "ghgEmission": 11
+      "ghgEmission": 11,
+      "genre": "Meat"
     },
     {
-      "reference": "Cherubini et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Brazil",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Cherubini et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Brazil",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Spies (2003)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Brazil",
-      "ghgEmission": 22.7
+      "ghgEmission": 22.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2009a)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Canada",
-      "ghgEmission": 8.7
+      "ghgEmission": 8.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2009a)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Canada",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Gutiérrez et al. (2016)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Cuba",
-      "ghgEmission": 20.7
+      "ghgEmission": 20.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Halberg et al. (2010)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Halberg et al. (2010)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 10.7
+      "ghgEmission": 10.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Halberg et al. (2010)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 9.4
+      "ghgEmission": 9.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Jakobsen et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 10
+      "ghgEmission": 10,
+      "genre": "Meat"
     },
     {
-      "reference": "Jakobsen et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 10.2
+      "ghgEmission": 10.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Jakobsen et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 6.6
+      "ghgEmission": 6.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Nguyen et al. (2011)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Denmark",
-      "ghgEmission": 8
+      "ghgEmission": 8,
+      "genre": "Meat"
     },
     {
-      "reference": "Basset-Mens and van der Werf (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 10.2
+      "ghgEmission": 10.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Basset-Mens and van der Werf (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 12.6
+      "ghgEmission": 12.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Basset-Mens and van der Werf (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 13.9
+      "ghgEmission": 13.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Espagnol and Demartini (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 15.2
+      "ghgEmission": 15.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Espagnol and Demartini (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 13.1
+      "ghgEmission": 13.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 10.1
+      "ghgEmission": 10.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 8
+      "ghgEmission": 8,
+      "genre": "Meat"
     },
     {
-      "reference": "Garcia-Launay et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Garrigues et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 8.2
+      "ghgEmission": 8.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Garrigues et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "France",
-      "ghgEmission": 8.2
+      "ghgEmission": 8.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 9.6
+      "ghgEmission": 9.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 9.3
+      "ghgEmission": 9.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 12.5
+      "ghgEmission": 12.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 11.3
+      "ghgEmission": 11.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Hirschfeld et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Germany",
-      "ghgEmission": 7.7
+      "ghgEmission": 7.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Bava et al. (2017)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Italy",
-      "ghgEmission": 12.4
+      "ghgEmission": 12.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Perez (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Mexico",
-      "ghgEmission": 18.1
+      "ghgEmission": 18.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Perez (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Mexico",
-      "ghgEmission": 13.1
+      "ghgEmission": 13.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 9.8
+      "ghgEmission": 9.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Dolman et al. (2012)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 22.4
+      "ghgEmission": 22.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 6.9
+      "ghgEmission": 6.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 7
+      "ghgEmission": 7,
+      "genre": "Meat"
     },
     {
-      "reference": "van Zanten et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 7.5
+      "ghgEmission": 7.5,
+      "genre": "Meat"
     },
     {
-      "reference": "van Zanten et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 7.5
+      "ghgEmission": 7.5,
+      "genre": "Meat"
     },
     {
-      "reference": "van Zanten et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 7.5
+      "ghgEmission": 7.5,
+      "genre": "Meat"
     },
     {
-      "reference": "van Zanten et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Netherlands",
-      "ghgEmission": 7.4
+      "ghgEmission": 7.4,
+      "genre": "Meat"
     },
     {
-      "reference": "González-García et al. (2015)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Portugal",
-      "ghgEmission": 10.3
+      "ghgEmission": 10.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Spain",
-      "ghgEmission": 12.3
+      "ghgEmission": 12.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Spain",
-      "ghgEmission": 12.8
+      "ghgEmission": 12.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Carlsson et al. (2009a)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 15.7
+      "ghgEmission": 15.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Darelius (2001)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 16.8
+      "ghgEmission": 16.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Nilsson (2004a)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 16.3
+      "ghgEmission": 16.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Cederberg and Nilsson (2004a)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 16.8
+      "ghgEmission": 16.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 11.5
+      "ghgEmission": 11.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Strid Eriksson et al. (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 19.2
+      "ghgEmission": 19.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Strid Eriksson et al. (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 11.8
+      "ghgEmission": 11.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Strid Eriksson et al. (2005)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Sweden",
-      "ghgEmission": 10.7
+      "ghgEmission": 10.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Switzerland",
-      "ghgEmission": 11.6
+      "ghgEmission": 11.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Switzerland",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "Switzerland",
-      "ghgEmission": 10.9
+      "ghgEmission": 10.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 7.1
+      "ghgEmission": 7.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Kool et al. (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 7.2
+      "ghgEmission": 7.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Perez (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 12.3
+      "ghgEmission": 12.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Perez (2009)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 13.4
+      "ghgEmission": 13.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 13.2
+      "ghgEmission": 13.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2006)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United Kingdom",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Stone et al. (2012)",
-      "product": "Pork",
+      "reference": "Pork",
       "country": "United States of America",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Meat"
     },
     {
-      "reference": "Phong et al. (2011)",
-      "product": "Pork",
-      "country": "Viet Nam",
-      "ghgEmission": 27.6
+      "reference": "Pork",
+      "country": "Vietnam",
+      "ghgEmission": 27.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Bengtsson and Seddon (2013)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Australia",
-      "ghgEmission": 15.7
+      "ghgEmission": 15.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Hall et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Australia",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2017)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Australia",
-      "ghgEmission": 7.3
+      "ghgEmission": 7.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2017)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Australia",
-      "ghgEmission": 6.7
+      "ghgEmission": 6.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Wiedemann et al. (2017)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Australia",
-      "ghgEmission": 5.2
+      "ghgEmission": 5.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Brazil",
-      "ghgEmission": 5.3
+      "ghgEmission": 5.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Brazil",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Meat"
     },
     {
-      "reference": "Spies (2003)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Brazil",
-      "ghgEmission": 20.4
+      "ghgEmission": 20.4,
+      "genre": "Meat"
     },
     {
-      "reference": "Williams et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Brazil",
-      "ghgEmission": 13.8
+      "ghgEmission": 13.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2009b)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Canada",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2009b)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Canada",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Vergé et al. (2009b)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "Canada",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Katajajuuri et al. (2006)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Finland",
-      "ghgEmission": 21
+      "ghgEmission": 21,
+      "genre": "Meat"
     },
     {
-      "reference": "Arroyo et al. (2013)",
-      "product": "Goose (foie gras)",
+      "reference": "Goose (foie gras)",
       "country": "France",
-      "ghgEmission": 47.7
+      "ghgEmission": 47.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 10.3
+      "ghgEmission": 10.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 9.8
+      "ghgEmission": 9.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 9.1
+      "ghgEmission": 9.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 16.1
+      "ghgEmission": 16.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 9
+      "ghgEmission": 9,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Duck",
+      "reference": "Duck",
       "country": "France",
-      "ghgEmission": 14.1
+      "ghgEmission": 14.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "France",
-      "ghgEmission": 17.5
+      "ghgEmission": 17.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "France",
-      "ghgEmission": 23.3
+      "ghgEmission": 23.3,
+      "genre": "Meat"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Prudêncio da Silva et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 7.5
+      "ghgEmission": 7.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Seguin et al. (2011)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 8.6
+      "ghgEmission": 8.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Seguin et al. (2011)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "France",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Spahat (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Malaysia",
-      "ghgEmission": 9.2
+      "ghgEmission": 9.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Spahat (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Malaysia",
-      "ghgEmission": 9.5
+      "ghgEmission": 9.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Netherlands",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Scholten et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Netherlands",
-      "ghgEmission": 7.9
+      "ghgEmission": 7.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Ellingsen and Aanondsen (2006)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Norway",
-      "ghgEmission": 8.9
+      "ghgEmission": 8.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Samardžić et al. (2014)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Russian Federation",
-      "ghgEmission": 5.6
+      "ghgEmission": 5.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Widheden et al. (2001)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Sweden",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Switzerland",
-      "ghgEmission": 5
+      "ghgEmission": 5,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Switzerland",
-      "ghgEmission": 6.6
+      "ghgEmission": 6.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Alig et al. (2012)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "Switzerland",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2012a)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "United Kingdom",
-      "ghgEmission": 9.7
+      "ghgEmission": 9.7,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2012a)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "United Kingdom",
-      "ghgEmission": 11.1
+      "ghgEmission": 11.1,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2012a)",
-      "product": "Chicken",
+      "reference": "Chicken",
       "country": "United Kingdom",
-      "ghgEmission": 14.9
+      "ghgEmission": 14.9,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2016)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "United Kingdom",
-      "ghgEmission": 13.5
+      "ghgEmission": 13.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2016)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "United Kingdom",
-      "ghgEmission": 12.2
+      "ghgEmission": 12.2,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2016)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "United Kingdom",
-      "ghgEmission": 13
+      "ghgEmission": 13,
+      "genre": "Meat"
     },
     {
-      "reference": "Leinonen et al. (2016)",
-      "product": "Turkey",
+      "reference": "Turkey",
       "country": "United Kingdom",
-      "ghgEmission": 11.6
+      "ghgEmission": 11.6,
+      "genre": "Meat"
     },
     {
-      "reference": "Phong et al. (2011)",
-      "product": "Chicken",
-      "country": "Viet Nam",
-      "ghgEmission": 19.5
+      "reference": "Chicken",
+      "country": "Vietnam",
+      "ghgEmission": 19.5,
+      "genre": "Meat"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Goat's milk",
+      "reference": "Goat's milk",
       "country": "Australia",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Australia",
-      "ghgEmission": 6.8
+      "ghgEmission": 6.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Mathot et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Belgium",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Meul et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Belgium",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Cunha et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Cunha et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 4.7
+      "ghgEmission": 4.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Olszensvski (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Seó (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Velazco-Bedoya (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 5.7
+      "ghgEmission": 5.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Arsenault et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Arsenault et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Jayasundara and Wagner-Riddle (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Mc Geough et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Samson et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.5
+      "ghgEmission": 3.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Milk"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Rivera et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Colombia",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Milk"
     },
     {
-      "reference": "Rivera et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Colombia",
-      "ghgEmission": 3.6
+      "ghgEmission": 3.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "van der Werf et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "van der Werf et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Zehetmeier et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Zehetmeier et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Garg et al. (2016)",
-      "product": "Cow and buffalo milk",
+      "reference": "Cow and buffalo milk",
       "country": "India",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2016b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Yan et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Battini et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Bava et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Fantin et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Guerci et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Penati et al. (2013); Penati et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Weiler et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Rivas-García et al. (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Mexico",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Broekema and Kramer (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Thomassen et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Thomassen et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Thomassen et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Milk"
     },
     {
-      "reference": "van Middelaar et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.4
+      "ghgEmission": 1.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Flysjö et al. (2011a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Saunders and Barber (2007); Wells (2001)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 1.3
+      "ghgEmission": 1.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 3.4
+      "ghgEmission": 3.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Bartl et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Peru",
-      "ghgEmission": 14.6
+      "ghgEmission": 14.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Bartl et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Peru",
-      "ghgEmission": 6.1
+      "ghgEmission": 6.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Doublet et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Romania",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Del Prado et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Spain",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Iribarren et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Spain",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.1
+      "ghgEmission": 2.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg and Mattsson (2000)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg and Mattsson (2000)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.5
+      "ghgEmission": 2.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Cederberg et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Milk"
     },
     {
-      "reference": "Flysjö et al. (2011a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 2.4
+      "ghgEmission": 2.4,
+      "genre": "Milk"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 1.5
+      "ghgEmission": 1.5,
+      "genre": "Milk"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Schader et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Schader et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 2.3
+      "ghgEmission": 2.3,
+      "genre": "Milk"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 1.7
+      "ghgEmission": 1.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Milk"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 2.7
+      "ghgEmission": 2.7,
+      "genre": "Milk"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 2
+      "ghgEmission": 2,
+      "genre": "Milk"
     },
     {
-      "reference": "Aguirre-Villegas et al. (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 1.9
+      "ghgEmission": 1.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 3.1
+      "ghgEmission": 3.1,
+      "genre": "Milk"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Milk"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Milk"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 2.8
+      "ghgEmission": 2.8,
+      "genre": "Milk"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 1.8
+      "ghgEmission": 1.8,
+      "genre": "Milk"
     },
     {
-      "reference": "Phetteplace et al. (2001)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 2.2
+      "ghgEmission": 2.2,
+      "genre": "Milk"
     },
     {
-      "reference": "Voutilainen et al. (2003)",
-      "product": "Cow's cheese (Emmental)",
+      "reference": "Cow's cheese (Emmental)",
       "country": "Finland",
-      "ghgEmission": 16
+      "ghgEmission": 16,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "France",
-      "ghgEmission": 29.6
+      "ghgEmission": 29.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Germany",
-      "ghgEmission": 20.6
+      "ghgEmission": 20.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Italy",
-      "ghgEmission": 18.5
+      "ghgEmission": 18.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Netherlands",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Cheese"
     },
     {
-      "reference": "Broekema and Kramer (2014)",
-      "product": "Cow's cheese (Gouda)",
+      "reference": "Cow's cheese (Gouda)",
       "country": "Netherlands",
-      "ghgEmission": 9.6
+      "ghgEmission": 9.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "van Middelaar et al. (2011)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Netherlands",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Basset-Mens et al. (2007); Basset-Mens et al. (2009)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "New Zealand",
-      "ghgEmission": 14.3
+      "ghgEmission": 14.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Doublet et al. (2013b)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Romania",
-      "ghgEmission": 10.5
+      "ghgEmission": 10.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Berlin (2002)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Sweden",
-      "ghgEmission": 16.5
+      "ghgEmission": 16.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bystricky et al. (2014)",
-      "product": "Cow's cheese",
+      "reference": "Cow's cheese",
       "country": "Switzerland",
-      "ghgEmission": 21.8
+      "ghgEmission": 21.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Kim et al. (2013)",
-      "product": "Cow's cheese (Cheddar)",
+      "reference": "Cow's cheese (Cheddar)",
       "country": "United States of America",
-      "ghgEmission": 16.1
+      "ghgEmission": 16.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Kim et al. (2013)",
-      "product": "Cow's cheese (Mozzarella)",
+      "reference": "Cow's cheese (Mozzarella)",
       "country": "United States of America",
-      "ghgEmission": 16.5
+      "ghgEmission": 16.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Milk for cow's cheese (Cheddar)",
+      "reference": "Milk for cow's cheese (Cheddar)",
       "country": "United States of America",
-      "ghgEmission": 17.1
+      "ghgEmission": 17.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Milk for cow's cheese (Cheddar)",
+      "reference": "Milk for cow's cheese (Cheddar)",
       "country": "United States of America",
-      "ghgEmission": 15.9
+      "ghgEmission": 15.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Milk for cow's cheese (Cheddar)",
+      "reference": "Milk for cow's cheese (Cheddar)",
       "country": "United States of America",
-      "ghgEmission": 14.5
+      "ghgEmission": 14.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Capper and Cady (2012)",
-      "product": "Milk for cow's cheese (Cheddar)",
+      "reference": "Milk for cow's cheese (Cheddar)",
       "country": "United States of America",
-      "ghgEmission": 13.1
+      "ghgEmission": 13.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Goat's milk",
+      "reference": "Goat's milk",
       "country": "Australia",
-      "ghgEmission": 71.3
+      "ghgEmission": 71.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Michael (2011)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Australia",
-      "ghgEmission": 57.9
+      "ghgEmission": 57.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 16.6
+      "ghgEmission": 16.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 15.1
+      "ghgEmission": 15.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 15
+      "ghgEmission": 15,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 14.3
+      "ghgEmission": 14.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 14.7
+      "ghgEmission": 14.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 13.6
+      "ghgEmission": 13.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Hörtenhuber et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Austria",
-      "ghgEmission": 12.4
+      "ghgEmission": 12.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Mathot et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Belgium",
-      "ghgEmission": 20.7
+      "ghgEmission": 20.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Meul et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Belgium",
-      "ghgEmission": 15.1
+      "ghgEmission": 15.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cunha et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 22.7
+      "ghgEmission": 22.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cunha et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 36.9
+      "ghgEmission": 36.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Olszensvski (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 35.3
+      "ghgEmission": 35.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Seó (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 68.2
+      "ghgEmission": 68.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Velazco-Bedoya (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Brazil",
-      "ghgEmission": 46.6
+      "ghgEmission": 46.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Arsenault et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 27.3
+      "ghgEmission": 27.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Arsenault et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 22.7
+      "ghgEmission": 22.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Jayasundara and Wagner-Riddle (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 16.4
+      "ghgEmission": 16.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Mc Geough et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Cheese"
     },
     {
-      "reference": "Samson et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 14.1
+      "ghgEmission": 14.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 14.6
+      "ghgEmission": 14.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 14.4
+      "ghgEmission": 14.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 16.6
+      "ghgEmission": 16.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 16.4
+      "ghgEmission": 16.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Canada",
-      "ghgEmission": 15.5
+      "ghgEmission": 15.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 27
+      "ghgEmission": 27,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 29.4
+      "ghgEmission": 29.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 21.8
+      "ghgEmission": 21.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 30.9
+      "ghgEmission": 30.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 21.3
+      "ghgEmission": 21.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 22.2
+      "ghgEmission": 22.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 27.5
+      "ghgEmission": 27.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wang et al. (2016a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 20.8
+      "ghgEmission": 20.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 26.7
+      "ghgEmission": 26.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 16.1
+      "ghgEmission": 16.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 16.6
+      "ghgEmission": 16.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 21.7
+      "ghgEmission": 21.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 18.8
+      "ghgEmission": 18.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 22.7
+      "ghgEmission": 22.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Wilkes and Wang (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "China",
-      "ghgEmission": 23.5
+      "ghgEmission": 23.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Rivera et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Colombia",
-      "ghgEmission": 31.3
+      "ghgEmission": 31.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Rivera et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Colombia",
-      "ghgEmission": 28
+      "ghgEmission": 28,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 20.2
+      "ghgEmission": 20.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 16.6
+      "ghgEmission": 16.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 22.7
+      "ghgEmission": 22.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 18.2
+      "ghgEmission": 18.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 23.9
+      "ghgEmission": 23.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 15.7
+      "ghgEmission": 15.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Kristensen et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Denmark",
-      "ghgEmission": 15.3
+      "ghgEmission": 15.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 18.1
+      "ghgEmission": 18.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 18.3
+      "ghgEmission": 18.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 17.7
+      "ghgEmission": 17.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 16.2
+      "ghgEmission": 16.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 17.5
+      "ghgEmission": 17.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Nguyen et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 16.1
+      "ghgEmission": 16.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "van der Werf et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 14.1
+      "ghgEmission": 14.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "van der Werf et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "France",
-      "ghgEmission": 14.3
+      "ghgEmission": 14.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 17.3
+      "ghgEmission": 17.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 9.4
+      "ghgEmission": 9.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Zehetmeier et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 13.8
+      "ghgEmission": 13.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Zehetmeier et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Germany",
-      "ghgEmission": 13.1
+      "ghgEmission": 13.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Garg et al. (2016)",
-      "product": "Cow and buffalo milk",
+      "reference": "Cow and buffalo milk",
       "country": "India",
-      "ghgEmission": 22.3
+      "ghgEmission": 22.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 12
+      "ghgEmission": 12,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 13.9
+      "ghgEmission": 13.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 11.7
+      "ghgEmission": 11.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2016b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 15.8
+      "ghgEmission": 15.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Yan et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Ireland",
-      "ghgEmission": 16.2
+      "ghgEmission": 16.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Battini et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 17.7
+      "ghgEmission": 17.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bava et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 18
+      "ghgEmission": 18,
+      "genre": "Cheese"
     },
     {
-      "reference": "Fantin et al. (2012)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 17.9
+      "ghgEmission": 17.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 17.8
+      "ghgEmission": 17.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 19
+      "ghgEmission": 19,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 26.6
+      "ghgEmission": 26.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 19.7
+      "ghgEmission": 19.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 16.7
+      "ghgEmission": 16.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2013b)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 15
+      "ghgEmission": 15,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 27.5
+      "ghgEmission": 27.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Guerci et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 26.6
+      "ghgEmission": 26.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Penati et al. (2013); Penati et al. (2010)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Italy",
-      "ghgEmission": 18.8
+      "ghgEmission": 18.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 17.7
+      "ghgEmission": 17.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 24.2
+      "ghgEmission": 24.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vagnoni et al. (2015)",
-      "product": "Sheep's milk",
+      "reference": "Sheep's milk",
       "country": "Italy",
-      "ghgEmission": 27
+      "ghgEmission": 27,
+      "genre": "Cheese"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 30.1
+      "ghgEmission": 30.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 25.1
+      "ghgEmission": 25.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Udo et al. (2016)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 23.2
+      "ghgEmission": 23.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Weiler et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Kenya",
-      "ghgEmission": 37.2
+      "ghgEmission": 37.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Rivas-García et al. (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Mexico",
-      "ghgEmission": 21
+      "ghgEmission": 21,
+      "genre": "Cheese"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 16
+      "ghgEmission": 16,
+      "genre": "Cheese"
     },
     {
-      "reference": "Broekema and Kramer (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 17.8
+      "ghgEmission": 17.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Thomassen et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 20.8
+      "ghgEmission": 20.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Thomassen et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 24.2
+      "ghgEmission": 24.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Thomassen et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 20.4
+      "ghgEmission": 20.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "van Middelaar et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Netherlands",
-      "ghgEmission": 14.9
+      "ghgEmission": 14.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 12.8
+      "ghgEmission": 12.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 9.3
+      "ghgEmission": 9.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 10.3
+      "ghgEmission": 10.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Basset-Mens et al. (2009)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 11.8
+      "ghgEmission": 11.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Flysjö et al. (2011a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 12.8
+      "ghgEmission": 12.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Saunders and Barber (2007); Wells (2001)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "New Zealand",
-      "ghgEmission": 9
+      "ghgEmission": 9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 22.1
+      "ghgEmission": 22.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 26.7
+      "ghgEmission": 26.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Roer et al. (2013); Johansen et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Norway",
-      "ghgEmission": 25.8
+      "ghgEmission": 25.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bartl et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Peru",
-      "ghgEmission": 150.5
+      "ghgEmission": 150.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Bartl et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Peru",
-      "ghgEmission": 59.8
+      "ghgEmission": 59.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 17.6
+      "ghgEmission": 17.6,
+      "genre": "Cheese"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 13.8
+      "ghgEmission": 13.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 34.4
+      "ghgEmission": 34.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 31.7
+      "ghgEmission": 31.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Notten et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "South Africa",
-      "ghgEmission": 28.5
+      "ghgEmission": 28.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Del Prado et al. (2013)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Spain",
-      "ghgEmission": 15.1
+      "ghgEmission": 15.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Iribarren et al. (2011)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Spain",
-      "ghgEmission": 9.9
+      "ghgEmission": 9.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 14.7
+      "ghgEmission": 14.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 15.4
+      "ghgEmission": 15.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg and Flysjö (2004)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 17.1
+      "ghgEmission": 17.1,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg and Mattsson (2000)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 23
+      "ghgEmission": 23,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg and Mattsson (2000)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 19.8
+      "ghgEmission": 19.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 18.9
+      "ghgEmission": 18.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Cederberg et al. (2007)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 19.7
+      "ghgEmission": 19.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Flysjö et al. (2011a)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 17.8
+      "ghgEmission": 17.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 9.9
+      "ghgEmission": 9.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Sasu-Boakye et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Sweden",
-      "ghgEmission": 10.5
+      "ghgEmission": 10.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Schader et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 14
+      "ghgEmission": 14,
+      "genre": "Cheese"
     },
     {
-      "reference": "Schader et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "Switzerland",
-      "ghgEmission": 12.2
+      "ghgEmission": 12.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 16.8
+      "ghgEmission": 16.8,
+      "genre": "Cheese"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 16.5
+      "ghgEmission": 16.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 11.9
+      "ghgEmission": 11.9,
+      "genre": "Cheese"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 23.5
+      "ghgEmission": 23.5,
+      "genre": "Cheese"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 20.7
+      "ghgEmission": 20.7,
+      "genre": "Cheese"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 16.2
+      "ghgEmission": 16.2,
+      "genre": "Cheese"
     },
     {
-      "reference": "Ross et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United Kingdom",
-      "ghgEmission": 14.4
+      "ghgEmission": 14.4,
+      "genre": "Cheese"
     },
     {
-      "reference": "Aguirre-Villegas et al. (2015)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 13.3
+      "ghgEmission": 13.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "O'Brien et al. (2014)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 12.3
+      "ghgEmission": 12.3,
+      "genre": "Cheese"
     },
     {
-      "reference": "Phetteplace et al. (2001)",
-      "product": "Cow's milk",
+      "reference": "Cow's milk",
       "country": "United States of America",
-      "ghgEmission": 16
+      "ghgEmission": 16,
+      "genre": "Cheese"
     },
     {
-      "reference": "Vergé et al. (2009b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Canada",
-      "ghgEmission": 3
+      "ghgEmission": 3,
+      "genre": "Eggs"
     },
     {
-      "reference": "Moudrý Jr et al. (2014)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Czech Republic",
-      "ghgEmission": 8.4
+      "ghgEmission": 8.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Moudrý Jr et al. (2014)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Czech Republic",
-      "ghgEmission": 6.5
+      "ghgEmission": 6.5,
+      "genre": "Eggs"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 4.9
+      "ghgEmission": 4.9,
+      "genre": "Eggs"
     },
     {
-      "reference": "Baumgartner et al. (2008)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Eggs"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Eggs"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "France",
-      "ghgEmission": 2.6
+      "ghgEmission": 2.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Blonk et al. (2008)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 3.7
+      "ghgEmission": 3.7,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 4.6
+      "ghgEmission": 4.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Dekker et al. (2011)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 5.4
+      "ghgEmission": 5.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Mollenhorst et al. (2006)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Eggs"
     },
     {
-      "reference": "Mollenhorst et al. (2006)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 6
+      "ghgEmission": 6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Mollenhorst et al. (2006)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 6.6
+      "ghgEmission": 6.6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Mollenhorst et al. (2006)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 6
+      "ghgEmission": 6,
+      "genre": "Eggs"
     },
     {
-      "reference": "Scholten et al. (2014)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Netherlands",
-      "ghgEmission": 4
+      "ghgEmission": 4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Carlsson et al. (2009b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Sweden",
-      "ghgEmission": 4.2
+      "ghgEmission": 4.2,
+      "genre": "Eggs"
     },
     {
-      "reference": "Sonesson et al. (2008)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Sweden",
-      "ghgEmission": 3.3
+      "ghgEmission": 3.3,
+      "genre": "Eggs"
     },
     {
-      "reference": "Sonesson et al. (2008)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "Sweden",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Eggs"
     },
     {
-      "reference": "Leinonen et al. (2012b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United Kingdom",
-      "ghgEmission": 3.8
+      "ghgEmission": 3.8,
+      "genre": "Eggs"
     },
     {
-      "reference": "Leinonen et al. (2012b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United Kingdom",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Leinonen et al. (2012b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United Kingdom",
-      "ghgEmission": 4.4
+      "ghgEmission": 4.4,
+      "genre": "Eggs"
     },
     {
-      "reference": "Leinonen et al. (2012b)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United Kingdom",
-      "ghgEmission": 5.8
+      "ghgEmission": 5.8,
+      "genre": "Eggs"
     },
     {
-      "reference": "Pelletier et al. (2013)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United States of America",
-      "ghgEmission": 5.9
+      "ghgEmission": 5.9,
+      "genre": "Eggs"
     },
     {
-      "reference": "Pelletier et al. (2014)",
-      "product": "Chicken's eggs",
+      "reference": "Chicken's eggs",
       "country": "United States of America",
-      "ghgEmission": 2.9
+      "ghgEmission": 2.9,
+      "genre": "Eggs"
     },
     {
-      "reference": "Casaca (2008)",
-      "product": "Grass carp, silver carp, big head carp, common carp, catfish",
+      "reference": "Grass carp, silver carp, big head carp, common carp, catfish",
       "country": "Brazil",
-      "ghgEmission": 34.8
+      "ghgEmission": 34.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Casaca (2008)",
-      "product": "Grass carp, silver carp, big head carp, common carp, catfish",
+      "reference": "Grass carp, silver carp, big head carp, common carp, catfish",
       "country": "Brazil",
-      "ghgEmission": 32.3
+      "ghgEmission": 32.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Casaca (2008)",
-      "product": "Grass carp, silver carp, big head carp, common carp, catfish",
+      "reference": "Grass carp, silver carp, big head carp, common carp, catfish",
       "country": "Brazil",
-      "ghgEmission": 32
+      "ghgEmission": 32,
+      "genre": "Fish"
     },
     {
-      "reference": "Efole Ewoukem et al. (2012)",
-      "product": "Tilapia, African catfish",
+      "reference": "Tilapia, African catfish",
       "country": "Cameroon",
-      "ghgEmission": 87.8
+      "ghgEmission": 87.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Efole Ewoukem et al. (2012)",
-      "product": "Tilapia, African catfish",
+      "reference": "Tilapia, African catfish",
       "country": "Cameroon",
-      "ghgEmission": 40.4
+      "ghgEmission": 40.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Efole Ewoukem et al. (2012)",
-      "product": "Tilapia, African catfish",
+      "reference": "Tilapia, African catfish",
       "country": "Cameroon",
-      "ghgEmission": 34.9
+      "ghgEmission": 34.9,
+      "genre": "Fish"
     },
     {
-      "reference": "Efole Ewoukem et al. (2012)",
-      "product": "Tilapia, African catfish",
+      "reference": "Tilapia, African catfish",
       "country": "Cameroon",
-      "ghgEmission": 28
+      "ghgEmission": 28,
+      "genre": "Fish"
     },
     {
-      "reference": "Astudillo et al. (2015)",
-      "product": "Grass carp",
+      "reference": "Grass carp",
       "country": "China",
-      "ghgEmission": 24.2
+      "ghgEmission": 24.2,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "China",
-      "ghgEmission": 14.2
+      "ghgEmission": 14.2,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "China",
-      "ghgEmission": 17
+      "ghgEmission": 17,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "China",
-      "ghgEmission": 13.2
+      "ghgEmission": 13.2,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "China",
-      "ghgEmission": 16.7
+      "ghgEmission": 16.7,
+      "genre": "Fish"
     },
     {
-      "reference": "Roque d'Orbcastel et al. (2009)",
-      "product": "Brook trout, brown trout, rainbow trout, arctic char",
+      "reference": "Brook trout, brown trout, rainbow trout, arctic char",
       "country": "Denmark",
-      "ghgEmission": 10.6
+      "ghgEmission": 10.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Aubin et al. (2009)",
-      "product": "Rainbow trout",
+      "reference": "Rainbow trout",
       "country": "France",
-      "ghgEmission": 10.6
+      "ghgEmission": 10.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Boissy et al. (2011)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "France",
-      "ghgEmission": 8.8
+      "ghgEmission": 8.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Boissy et al. (2011)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "France",
-      "ghgEmission": 9.8
+      "ghgEmission": 9.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Chen et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "France",
-      "ghgEmission": 8.8
+      "ghgEmission": 8.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Chen et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "France",
-      "ghgEmission": 9.4
+      "ghgEmission": 9.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Chen et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "France",
-      "ghgEmission": 8.8
+      "ghgEmission": 8.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Roque d'Orbcastel et al. (2009)",
-      "product": "Brook trout, brown trout, rainbow trout, arctic char",
+      "reference": "Brook trout, brown trout, rainbow trout, arctic char",
       "country": "France",
-      "ghgEmission": 13.6
+      "ghgEmission": 13.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Trout (large)",
+      "reference": "Trout (large)",
       "country": "France",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Trout (small)",
+      "reference": "Trout (small)",
       "country": "France",
-      "ghgEmission": 6.9
+      "ghgEmission": 6.9,
+      "genre": "Fish"
     },
     {
-      "reference": "Koch and Salou (2015)",
-      "product": "Sea bass, sea bream",
+      "reference": "Sea bass, sea bream",
       "country": "France",
-      "ghgEmission": 13.3
+      "ghgEmission": 13.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Wilfart et al. (2013)",
-      "product": "Salmon",
+      "reference": "Salmon",
       "country": "France",
-      "ghgEmission": 8.1
+      "ghgEmission": 8.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Wilfart et al. (2013)",
-      "product": "Common carp, tench, roach, perch, sander, pike",
+      "reference": "Common carp, tench, roach, perch, sander, pike",
       "country": "France",
-      "ghgEmission": 39
+      "ghgEmission": 39,
+      "genre": "Fish"
     },
     {
-      "reference": "Wilfart et al. (2013)",
-      "product": "Common carp, tench, roach, perch, pike",
+      "reference": "Common carp, tench, roach, perch, pike",
       "country": "France",
-      "ghgEmission": 68.7
+      "ghgEmission": 68.7,
+      "genre": "Fish"
     },
     {
-      "reference": "Mungkung et al. (2013)",
-      "product": "Common carp",
+      "reference": "Common carp",
       "country": "Indonesia",
-      "ghgEmission": 5.5
+      "ghgEmission": 5.5,
+      "genre": "Fish"
     },
     {
-      "reference": "Mungkung et al. (2013)",
-      "product": "Common carp",
+      "reference": "Common carp",
       "country": "Indonesia",
-      "ghgEmission": 6.6
+      "ghgEmission": 6.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Mungkung et al. (2013)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Indonesia",
-      "ghgEmission": 20.6
+      "ghgEmission": 20.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Mungkung et al. (2013)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Indonesia",
-      "ghgEmission": 31.6
+      "ghgEmission": 31.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Dekamin et al. (2015)",
-      "product": "Rainbow trout",
+      "reference": "Rainbow trout",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 5.2
+      "ghgEmission": 5.2,
+      "genre": "Fish"
     },
     {
-      "reference": "Dekamin et al. (2015)",
-      "product": "Rainbow trout",
+      "reference": "Rainbow trout",
       "country": "Iran (Islamic Republic of)",
-      "ghgEmission": 18.4
+      "ghgEmission": 18.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Blonk et al. (2009)",
-      "product": "Salmon",
+      "reference": "Salmon",
       "country": "Norway",
-      "ghgEmission": 7.5
+      "ghgEmission": 7.5,
+      "genre": "Fish"
     },
     {
-      "reference": "Ellingsen et al. (2009)",
-      "product": "Salmon",
+      "reference": "Salmon",
       "country": "Norway",
-      "ghgEmission": 7.4
+      "ghgEmission": 7.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "Peru",
-      "ghgEmission": 15.3
+      "ghgEmission": 15.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "Peru",
-      "ghgEmission": 14.1
+      "ghgEmission": 14.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Trout",
+      "reference": "Trout",
       "country": "Peru",
-      "ghgEmission": 14.9
+      "ghgEmission": 14.9,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Tambaqui",
+      "reference": "Tambaqui",
       "country": "Peru",
-      "ghgEmission": 31.4
+      "ghgEmission": 31.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Tambaqui",
+      "reference": "Tambaqui",
       "country": "Peru",
-      "ghgEmission": 29.1
+      "ghgEmission": 29.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Peru",
-      "ghgEmission": 31.1
+      "ghgEmission": 31.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Peru",
-      "ghgEmission": 32.4
+      "ghgEmission": 32.4,
+      "genre": "Fish"
     },
     {
-      "reference": "Avadí et al. (2015)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Peru",
-      "ghgEmission": 24.3
+      "ghgEmission": 24.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Thailand",
-      "ghgEmission": 20.1
+      "ghgEmission": 20.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tilapia",
+      "reference": "Tilapia",
       "country": "Thailand",
-      "ghgEmission": 18
+      "ghgEmission": 18,
+      "genre": "Fish"
     },
     {
-      "reference": "Jerbi et al. (2012)",
-      "product": "Sea bass",
+      "reference": "Sea bass",
       "country": "Tunisia",
-      "ghgEmission": 28.9
+      "ghgEmission": 28.9,
+      "genre": "Fish"
     },
     {
-      "reference": "Jerbi et al. (2012)",
-      "product": "Sea bass",
+      "reference": "Sea bass",
       "country": "Tunisia",
-      "ghgEmission": 44.2
+      "ghgEmission": 44.2,
+      "genre": "Fish"
     },
     {
-      "reference": "Boissy et al. (2011)",
-      "product": "Salmon",
+      "reference": "Salmon",
       "country": "United Kingdom",
-      "ghgEmission": 8.7
+      "ghgEmission": 8.7,
+      "genre": "Fish"
     },
     {
-      "reference": "Boissy et al. (2011)",
-      "product": "Salmon",
+      "reference": "Salmon",
       "country": "United Kingdom",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Fish"
     },
     {
-      "reference": "Blonk et al. (2009)",
-      "product": "Pangasius",
-      "country": "Viet Nam",
-      "ghgEmission": 12.8
+      "reference": "Pangasius",
+      "country": "Vietnam",
+      "ghgEmission": 12.8,
+      "genre": "Fish"
     },
     {
-      "reference": "Blonk et al. (2009)",
-      "product": "Pangasius",
-      "country": "Viet Nam",
-      "ghgEmission": 13.5
+      "reference": "Pangasius",
+      "country": "Vietnam",
+      "ghgEmission": 13.5,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Pangasius",
-      "country": "Viet Nam",
-      "ghgEmission": 12.9
+      "reference": "Pangasius",
+      "country": "Vietnam",
+      "ghgEmission": 12.9,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Pangasius",
-      "country": "Viet Nam",
-      "ghgEmission": 13.6
+      "reference": "Pangasius",
+      "country": "Vietnam",
+      "ghgEmission": 13.6,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Pangasius",
-      "country": "Viet Nam",
-      "ghgEmission": 12
+      "reference": "Pangasius",
+      "country": "Vietnam",
+      "ghgEmission": 12,
+      "genre": "Fish"
     },
     {
-      "reference": "Phong et al. (2011)",
-      "product": "Tilapia, kissing gourami, giant gourami, silver barb, common carp, silver carp, striped catﬁsh",
-      "country": "Viet Nam",
-      "ghgEmission": 35.1
+      "reference": "Tilapia, kissing gourami, giant gourami, silver barb, common carp, silver carp, striped catﬁsh",
+      "country": "Vietnam",
+      "ghgEmission": 35.1,
+      "genre": "Fish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Giant river prawn",
+      "reference": "Giant river prawn",
       "country": "Bangladesh",
-      "ghgEmission": 82.8
+      "ghgEmission": 82.8,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Giant river prawn",
+      "reference": "Giant river prawn",
       "country": "Bangladesh",
-      "ghgEmission": 94.6
+      "ghgEmission": 94.6,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tiger prawn",
+      "reference": "Tiger prawn",
       "country": "Bangladesh",
-      "ghgEmission": 17.5
+      "ghgEmission": 17.5,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tiger prawn",
+      "reference": "Tiger prawn",
       "country": "Bangladesh",
-      "ghgEmission": 48.1
+      "ghgEmission": 48.1,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tiger prawn",
+      "reference": "Tiger prawn",
       "country": "Bangladesh",
-      "ghgEmission": 30.9
+      "ghgEmission": 30.9,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Giant river prawn",
+      "reference": "Giant river prawn",
       "country": "Bangladesh",
-      "ghgEmission": 43.6
+      "ghgEmission": 43.6,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Santos et al. (2015)",
-      "product": "Amazon river prawn",
+      "reference": "Amazon river prawn",
       "country": "Brazil",
-      "ghgEmission": 87.7
+      "ghgEmission": 87.7,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Santos et al. (2015)",
-      "product": "Amazon river prawn",
+      "reference": "Amazon river prawn",
       "country": "Brazil",
-      "ghgEmission": 69.6
+      "ghgEmission": 69.6,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Santos et al. (2015)",
-      "product": "Giant giver prawn",
+      "reference": "Giant giver prawn",
       "country": "Brazil",
-      "ghgEmission": 48.5
+      "ghgEmission": 48.5,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Santos et al. (2015)",
-      "product": "Giant giver prawn",
+      "reference": "Giant giver prawn",
       "country": "Brazil",
-      "ghgEmission": 38.3
+      "ghgEmission": 38.3,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Cao (2012)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "China",
-      "ghgEmission": 12.9
+      "ghgEmission": 12.9,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Cao (2012)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "China",
-      "ghgEmission": 8.3
+      "ghgEmission": 8.3,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "China",
-      "ghgEmission": 15.1
+      "ghgEmission": 15.1,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "China",
-      "ghgEmission": 16.3
+      "ghgEmission": 16.3,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "Thailand",
-      "ghgEmission": 21.8
+      "ghgEmission": 21.8,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Shrimp",
+      "reference": "Shrimp",
       "country": "Thailand",
-      "ghgEmission": 19.1
+      "ghgEmission": 19.1,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tiger prawn",
-      "country": "Viet Nam",
-      "ghgEmission": 17.3
+      "reference": "Tiger prawn",
+      "country": "Vietnam",
+      "ghgEmission": 17.3,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Shrimp",
-      "country": "Viet Nam",
-      "ghgEmission": 14
+      "reference": "Shrimp",
+      "country": "Vietnam",
+      "ghgEmission": 14,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Henriksson et al. (2014a)",
-      "product": "Tiger prawn",
-      "country": "Viet Nam",
-      "ghgEmission": 16.9
+      "reference": "Tiger prawn",
+      "country": "Vietnam",
+      "ghgEmission": 16.9,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Jonell and Henriksson (2015)",
-      "product": "Tiger prawn",
-      "country": "Viet Nam",
-      "ghgEmission": 62.4
+      "reference": "Tiger prawn",
+      "country": "Vietnam",
+      "ghgEmission": 62.4,
+      "genre": "Shellfish"
     },
     {
-      "reference": "Jonell and Henriksson (2015)",
-      "product": "Tiger prawn",
-      "country": "Viet Nam",
-      "ghgEmission": 99
+      "reference": "Tiger prawn",
+      "country": "Vietnam",
+      "ghgEmission": 99,
+      "genre": "Shellfish"
     }
   ];
 

@@ -8,13 +8,6 @@ const foodsSchema = new Schema({
     required: true
   },
 
-  product: {
-    type: String,
-    trim: true,
-    required: true
-  },
-
-
   country: {
     type: String,
     trim: true,
@@ -23,7 +16,14 @@ const foodsSchema = new Schema({
 
   ghgEmission: {
     type: Number
+  },
+
+  genre: {
+    type: String,
+    trim: true,
+    required: true
   }
+
 });
 
 const Foods = mongoose.model("Foods", foodsSchema);
