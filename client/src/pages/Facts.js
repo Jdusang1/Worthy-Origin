@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar"
 import Jumbotron from "../components/Jumbotron";
@@ -37,6 +37,7 @@ const Div = styled.div`
   .button {
     background-color: #cb5744;
     border: none;
+
     
 
   }
@@ -54,7 +55,7 @@ const Facts = () => {
     country: ""
   })
 
-  const {searchTerm, id, ghg, country} = itemInfo;
+  const { searchTerm, id, ghg, country } = itemInfo;
 
   const handleInputChange = event => {
     setItemInfo({ ...itemInfo, searchTerm: event.target.value });
@@ -101,7 +102,7 @@ const Facts = () => {
               <Col>
                 <h2>Search Item</h2>
                 <p><strong>Search Item</strong> produces <strong>GHG</strong> kg CO2.</p>
-                <p>That is equivalent to <Converter ghg={40}/> miles driven!</p>
+                <p>That is equivalent to <Converter ghg={40} /> miles driven!</p>
               </Col>
             </Row>
           </div>
@@ -110,14 +111,14 @@ const Facts = () => {
 
         <Div color={"grey"}>
 
-          <Charts/>
-          
+          <Charts />
+
 
         </Div>
 
         <Div>
-        <FactsCarousel />
-          
+          <FactsCarousel />
+
         </Div>
 
         <Footer />

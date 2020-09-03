@@ -41,6 +41,7 @@ const Div = styled.div`
   .button {
     background-color: #cb5744;
     border: none;
+  
 
   }
 
@@ -51,21 +52,21 @@ const Div = styled.div`
 const User = () => {
 
 
-  // const [listItem, setListItem] = useState({
-  //   product: "",
-  //   id: "",
-  //   ghgEmission: "",
-  //   carEquivalency: ""
+  const [listItem, setListItem] = useState({
+    product: "",
+    id: "",
+    ghgEmission: "",
+    carEquivalency: ""
 
 
-  // })
+  })
 
   const [searchResults, setSearchResults] = useState([])
 
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  const [groceryList, setGroceryList] = useState([])
+  // const [groceryList, setGroceryList] = useState([]);
 
 
 
@@ -83,11 +84,19 @@ const User = () => {
   //   }
   // }, []);
 
-  // const { product, id, ghgEmission, carEquivalency, } = listItem;
+  const { product, id, ghgEmission, carEquivalency, } = listItem;
 
   // const productRef = useRef();
   // const ghgEmissionRef = useRef();
   // const carEquivalency = useRef();
+
+  // const loadGroceries = event => {
+  //   API.getGroceries()
+  //     .then(res =>
+  //       populateList(res.data)
+  //     )
+  //     .catch(err => console.log(err))
+  // }
 
 
   const handleInputChange = event => {
@@ -104,11 +113,15 @@ const User = () => {
 
   }
 
-  const addToGroceryLIst = (event, id) => {
-    eventPreventDefault();
+
+  // const addToGroceryList = (event, id) => {
+  //   eventPreventDefault({ grocerList: _id });
+  //   API.addItem({
+
+  //   })
 
 
-  }
+  // }
 
 
 

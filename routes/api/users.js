@@ -6,3 +6,5 @@ const foodsController = require("../../controllers/foodsController");
 //will need a  /:id
 //populate
 //create user
+
+module.exports = router;

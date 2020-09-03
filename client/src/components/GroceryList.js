@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Converter from "../utils/Conversion"
 import styled from "styled-components";
-
 import { Table, Card, CardHeader } from 'reactstrap';
+
 const TableWrapper = styled.div`
 #results{
     text-align: center;

@@ -10,9 +10,9 @@ export default {
 
     }
 
-    addItem: id => {
-        return axios.get(``)
-    }
+    // addItem: id => {
+    //     return axios.get(``)
+    // }
 
 
 }

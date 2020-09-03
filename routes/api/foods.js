@@ -13,14 +13,14 @@ router
   .put(foodsController.update)
   .delete(foodsController.remove);
 
-router
-  .route("/:id")
-  .get(foodsController.addItem)
-  .
+// router
+//   .route("/:id")
+//   .get(foodsController.addItem)
 
 
-  // router
-  //   .route("/:food")
-  //   .get(foodsController.findAll)
 
-  module.exports = router;
+// router
+//   .route("/:food")
+//   .get(foodsController.findAll)
+
+module.exports = router;
