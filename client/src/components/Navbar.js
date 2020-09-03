@@ -15,7 +15,7 @@ a {
   color: black;
 }
 .blue{
-  background-color:#2b2e39 !important;
+  background-color:#143d3d;
   position: fixed;
   top: 0;
   right: 0;
@@ -23,7 +23,7 @@ a {
   z-index: 1030;
 }
 .transparent{
-  background-color:transparent !important;
+  background-color:transparent;
   position: fixed;
   top: 0;
   right: 0;
@@ -38,7 +38,7 @@ const NavBar = () => {
   navRef.current = navBackground
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 330
+      const show = window.scrollY > 450
       if (navRef.current !== show) {
         console.log(window.scrollY)
         setNavBackground(show)
