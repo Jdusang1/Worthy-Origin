@@ -27,21 +27,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
-  // addItem: function (req, res) {
-  //   db.Foods.findOne(req.params.id)
-  //     .then(({ _id }) => db.Users.findOneAndUpdate({}, { $push: { groceryList: _id } }, { new: true }))
-  //     .then(res => res.json(res))
-  //     .catch(err => res.status(422).json(err));
-
-  // },
+  
 
   populateList: function (req, res) {
-    db.Users.find({_id})
+    
+    db.Users.findOne( { _id: req.params.id })
       .populate("groceryList")
       .then(dbUser => {
+        console.log(dbUser)
         res.json(dbUser);
       })
       .catch(err => {
+        console.log(err)
         res.json(err);
       });
   }

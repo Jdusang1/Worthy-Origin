@@ -17,12 +17,16 @@ export default {
         return axios.post(`/api/users`, userData)
     },
 
-    populateList: currentUser => {
-        return axios.get(`/api/users/${currentUser}`)
+    populateList: id => {
+        return axios.get(`/api/users/populate/${id}`)
     },
 
     findUsers: () => {
         return axios.get(`/api/users`)
+    },
+
+    addItem: (id, currentUser) => {
+        return axios.get(`/api/foods/item/${id}?currentUser=${currentUser}`)
     }
 
     
