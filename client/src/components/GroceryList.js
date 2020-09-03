@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Table, Card, CardHeader } from 'reactstrap';
 
 const TableWrapper = styled.div`
+margin: 0 auto;
 #results{
     text-align: center;
 }
@@ -19,7 +20,7 @@ td{
 `
 
 
-function GroceryList({ product, ghgEmission, carEquivalency }) {
+function GroceryList({ list }) {
     return (
 
         <TableWrapper>
@@ -33,16 +34,19 @@ function GroceryList({ product, ghgEmission, carEquivalency }) {
                             <th>Food Item</th>
                             <th>Emissions</th>
                             <th>Miles Driven</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-
-                            <td>{product}</td>
-                            <td>{ghgEmission}</td>
-                            <td><Converter ghg={ghgEmission} /></td>
-
+                        {list.map(item => (
+                        <tr key={item._id}>
+                            <td>{item.reference}</td>
+                            <td>{item.ghgEmission}</td>
+                            <td><Converter ghg={item.ghgEmission} /></td>
+                            <td>X</td>
                         </tr>
+
+                        ))}
 
                     </tbody>
                 </Table>

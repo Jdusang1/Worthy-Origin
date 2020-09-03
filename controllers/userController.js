@@ -31,7 +31,7 @@ module.exports = {
 
   populateList: function (req, res) {
     
-    db.Users.findOne( { _id: req.params.id })
+    db.Users.findOne( { id: req.params.id })
       .populate("groceryList")
       .then(dbUser => {
         console.log(dbUser)
