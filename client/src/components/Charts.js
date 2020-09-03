@@ -13,7 +13,14 @@ const DropdownWrapper = styled.div`
   height: auto;
   max-height: 200px;
   overflow-x: hidden;
-}
+  }
+
+  .dropdown {
+    padding: 10px 40px;
+    font-size: 20px;
+    
+   
+  }
 `
 const ChartWrapper = styled.div`
   div{
@@ -54,7 +61,7 @@ const Charts = () => {
   }
 
 
-const renderPieChart=(
+const renderChart=(
   //   
 
       <div style={{ width: '100%', height: 500 }}>
@@ -89,7 +96,7 @@ const renderPieChart=(
       <DropdownWrapper>
 
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle caret>
+          <DropdownToggle caret className="dropdown">
             Foods
           </DropdownToggle>
           <DropdownMenu 
@@ -119,7 +126,7 @@ const renderPieChart=(
       </DropdownWrapper>
     
       <ChartWrapper>
-        {selected ? renderPieChart : <div></div>}
+        {selected ? renderChart : <div></div>}
       </ChartWrapper>        
     </>
 

@@ -8,6 +8,7 @@ import Converter from "../utils/Conversion";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import Charts from "../components/Charts";
+import API from "../utils/API"
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -17,7 +18,12 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
+    
 
+  }
+
+  .searchBar {
+   text-align: center;
   }
 
   p {
@@ -47,28 +53,37 @@ const Div = styled.div`
 
 const Facts = () => {
   const [searchTerm, setSearchTerm] = useState("")
+  const [searchResults, setSearchResults] = useState([])
   const [itemInfo, setItemInfo] = useState({
     id: "",
     ghg: "",
-    country: ""
+    country: "",
+    product: ""
   })
 
-  const {searchTerm, id, ghg, country} = itemInfo;
+  const {id, ghg, country, product} = itemInfo;
 
   const handleInputChange = event => {
-    setItemInfo(event.target.value );
+    setSearchTerm(event.target.value );
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    if (searchTerm) {
       API.getFood(searchTerm)
-        .then(res => setItemInfo({
-          id: res.data[0]._id,
-          
-        })
+        .then((data) => {
+          console.log(data)
+
+          setItemInfo({
+            id: data.data[0]._id,
+            ghg: data.data[0].ghgEmission,
+            country: data.data[0].country,
+            product: data.data[0].product
+          })
+          setSearchTerm("");
+        }
+        
+        )
         .catch(err => console.log(err))
-    }
   };
 
   return (
@@ -81,6 +96,7 @@ const Facts = () => {
           <div>
             <h2>DISCOVER GREENHOUSE GAS EMISSIONS FOR A SINGLE FOOD ITEM</h2>
             <SearchBar
+              className="searchBar"
               searchTerm={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
@@ -94,16 +110,13 @@ const Facts = () => {
         <Div>
           <div>
             <Row>
-              <h2>Results</h2>
-            </Row>
-            <Row>
               <Col>
                 <h2>image goes here</h2>
               </Col>
               <Col>
-                <h2>Search Item</h2>
-                <p><strong>Search Item</strong> produces <strong>GHG</strong> kg CO2.</p>
-                <p>That is equivalent to <Converter ghg={40}/> miles driven!</p>
+                <h2>{product}</h2>
+                <p><strong>{product}</strong> produces <strong>{ghg}</strong> kg CO2.</p>
+                <p>That is equivalent to <Converter ghg={ghg}/> miles driven!</p>
               </Col>
             </Row>
           </div>
