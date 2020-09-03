@@ -101,7 +101,7 @@ const User = () => {
   //   }
   // }, []);
 
-  const { product, id, ghgEmission, carEquivalency, } = listItem;
+  // const { product, id, ghgEmission, carEquivalency, } = listItem;
 
   // const productRef = useRef();
   // const ghgEmissionRef = useRef();
