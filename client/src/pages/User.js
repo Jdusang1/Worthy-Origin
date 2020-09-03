@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useReducer } from "react";
+import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Container, Col, Row, Button } from "reactstrap"
 import NavBar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
@@ -7,7 +8,6 @@ import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
 import FoodTable from "../components/FoodTable";
 import API from "../utils/API";
-
 
 
 const grey = "#f9f9f9";
@@ -47,6 +47,7 @@ const Div = styled.div`
 
 const User = () => {
 
+  const { user, isAuthenticated } = useAuth0();
 
   const [listItem, setListItem] = useState({
     product: "",
@@ -58,14 +59,7 @@ const User = () => {
   })
 
   const [searchResults, setSearchResults] = useState([])
-
-
   const [searchTerm, setSearchTerm] = useState("");
-
-
-
-
-
 
   const [groceries, dispatch] = useReducer((prevItem, action) => {
     switch (action.type) {
@@ -96,12 +90,7 @@ const User = () => {
     API.getFood(searchTerm)
       .then((data) => setSearchResults(data.data));
 
-
-
     // const item = {
-
-
-
 
     //   product: current.value,
     //   ghgEmission: current.value,
@@ -114,10 +103,8 @@ const User = () => {
   }
 
 
-
-
-
   return (
+    isAuthenticated && (
     <>
       <NavBar />
       <Jumbotron />
@@ -125,7 +112,12 @@ const User = () => {
       <Container fluid={true} >
         <Div color="grey">
           <div>
-            <h2>BUILD YOUR GROCRY LIST</h2>
+          <img 
+            src={user.picture} 
+            alt={user.name} 
+            className="rounded-circle"/>  
+            <h1>Welcome back, {user.name}!</h1>
+            <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
               product={searchTerm}
@@ -169,15 +161,12 @@ const User = () => {
           </Row>
         </Div>
 
-
         <Footer />
-
 
       </Container>
     </>
+    )
   )
-
-
 }
 
-export default User;
+export default withAuthenticationRequired(User);

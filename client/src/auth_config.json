@@ -1,4 +1,6 @@
 {
     "domain": "dev-sdpwi0gl.us.auth0.com",
-    "clientId": "0ShaaYxJPQCjKisfrnkqTfPunghp5lzE"
+    "clientId": "0ShaaYxJPQCjKisfrnkqTfPunghp5lzE",
+    "audience": "https://dev-sdpwi0gl.us.auth0.com/api/v2/",
+    "scope": "read:current_user"
 }
