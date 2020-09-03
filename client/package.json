@@ -12,6 +12,8 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^2.1.1",
+    "react-text-loop": "^2.3.0",
+    "react-tooltip": "^4.2.9",
     "reactstrap": "^8.5.1",
     "recharts": "^1.8.5",
     "styled-components": "^5.1.1"
