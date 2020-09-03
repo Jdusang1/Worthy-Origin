@@ -62,7 +62,7 @@ const Div = styled.div`
   }
 
 `
-
+const deforestation = `Testing for now` 
 
 
 const Home = () => {
@@ -79,7 +79,7 @@ const Home = () => {
         <Div color={"grey"}>
           <div>
             <h2>DID YOU KNOW?</h2>
-            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of <a data-for='custom-color-no-arrow' data-tip='Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planets average temperature rise by increasing the greenhouse effect.'>greenhouse gas emissions</a>  for the lifecycle of each product.</p>
+            <p>Food production is a large contributor to climate change. Food products emit different values of greenhouse gas emissions during each part of the supply change cycle. Below is a chart illustrating the amount of <a data-for='custom-color-no-arrow' data-tip='Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planets average temperature rise by increasing the greenhouse effect.'><b>greenhouse gas emissions</b></a>  for the lifecycle of each product.</p>
 
             <StackedBar />
             <Button className="button" href={"/facts"}>Learn More!</Button>
@@ -98,9 +98,7 @@ const Home = () => {
               <Col>
                 <HomeCard
                   img={ax}
-                  text={
-                    
-                    "Refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am x but destroy couch as revenge i shredded your linens for you but poop in litter box, scratch the walls. Loved it, hated it, loved it, hated it love you, then bite you but reward the chosen human with a slow blink yet you have cat to be kitten me right meow or hunt anything that moves."}
+                  text={deforestation}
                 />
               </Col>
               <Col>
