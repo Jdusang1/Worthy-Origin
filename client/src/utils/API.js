@@ -7,7 +7,22 @@ export default {
 
     getFood: searchTerm => {
         return axios.get(`/api/foods/${searchTerm}`)
+    },
 
+    getUser: currentUser => {
+        return axios.get(`/api/users/${currentUser}`)
+    },
+
+    createUser: userData => {
+        return axios.post(`/api/users`, userData)
+    },
+
+    populateList: currentUser => {
+        return axios.get(`/api/users/${currentUser}`)
+    },
+
+    findUsers: () => {
+        return axios.get(`/api/users`)
     }
 
     // addItem: id => {

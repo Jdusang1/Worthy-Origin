@@ -1,9 +1,16 @@
 const router = require("express").Router();
-const foodsController = require("../../controllers/foodsController");
+const userController = require("../../controllers/userController");
 
-
+router.route("/")
+  .get(userController.findUsers)
+  .post(userController.createUser)
 // user routes go here
 //will need a  /:id
+///:username
+router.route("/:id")
+  .get(userController.getUser)
+  .get(userController.populateList)
+
 //populate
 //create user
 
