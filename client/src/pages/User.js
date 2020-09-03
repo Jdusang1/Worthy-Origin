@@ -80,7 +80,7 @@ const User = () => {
           })
         } else {
           console.log("yay user found", dbUser)
-          API.populateList(dbUser._id)
+          API.populateList(dbUser.data._id)
             .then(res => console.log(res))
         }
       })
@@ -107,18 +107,9 @@ const User = () => {
   // const ghgEmissionRef = useRef();
   // const carEquivalency = useRef();
 
-  // const loadGroceries = event => {
-  //   API.getGroceries()
-  //     .then(res =>
-  //       populateList(res.data)
-  //     )
-  //     .catch(err => console.log(err))
-  // }
-
 
   const handleInputChange = event => {
     setSearchTerm(event.target.value);
-
   }
 
   const handleFormSubmit = event => {
@@ -130,18 +121,12 @@ const User = () => {
 
   }
 
-  // const addToGroceryLIst = (event, id) => {
-  //   event.preventDefault();
-
-  // }
-  // const addToGroceryList = (event, id) => {
-  //   eventPreventDefault({ grocerList: _id });
-  //   API.addItem({
-
-  //   })
-
-
-  // }
+  const addToGroceryList = (event, id) => {
+    event.preventDefault();
+    API.addItem(id, currentUser)
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  }
 
 
 
@@ -153,6 +138,7 @@ const User = () => {
   //   product: current.value,
   //   ghgEmission: current.value,
   //   carEquivalency: current.value,
+
 
   // dispatch({ type: "add", payload: item });
   // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
@@ -192,11 +178,11 @@ const User = () => {
               </Row>
               <Row>
                 {/* {groceryList ? (
-                  <Grocerylist
-                    product={searchTerm}
-                    ghgEmission={ghgEmission}
-                    carEquivalency={carEquivalency}
-                  />) : ""} */}
+                <Grocerylist
+                  product={searchTerm}
+                  ghgEmission={ghgEmission}
+                  carEquivalency={carEquivalency}
+                />) : ""} */}
               </Row>
             </div>
 
@@ -214,14 +200,18 @@ const User = () => {
                       <Col md={3} key={result._id}>
                         <Card
                           id={result._id}
-                          product={result.product}
+                          product={result.reference}
                           country={result.country}
                           ghgemission={result.ghgEmission}
                         >
-                          <p>{result.product}</p>
+                          <p>{result.reference}</p>
                           <p>Country Origin: {result.country}</p>
                           <p>Ghg Emissions: {result.ghgEmission}</p>
-                          <Button>Add Product to List</Button>
+                          <Button
+                            onClick={(event) => addToGroceryList(event, result._id)}
+                          >
+                            Add Product to List
+                          </Button>
                         </Card>
 
 
@@ -239,7 +229,7 @@ const User = () => {
                 <h2>GROCERIES </h2>
               </Row>
               <Row>
-                {/* <FoodTable /> */}
+                <FoodTable />
 
               </Row>
             </div>

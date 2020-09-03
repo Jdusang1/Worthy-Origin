@@ -38,10 +38,11 @@ module.exports = {
 
 
   addItem: function (req, res) {
-    db.Foods.findOne(req.params.id)
-      .then(({ _id }) => db.Users.findOneAndUpdate({}, { $push: { groceryList: _id } }, { new: true }))
-      .then(res => res.json(res))
-      .catch(err => res.status(422).json(err));
+    console.log("current user", req.query.currentUser)
+    db.Foods.findOne({_id: req.params.id})
+      .then(({ _id }) => db.Users.findOneAndUpdate({ id: req.query.currentUser }, { $push: { groceryList: _id } }, { new: true }))
+      .then(food => res.json(food))
+      .catch(err => console.log(err));
 
   }
 
