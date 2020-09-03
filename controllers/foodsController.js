@@ -4,8 +4,8 @@ const db = require("../models");
 module.exports = {
   findAll: function (req, res) {
     db.Foods
-      .find({ product: req.params.search })
-      .sort({ product: -1 })
+      .find({ genre: req.params.search })
+      .sort({ reference: 1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -69,10 +69,5 @@ module.exports = {
   //       res.json(err);
   //     });
   // }
-
-
-
-
-
 
 };

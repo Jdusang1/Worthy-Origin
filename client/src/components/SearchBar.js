@@ -2,15 +2,25 @@ import React from "react";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import styled from "styled-components";
 
-const SearchBarWrapper = styled.div`
+const FormWrapper = styled.form`
+  padding: 10px 20px;
 
+  .button {
+    background-color: #cb5744;
+    border: none;
+    font-size: 16px;
+  }
 
-`
+  .button:hover {
+  background-color: #ec9a59;
+  }
+
+  `
 
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
-
   return (
-    <SearchBarWrapper>
+    <FormWrapper>
+
       <Form inline onSubmit={handleFormSubmit}>
         <FormGroup>
           <Label for={name} hidden>Zip Code</Label>
@@ -23,9 +33,9 @@ const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholde
             value={searchTerm}
           />
         </FormGroup>
-        <Button>{button}</Button>
+        <Button className="button">{button}</Button>
       </Form>
-    </SearchBarWrapper>
+    </FormWrapper>
   )
 };
 

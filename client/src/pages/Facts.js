@@ -8,16 +8,26 @@ import Converter from "../utils/Conversion";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import Charts from "../components/Charts";
+import API from "../utils/API";
+import Placeholder from "../img/placeholder.png";
+
 
 const grey = "#f9f9f9";
 const white = "ffffff";
 
 const Div = styled.div`
+  
   div {
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
+   margin: 0 auto;
+    
+  }
 
+  .searchBar {
+    margin: 0 auto;
+   
   }
 
   p {
@@ -31,43 +41,55 @@ const Div = styled.div`
    margin: 10px auto;
    font-family: "Raleway";
    font-size: 52px;
+   text-align: center;
 
   }
 
   .button {
     background-color: #cb5744;
     border: none;
-
-    
-
   }
 
   .button:hover {
   background-color: #ec9a59;
+  }
+
+  .placeholder {
+    height: 200px;
+    width: 200px;
+  }
   `
 
 const Facts = () => {
-
+  const [searchTerm, setSearchTerm] = useState("")
   const [itemInfo, setItemInfo] = useState({
-    searchTerm: "",
     id: "",
     ghg: "",
-    country: ""
+    country: "",
+    product: ""
   })
 
-  const { searchTerm, id, ghg, country } = itemInfo;
+  const { id, ghg, country, product } = itemInfo;
 
   const handleInputChange = event => {
-    setItemInfo({ ...itemInfo, searchTerm: event.target.value });
+    setSearchTerm(event.target.value);
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    // if (searchTerm) {
-    //   API.getItem()
-    //     .then(res=> setItemInfo(res.data))
-    //     .catch(err => console.log(err))
-    // }
+    API.getFood(searchTerm)
+      .then((data) => {
+        console.log(data)
+
+        setItemInfo({
+          id: data.data[1]._id,
+          ghg: data.data[1].ghgEmission,
+          country: data.data[1].country,
+          product: data.data[1].reference
+        })
+        setSearchTerm("");
+      })
+      .catch(err => console.log(err))
   };
 
   return (
@@ -80,6 +102,7 @@ const Facts = () => {
           <div>
             <h2>DISCOVER GREENHOUSE GAS EMISSIONS FOR A SINGLE FOOD ITEM</h2>
             <SearchBar
+              className="searchBar"
               searchTerm={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
@@ -91,34 +114,32 @@ const Facts = () => {
         </Div>
 
         <Div>
-          <div>
-            <Row>
-              <h2>Results</h2>
-            </Row>
-            <Row>
-              <Col>
-                <h2>image goes here</h2>
-              </Col>
-              <Col>
-                <h2>Search Item</h2>
-                <p><strong>Search Item</strong> produces <strong>GHG</strong> kg CO2.</p>
-                <p>That is equivalent to <Converter ghg={40} /> miles driven!</p>
-              </Col>
-            </Row>
-          </div>
+
+          {product ? (
+            <div>
+              <Row>
+                <Col>
+                  <img src={Placeholder} alt="placeholder image" className="placeholder" />
+                </Col>
+                <Col>
+                  <h2>{product}</h2>
+                  <p><strong>{product}</strong> produces <strong>{ghg}</strong> kg CO2.</p>
+                  <p>That is equivalent to <Converter ghg={ghg} /> miles driven!</p>
+                </Col>
+              </Row>
+            </div>
+
+          ) : (<h2>Begin your search</h2>)}
 
         </Div>
 
         <Div color={"grey"}>
-
           <Charts />
-
-
         </Div>
 
         <Div>
+          <h2>Other Facts About Greenhouse Gas </h2>
           <FactsCarousel />
-
         </Div>
 
         <Footer />

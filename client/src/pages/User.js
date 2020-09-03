@@ -69,10 +69,6 @@ const User = () => {
   // const [groceryList, setGroceryList] = useState([]);
 
 
-
-
-
-
   // const [groceries, dispatch] = useReducer((prevItem, action) => {
   //   switch (action.type) {
   //     case "add":
@@ -113,114 +109,127 @@ const User = () => {
 
   }
 
+  const addToGroceryLIst = (event, id) => {
+    event.preventDefault();
 
-  // const addToGroceryList = (event, id) => {
-  //   eventPreventDefault({ grocerList: _id });
-  //   API.addItem({
+    // const addToGroceryList = (event, id) => {
+    //   eventPreventDefault({ grocerList: _id });
+    //   API.addItem({
 
-  //   })
-
-
-  // }
-
+    //   })
 
 
-  // const item = {
+    // }
 
 
 
-
-  //   product: current.value,
-  //   ghgEmission: current.value,
-  //   carEquivalency: current.value,
-
-
-  // dispatch({ type: "add", payload: item });
-  // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
+    // const item = {
 
 
 
 
+    //   product: current.value,
+    //   ghgEmission: current.value,
+    //   carEquivalency: current.value,
 
 
-  return (
-    <>
-      <NavBar />
-      <Jumbotron />
+    // dispatch({ type: "add", payload: item });
+    // productRef.current.value = ghgEmissionRef.current.value = carEquivalencyRef.current.value = "";
 
-      <Container fluid={true} >
-        <Div color="grey">
-          <div>
-            <h2>BUILD YOUR GROCERY LIST</h2>
-            <p>paragraph</p>
-            <SearchBar
-              product={searchTerm}
-              handleInputChange={handleInputChange}
-              handleFormSubmit={handleFormSubmit}
-            />
-          </div>
-        </Div>
+    return (
+      <>
+        <NavBar />
+        <Jumbotron />
 
-        <Div>
+        <Container fluid={true} >
+          <Div color="grey">
+            <div>
+              <h2>BUILD YOUR GROCERY LIST</h2>
+              <p>paragraph</p>
+              <SearchBar
+                product={searchTerm}
+                handleInputChange={handleInputChange}
+                handleFormSubmit={handleFormSubmit}
+                placeholder={"Food Item"}
+                name={"item"}
+                button={"Search"}
+              />
+            </div>
+          </Div>
 
-          <div>
-            <Row>
-              <h2>GROCERIES </h2>
-            </Row>
-            <Row>
-              {product ? (
+          <Div>
+
+            <div>
+              <Row>
+                <h2>GROCERIES </h2>
+              </Row>
+              <Row>
+                {/* {groceryList ? (
                 <Grocerylist
-                  product={product}
+                  product={searchTerm}
                   ghgEmission={ghgEmission}
                   carEquivalency={carEquivalency}
-                />) : ""}
+                />) : ""} */}
+              </Row>
+            </div>
+
+
+            <Row>
+              <Div>
+                <div>
+                  <Row>
+                    <h2>Results For: {searchTerm}</h2>
+
+
+                  </Row>
+                  <Row>
+                    {searchResults.map(result => (
+                      <Col md={3} key={result._id}>
+                        <Card
+                          id={result._id}
+                          product={result.product}
+                          country={result.country}
+                          ghgemission={result.ghgEmission}
+                        >
+                          <p>{result.product}</p>
+                          <p>Country Origin: {result.country}</p>
+                          <p>Ghg Emissions: {result.ghgEmission}</p>
+                          <Button>Add Product to List</Button>
+                        </Card>
+
+
+                      </Col>
+
+                    ))}
+                  </Row>
+                </div>
+
+              </Div>
             </Row>
-          </div>
+
+            <div>
+              <Row>
+                <h2>GROCERIES </h2>
+              </Row>
+              <Row>
+                <FoodTable />
+
+              </Row>
+            </div>
 
 
-          <Row>
-            <Div>
-              <div>
-                <Row>
-                  <h2>Results For: {searchTerm}</h2>
+
+          </Div>
 
 
-                </Row>
-                <Row>
-                  {searchResults.map(result => (
-                    <Col md={3} key={result._id}>
-                      <Card
-                        id={result._id}
-                        product={result.product}
-                        country={result.country}
-                        ghgEmission={result.ghgEmission}
-                      >
-                        <p>{result.product}</p>
-                        <p>Country Origin: {result.country}</p>
-                        <p>Ghg Emissions: {result.ghgEmission}</p>
-                        <Button>Add Product to List</Button>
-                      </Card>
+          <Footer />
 
 
-                    </Col>
-
-                  ))}
-                </Row>
-              </div>
-
-            </Div>
-          </Row>
-        </Div>
+        </Container>
+      </>
+    )
 
 
-        <Footer />
+  }
 
-
-      </Container>
-    </>
-  )
-
-
-}
-
-export default User;
+  export default User;

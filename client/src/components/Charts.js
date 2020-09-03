@@ -13,15 +13,24 @@ const DropdownWrapper = styled.div`
   height: auto;
   max-height: 200px;
   overflow-x: hidden;
-}
+  }
+
+  .button {
+    padding: 10px 40px;
+    font-size: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #cb5744;
+
+  }
 `
 const ChartWrapper = styled.div`
   div{
-
     margin: 10px auto;
   }
   
 `
+
 
 const Charts = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -54,7 +63,7 @@ const Charts = () => {
   }
 
 
-const renderPieChart=(
+const renderChart=(
   //   
 
       <div style={{ width: '100%', height: 500 }}>
@@ -89,7 +98,7 @@ const renderPieChart=(
       <DropdownWrapper>
 
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle caret>
+          <DropdownToggle caret className="button">
             Foods
           </DropdownToggle>
           <DropdownMenu 
@@ -119,7 +128,7 @@ const renderPieChart=(
       </DropdownWrapper>
     
       <ChartWrapper>
-        {selected ? renderPieChart : <div></div>}
+        {selected ? renderChart : <div></div>}
       </ChartWrapper>        
     </>
 

@@ -10,9 +10,13 @@ export default {
 
     }
 
+<<<<<<< HEAD
     // addItem: id => {
     //     return axios.get(``)
     // }
+=======
+    
+>>>>>>> master
 
 
 }
