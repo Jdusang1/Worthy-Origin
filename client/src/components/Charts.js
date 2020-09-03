@@ -15,20 +15,22 @@ const DropdownWrapper = styled.div`
   overflow-x: hidden;
   }
 
-  .dropdown {
+  .button {
     padding: 10px 40px;
     font-size: 20px;
-    
-   
+    border: none;
+    font-size: 16px;
+    background-color: #cb5744;
+
   }
 `
 const ChartWrapper = styled.div`
   div{
-
     margin: 10px auto;
   }
   
 `
+
 
 const Charts = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -96,7 +98,7 @@ const renderChart=(
       <DropdownWrapper>
 
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle caret className="dropdown">
+          <DropdownToggle caret className="button">
             Foods
           </DropdownToggle>
           <DropdownMenu 

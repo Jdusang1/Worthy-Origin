@@ -8,22 +8,26 @@ import Converter from "../utils/Conversion";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import Charts from "../components/Charts";
-import API from "../utils/API"
+import API from "../utils/API";
+import Placeholder from "../img/placeholder.png";
+
 
 const grey = "#f9f9f9";
 const white = "ffffff";
 
 const Div = styled.div`
+  
   div {
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
+   margin: 0 auto;
     
-
   }
 
   .searchBar {
-   text-align: center;
+    margin: 0 auto;
+   
   }
 
   p {
@@ -37,23 +41,27 @@ const Div = styled.div`
    margin: 10px auto;
    font-family: "Raleway";
    font-size: 52px;
+   text-align: center;
 
   }
 
   .button {
     background-color: #cb5744;
     border: none;
-    
-
   }
 
   .button:hover {
   background-color: #ec9a59;
+  }
+
+  .placeholder {
+    height: 200px;
+    width: 200px;
+  }
   `
 
 const Facts = () => {
   const [searchTerm, setSearchTerm] = useState("")
-  const [searchResults, setSearchResults] = useState([])
   const [itemInfo, setItemInfo] = useState({
     id: "",
     ghg: "",
@@ -74,15 +82,13 @@ const Facts = () => {
           console.log(data)
 
           setItemInfo({
-            id: data.data[0]._id,
-            ghg: data.data[0].ghgEmission,
-            country: data.data[0].country,
-            product: data.data[0].product
+            id: data.data[1]._id,
+            ghg: data.data[1].ghgEmission,
+            country: data.data[1].country,
+            product: data.data[1].reference
           })
           setSearchTerm("");
-        }
-        
-        )
+        })
         .catch(err => console.log(err))
   };
 
@@ -108,10 +114,12 @@ const Facts = () => {
         </Div>
 
         <Div>
+
+          {product ? (
           <div>
             <Row>
               <Col>
-                <h2>image goes here</h2>
+                <img src={Placeholder} alt="placeholder image" className="placeholder" />
               </Col>
               <Col>
                 <h2>{product}</h2>
@@ -121,18 +129,17 @@ const Facts = () => {
             </Row>
           </div>
 
+          ) : (<h2>Begin your search</h2>)}
+
         </Div>
 
         <Div color={"grey"}>
-
           <Charts/>
-          
-
         </Div>
 
         <Div>
-        <FactsCarousel />
-          
+          <h2>Other Facts About Greenhouse Gas </h2>
+          <FactsCarousel />
         </Div>
 
         <Footer />
