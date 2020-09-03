@@ -79,7 +79,7 @@ const User = () => {
               })
             } else {
               console.log("yay user found", dbUser)
-              API.populateList(dbUser._id)
+              API.populateList(dbUser.data._id)
               .then(res => console.log(res))
             }
           })
@@ -109,7 +109,6 @@ const User = () => {
 
   const handleInputChange = event => {
     setSearchTerm(event.target.value);
-
   }
 
   const handleFormSubmit = event => {
@@ -121,10 +120,11 @@ const User = () => {
 
   }
 
-  const addToGroceryLIst = (event, id) => {
+  const addToGroceryList = (event, id) => {
     event.preventDefault();
-
-
+    API.addItem(id, currentUser)
+      .then(res=> console.log(res))
+      .catch(err => console.log(err))
   }
 
 
@@ -199,14 +199,18 @@ const User = () => {
                     <Col md={3} key={result._id}>
                       <Card
                         id={result._id}
-                        product={result.product}
+                        product={result.reference}
                         country={result.country}
                         ghgemission={result.ghgEmission}
                       >
-                        <p>{result.product}</p>
+                        <p>{result.reference}</p>
                         <p>Country Origin: {result.country}</p>
                         <p>Ghg Emissions: {result.ghgEmission}</p>
-                        <Button>Add Product to List</Button>
+                        <Button 
+                          onClick={(event) => addToGroceryList(event, result._id)}
+                          >
+                            Add Product to List
+                          </Button>
                       </Card>
 
 
