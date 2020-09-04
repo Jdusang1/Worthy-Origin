@@ -135,7 +135,6 @@ const Facts = () => {
 
         <Div color={"grey"}>
           <div>
-
             <h4>Select a food item to see the product's life cycle greenhouse gas emissions in kg CO2</h4>
             <h4>Hover over the chart to read the values</h4>
             <p>1 mile driven is equivalent to .44 kg C02</p>
