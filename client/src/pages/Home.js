@@ -1,6 +1,6 @@
 import React from "react";
-import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
-import {Link} from "react-router-dom";
+import { Container,Col,Row,Button,Card,CardImg,CardBody } from "reactstrap";
+import { Link } from "react-router-dom";
 import MainJumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar";
 import deforest from "../img/deforest.jpg";
@@ -94,7 +94,9 @@ background-image:url("../img/heroImage.png");
 `
 
 const Home = () => {
+
   const { isAuthenticated } = useAuth0();
+  
   return (
     <>
       <NavBar />

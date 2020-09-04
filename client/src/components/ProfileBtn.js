@@ -1,5 +1,4 @@
 import React from "react";
-import { withAuthenticationRequired } from "@auth0/auth0-react";
 import { Button } from "reactstrap";
 import styled from "styled-components";
 

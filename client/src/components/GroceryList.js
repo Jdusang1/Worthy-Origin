@@ -4,24 +4,23 @@ import styled from "styled-components";
 import { Table, Card, CardHeader } from 'reactstrap';
 
 const TableWrapper = styled.div`
-margin: 0 auto;
-#results{
-    text-align: center;
-    font-size: 30px;
-    font-family: "Raleway";
-    background: transparent;
-}
+    margin: 0 auto;
+    #results{
+        text-align: center;
+        font-size: 30px;
+        font-family: "Raleway";
+        background: transparent;
+    }
 
-th{
-    text-align: center;
-    font-family: "Roboto";
-    
-}
+    th{
+        text-align: center;
+        font-family: "Roboto";
+    }
 
-td{
-    text-align: center;
-    font-family: "Roboto";
-}
+    td{
+        text-align: center;
+        font-family: "Roboto";
+    }
 `
 
 
@@ -33,7 +32,6 @@ function GroceryList({ list, removeFromGroceryList }) {
             <Card>
                 <CardHeader id="results">Grocery List</CardHeader>
                 <Table>
-
                     <thead>
                         <tr>
                             <th>Food Item</th>
@@ -54,15 +52,11 @@ function GroceryList({ list, removeFromGroceryList }) {
                                     X
                                 </td>
                             </tr>
-
                         ))}
-
                     </tbody>
                 </Table>
             </Card>
         </TableWrapper>
-
-
     )
 }
 
