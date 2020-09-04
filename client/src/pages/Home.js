@@ -1,11 +1,12 @@
 import React from "react";
 import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
-import {Link} from "react-router-dom"
-import Jumbotron from "../components/Jumbotron";
+import {Link} from "react-router-dom";
+import MainJumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar";
 import deforest from "../img/deforest.jpg";
 import cows from "../img/cows.jpg";
 import fossilfuel from "../img/fossilfuel.jpg";
+// import homeImg from "../img/heroImage.png"
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import StackedBar from "../components/StackedBar";
@@ -88,12 +89,20 @@ const CardWrapper = styled.article`
   }
 `;
 
+const JumboWrapper =styled.div`
+.homeImg{
+background-image:url("../img/heroImage.png");
+}
+`
+
 const Home = () => {
   const { isAuthenticated } = useAuth0();
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      <JumboWrapper>
+      <MainJumbotron className="homeImg"/>
+      </JumboWrapper>
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>
@@ -115,7 +124,7 @@ const Home = () => {
             
             <div>
 
-              <Button className="button" href={"/facts"}> Learn More!</Button>
+              <Button className="button"><Link to ="/facts">Learn More!</Link></Button>
             </div>
             <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
           </div>
@@ -219,8 +228,7 @@ const Home = () => {
                 <h2>FIND FARMERS MARKETS</h2>
                 <p>Switching to purchasing more local foods can reduce greenhouse
                   gas emissions. Search for local farmers markets in your area!</p>
-                <Button className="button" href={"/farmers-markets"}>
-                  Search
+                <Button className="button"><Link to ="/farmers-markets">Search</Link>
                 </Button>
               </Col>
               <Col>
