@@ -4,7 +4,7 @@ import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav,
   DropdownMenu,DropdownItem,} from 'reactstrap';
 import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
-import { NavLink as RouterNavLink } from "react-router-dom";
+import { NavLink as RouterNavLink, Link } from "react-router-dom";
 
 
 const NavStyle = styled.div`

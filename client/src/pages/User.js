@@ -132,6 +132,7 @@ const User = () => {
         API.populateList(currentUser)
           .then(res => {
             setGroceryList(res.data.groceryList)
+            calculateGHG(res.data.groceryList);
           })
           .catch(err => console.log(err))
       })
@@ -172,7 +173,7 @@ const User = () => {
                         TOTAL: {totalGHG.toFixed(1)}
                       </p>
                       <p>
-                        Equivalent to <Converter ghg={totalGHG} /> car miles driven!
+                        Equivalent to <Converter ghg={totalGHG} /> miles driven in a passenger car!
                     </p>
                     </Col>
                     <Col>
@@ -180,7 +181,7 @@ const User = () => {
                     </Col>
                   </Row>
                   </>
-                ) : <h6>Add to your list by searching for an item!</h6>}
+                ) : <h6>Add to your list by searching for an item! </h6>}
             </div>
           </Div>
 

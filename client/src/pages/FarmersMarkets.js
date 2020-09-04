@@ -18,7 +18,7 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
-
+    
   }
 
   p {
