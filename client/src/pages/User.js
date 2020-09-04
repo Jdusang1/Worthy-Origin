@@ -84,9 +84,6 @@ const User = () => {
             })
         }
       })
-
-
-
       .catch(err => console.log(err));
   }, [])
 
@@ -159,29 +156,31 @@ const User = () => {
 
           <Div>
             <div>
-              <Row>
                 {groceryList.length ? (
-                  <Grocerylist
-                    list={groceryList}
-                  />
+                  <>
+                  <Row>
+                      <Grocerylist
+                        list={groceryList}
+                        removeFromGroceryList={removeFromGroceryList}
+                      />
+                  </Row>
 
+                  <Row>
+                    <Col>
+                      <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
+                      <p>
+                        TOTAL: {totalGHG.toFixed(1)}
+                      </p>
+                      <p>
+                        Equivalent to <Converter ghg={totalGHG} /> car miles driven!
+                    </p>
+                    </Col>
+                    <Col>
+                      <CarIcon ghg={totalGHG} />
+                    </Col>
+                  </Row>
+                  </>
                 ) : <h6>Add to your list by searching for an item!</h6>}
-              </Row>
-
-              <Row>
-                <Col>
-                  <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
-                  <p>
-                    TOTAL: {totalGHG.toFixed(1)}
-                  </p>
-                  <p>
-                    Equivalent to <Converter ghg={totalGHG} /> car miles driven!
-                </p>
-                </Col>
-                <Col>
-                  <CarIcon ghg={totalGHG} />
-                </Col>
-              </Row>
             </div>
           </Div>
 
