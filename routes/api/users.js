@@ -10,8 +10,9 @@ router.route("/")
 router.route("/:id")
   .get(userController.getUser)
 
-router.route("/populate/:id")  
+router.route("/populate/:id")
   .get(userController.populateList)
+
 
 
 //populate

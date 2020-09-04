@@ -59,31 +59,31 @@ const User = () => {
 
   // => if user then populate else => create user
   useEffect(() => {
-  
-        API.getUser(currentUser)
-          .then(dbUser => {
-            if (!dbUser.data) {
-              console.log("user not found")
-              API.createUser({
-                username: user.email,
-                id: user.sub,
-                groceries: []
-              })
-            } else {
-              console.log("yay user found", dbUser)
-              API.populateList(dbUser.data.id)
-              .then(res => {
-                console.log(res)
-                setGroceryList(res.data.groceryList);
-              })
-            }
+
+    API.getUser(currentUser)
+      .then(dbUser => {
+        if (!dbUser.data) {
+          console.log("user not found")
+          API.createUser({
+            username: user.email,
+            id: user.sub,
+            groceries: []
           })
-  
+        } else {
+          console.log("yay user found", dbUser)
+          API.populateList(dbUser.data.id)
+            .then(res => {
+              console.log(res)
+              setGroceryList(res.data.groceryList);
+            })
+        }
+      })
+
       .catch(err => console.log(err));
-  }, []) 
-  
+  }, [])
+
   const handleInputChange = event => {
-    
+
     setSearchTerm(event.target.value);
   }
 
@@ -99,103 +99,116 @@ const User = () => {
   const addToGroceryList = (event, id) => {
     event.preventDefault();
     API.addItem(id, currentUser)
-      .then(res=> {
+      .then(res => {
         API.populateList(currentUser)
-              .then(res => {
-                console.log(res)
-                setGroceryList(res.data.groceryList);
-              })
+          .then(res => {
+            console.log(res)
+            setGroceryList(res.data.groceryList);
+          })
       })
       .catch(err => console.log(err))
   }
 
+  const removeFromGroceryList = (event, id) => {
+    event.preventDefault();
+    API.removeItem(id, currentUser)
+      .then(res => {
+        API.populateList(currentUser)
+          .then(res => {
+            setGroceryList(res.data.groceryList)
+          })
+          .catch(err => console.log(err))
+      })
+  }
+
   return (
     isAuthenticated && (
-    <>
-      <NavBar />
-      <Jumbotron />
+      <>
+        <NavBar />
+        <Jumbotron />
 
-      <Container fluid={true} >
-        <Div color="grey">
-          <div>
-          <img 
-            src={user.picture} 
-            alt={user.name} 
-            className="rounded-circle"/>  
-            <h1>Welcome back, {user.given_name}!</h1>
-            <h2>BUILD YOUR GROCERY LIST</h2>
-            <p>Search for grocery items to add to your list and see your total carbon footprint for food consumption.</p>
-            <SearchBar
-              searchTerm={searchTerm}
-              handleInputChange={handleInputChange}
-              handleFormSubmit={handleFormSubmit}
-              placeholder={"Food Item"}
-              name={"item"}
-              button={"Search"}
-            />
-          </div>
-        </Div>
+        <Container fluid={true} >
+          <Div color="grey">
+            <div>
+              <img
+                src={user.picture}
+                alt={user.name}
+                className="rounded-circle" />
+              <h1>Welcome back, {user.given_name}!</h1>
+              <h2>BUILD YOUR GROCERY LIST</h2>
+              <p>Search for grocery items to add to your list and see your total carbon footprint for food consumption.</p>
+              <SearchBar
+                searchTerm={searchTerm}
+                handleInputChange={handleInputChange}
+                handleFormSubmit={handleFormSubmit}
+                placeholder={"Food Item"}
+                name={"item"}
+                button={"Search"}
+              />
+            </div>
+          </Div>
 
-        <Div>
+          <Div>
 
-          <div>
-            <Row>
-              <h2>GROCERIES </h2>
-            </Row>
-            <Row>
-              {groceryList.length ? (
-                
+            <div>
+              <Row>
+                <h2>GROCERIES </h2>
+              </Row>
+              <Row>
+                {groceryList.length ? (
+
                   <Grocerylist
                     list={groceryList}
+                    removeFromGroceryList={removeFromGroceryList}
                   />
-                
-               ) : ""}
-            </Row>
-          </div>
+
+                ) : ""}
+              </Row>
+            </div>
 
 
-          <Row>
-            <Div>
-              <div>
-                <Row>
-                  <h2>Results For: {searchTerm}</h2>
+            <Row>
+              <Div>
+                <div>
+                  <Row>
+                    <h2>Results For: {searchTerm}</h2>
 
 
-                </Row>
-                <Row>
-                  {searchResults.map(result => (
-                    <Col md={3} key={result._id}>
-                      <Card
-                        id={result._id}
-                        product={result.reference}
-                        country={result.country}
-                        ghgemission={result.ghgEmission}
-                      >
-                        <p>{result.reference}</p>
-                        <p>Country Origin: {result.country}</p>
-                        <p>Ghg Emissions: {result.ghgEmission}</p>
-                        <Button 
-                          onClick={(event) => addToGroceryList(event, result._id)}
+                  </Row>
+                  <Row>
+                    {searchResults.map(result => (
+                      <Col md={3} key={result._id}>
+                        <Card
+                          id={result._id}
+                          product={result.reference}
+                          country={result.country}
+                          ghgemission={result.ghgEmission}
+                        >
+                          <p>{result.reference}</p>
+                          <p>Country Origin: {result.country}</p>
+                          <p>Ghg Emissions: {result.ghgEmission}</p>
+                          <Button
+                            onClick={(event) => addToGroceryList(event, result._id)}
                           >
                             Add Product to List
                           </Button>
-                      </Card>
+                        </Card>
 
-                    </Col>
+                      </Col>
 
-                  ))}
-                </Row>
-              </div>
+                    ))}
+                  </Row>
+                </div>
 
-            </Div>
-          </Row>
+              </Div>
+            </Row>
 
-        </Div>
+          </Div>
 
-        <Footer />
+          <Footer />
 
-      </Container>
-    </>
+        </Container>
+      </>
     )
   )
 }

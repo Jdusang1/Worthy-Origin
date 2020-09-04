@@ -6,7 +6,7 @@ module.exports = {
   createUser: function (req, res) {
     db.Users
       .create(req.body)
-      .then(dbUser => console.log("create user",dbUser))
+      .then(dbUser => console.log("create user", dbUser))
       .catch(err => res.status(422).json(err));
   },
 
@@ -27,11 +27,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
-  
+  remove: function (req, res) {
+    db.Foods
+      .findById({ _id: req.params.id })
+      .then(dbModel => dbModel.remove())
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+
 
   populateList: function (req, res) {
-    
-    db.Users.findOne( { id: req.params.id })
+
+    db.Users.findOne({ id: req.params.id })
       .populate("groceryList")
       .then(dbUser => {
         console.log(dbUser)
@@ -42,5 +49,6 @@ module.exports = {
         res.json(err);
       });
   }
+
 
 };

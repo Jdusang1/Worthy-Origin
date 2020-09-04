@@ -1,9 +1,9 @@
 import React from 'react';
-import Converter from "../utils/Conversion"
-
+import Converter from "../utils/Conversion";
+import { Button } from "reactstrap";
 import styled from "styled-components";
-
 import { Table, Card, CardHeader } from 'reactstrap';
+
 const TableWrapper = styled.div`
 margin: 0 auto;
 #results{
@@ -21,7 +21,8 @@ td{
 `
 
 
-function GroceryList({ list }) {
+function GroceryList({ list, removeFromGroceryList }) {
+
     return (
 
         <TableWrapper>
@@ -40,12 +41,16 @@ function GroceryList({ list }) {
                     </thead>
                     <tbody>
                         {list.map(item => (
-                        <tr key={item._id}>
-                            <td>{item.reference}</td>
-                            <td>{item.ghgEmission}</td>
-                            <td><Converter ghg={item.ghgEmission} /></td>
-                            <td>X</td>
-                        </tr>
+                            <tr key={item._id}>
+                                <td>{item.reference}</td>
+                                <td>{item.ghgEmission}</td>
+                                <td><Converter ghg={item.ghgEmission} /></td>
+                                <td
+                                    onClick={(event) => removeFromGroceryList(event, item._id)}
+                                >
+                                    X
+                                </td>
+                            </tr>
 
                         ))}
 

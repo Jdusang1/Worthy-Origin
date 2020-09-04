@@ -27,9 +27,13 @@ export default {
 
     addItem: (id, currentUser) => {
         return axios.get(`/api/foods/item/${id}?currentUser=${currentUser}`)
+    },
+
+    removeItem: (id, currentUser) => {
+        return axios.get(`/api/foods/remove/${id}?currentUser=${currentUser}`)
     }
 
-    
+
 
 
 }
