@@ -1,15 +1,35 @@
 import React from "react";
 import { Jumbotron } from "reactstrap";
 import styled from "styled-components";
-import img from "../img/heroImage.png";
 import logo from "../img/WorthyOrigin.png";
 import TextLoop from "react-text-loop";
+import market from "../pages/FarmersMarkets";
+// import marketImg from "../img/market.png"
+import facts from "../pages/Facts";
+// import factsImg from "../img/veggies.png"
+import user from "../pages/User";
+// import userImg from "../img/farmersMarket.jpg"
+// import homeImg from "../img/heroImage.png";
+// import home from "../pages/Home";
+
+const changeImg = (image) => {
+  if (market){
+    return "background-image: url(../img/market.png)"
+  } else if (user){
+    return "background-image: url(../img/farmersMarket.jpg)"
+  } else if (facts){
+    return "background-image: url(../img/veggies.png)"
+  } else {
+    return "background-image: url(../img/heroImage.png)"
+  }
+}
+
 
 const JumboWrapper = styled.div`
   .jumbotron {
     position:relative;
     text-align:center;
-    background-image: url(${img});
+    ${({image})} => changeImg(image);
     background-size: cover
   }
   .img {
@@ -23,13 +43,11 @@ const JumboWrapper = styled.div`
   }
 `
 
-function MainJumbotron(props) {
-  
-
+const MainJumbotron = ({image}) => {
   return (
     <JumboWrapper>
       <div>
-        <Jumbotron className="backgroundImg">
+        <Jumbotron image={image}>
           <img src={logo} alt="Worthy Origin Logo" />
           <p>
           <TextLoop interval={7000} adjustingSpeed={1000}>

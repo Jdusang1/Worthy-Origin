@@ -88,7 +88,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      <Jumbotron image={image}/>
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>
