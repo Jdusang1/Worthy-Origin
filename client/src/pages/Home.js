@@ -99,9 +99,9 @@ const Home = () => {
               each part of the supply change cycle. Below is a chart
               illustrating the amount of              
                 <a data-for="custom-color-no-arrow"
-                data-tip="Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planets average temperature rise by increasing the greenhouse effect.">
+                data-tip="Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planet's average temperature rise by increasing the greenhouse effect.">
                 <b> greenhouse gas emissions </b>
-                </a>
+              </a>
               for the lifecycle of each product.
             </p>
             <StackedBar />

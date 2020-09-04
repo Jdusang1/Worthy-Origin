@@ -83,15 +83,16 @@ const User = () => {
   }, []) 
   
   const handleInputChange = event => {
+    
     setSearchTerm(event.target.value);
   }
 
   const handleFormSubmit = event => {
     event.preventDefault();
-
-    API.getFood(searchTerm)
+    let word = searchTerm;
+    word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    API.getFood(word)
       .then((data) => setSearchResults(data.data));
-
 
   }
 
@@ -121,10 +122,10 @@ const User = () => {
             src={user.picture} 
             alt={user.name} 
             className="rounded-circle"/>  
-            <h1>Welcome back, {user.name}!</h1>
-            <p>paragraph</p>
+            <h1>Welcome back, {user.given_name}!</h1>
+            <p>Search for grocery items to add to your list and see your total carbon footprint for food consumption.</p>
             <SearchBar
-              product={searchTerm}
+              searchTerm={searchTerm}
               handleInputChange={handleInputChange}
               handleFormSubmit={handleFormSubmit}
               placeholder={"Food Item"}
