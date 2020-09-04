@@ -60,8 +60,6 @@ const Div = styled.div`
     text-align: left;
     opacity: 0.98;
   }
-
-
 `;
 const CardWrapper = styled.article`
   .card {

@@ -21,8 +21,8 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
-   margin: 0 auto;
-    
+    margin: 0 auto;
+  
   }
 
   .searchBar {
@@ -77,10 +77,11 @@ const Facts = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
-    API.getFood(searchTerm)
+    let word = searchTerm;
+    word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    API.getFood(word)
       .then((data) => {
         console.log(data)
-
         setItemInfo({
           id: data.data[1]._id,
           ghg: data.data[1].ghgEmission,
@@ -124,7 +125,7 @@ const Facts = () => {
                 <Col>
                   <h2>{product}</h2>
                   <p><strong>{product}</strong> produces <strong>{ghg}</strong> kg CO2.</p>
-                  <p>That is equivalent to <Converter ghg={ghg} /> miles driven!</p>
+                  <p>That is equivalent to <Converter ghg={ghg} /> miles driven in a passenger car! </p>
                 </Col>
               </Row>
             </div>
@@ -137,7 +138,7 @@ const Facts = () => {
           <div>
             <h4>Select a food item to see the product's life cycle greenhouse gas emissions in kg CO2</h4>
             <h4>Hover over the chart to read the values</h4>
-            <p>1 mile driven is equivalent to .44 kg C02</p>
+            <p>1 mile driven in a passenger car is equivalent to .44 kg C02</p>
             <Charts />
           </div>
         </Div>

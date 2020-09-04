@@ -20,8 +20,6 @@ import homeImg from "../img/heroImage.png";
 //     return "background-image: url('../img/heroImage.png');"
 //   }
 // }
-
-
 const JumboWrapper = styled.div`
   ${'' /* ${({image}) => changeImg(image)}; */}
   .jumbotron {
@@ -30,6 +28,7 @@ const JumboWrapper = styled.div`
     text-align:center;
     background-size: cover
   }
+
   .img {
     margin-left:auto;
     margin-right:auto;
@@ -45,7 +44,7 @@ const MainJumbotron = () => {
   return (
     // image={image}
   <JumboWrapper >
-    <div>
+      <div>
         <Jumbotron >
           <img src={logo} alt="Worthy Origin Logo" />
           <div className="text-loop">
