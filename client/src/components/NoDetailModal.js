@@ -16,17 +16,15 @@ const StyleModal = styled(Modal)`
     }
 `
 
-
 const NoDetails = ({ modal, toggle }) => {
     return(
-   
-            <StyleModal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle} className="modal-header">The Details</ModalHeader>
-                <ModalBody>
-                    <p>Sorry it looks like we don't have details for that market!</p>
-                </ModalBody>
-            </StyleModal>
-     
+
+        <StyleModal isOpen={modal} toggle={toggle}>
+            <ModalHeader toggle={toggle} className="modal-header">The Details</ModalHeader>
+            <ModalBody>
+                <p>Sorry it looks like we don't have details for that market!</p>
+            </ModalBody>
+        </StyleModal>
 
     )
 };

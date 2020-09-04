@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
-import LocalAPI from "../utils/localAPI";
 import styled from "styled-components";
 import MarketDetails from "../components/MarketDetails";
 import NoDetails from "../components/NoDetailModal";
@@ -67,7 +66,7 @@ const FarmersMarkets = () => {
     schedule: "",
   })
 
-  const { searchTerm, id, marketName, markets, selectedMarket } = marketInfo;
+  const { searchTerm, markets } = marketInfo;
   const { address, link, products, schedule } = marketDetails;
 
   const marketSearch = searchTerm => {
@@ -83,7 +82,7 @@ const FarmersMarkets = () => {
 
   const getMarketDetails = id => {
     if (id !== "Error") {
-      LocalAPI.getSelectedMarket(id)
+      API.getSelectedMarket(id)
         .then(({data}) => {setMarketDetails({
           address: data.marketdetails.Address,
           link: data.marketdetails.GoogleLink,
@@ -131,7 +130,6 @@ const FarmersMarkets = () => {
         </Div>
 
         <Div>
-
           <div>
             <Row>
               <h2>Farmers Markets in Your Area: </h2>
@@ -152,7 +150,6 @@ const FarmersMarkets = () => {
                   />
                 </Col>
               ))}
-
             </Row>
             <Row>
               <Col>
@@ -173,9 +170,7 @@ const FarmersMarkets = () => {
           </div>
         </Div>
 
-
         <Footer />
-
 
       </Container>
     </>

@@ -13,18 +13,12 @@ const ChartWrapper = styled.div`
 
 const Chart = (props) => {
 
-  const data = [ghgData];
-  console.log(props.data);
-
-
   const renderBarChart = (
- 
 
     <BarChart width={1000} height={500} data={props.data[0]} >
       <XAxis  dataKey={props.name} stroke="#3f5961" />
       <YAxis label={{ value: 'GHG emissions per kg of food item', angle: -90, position: 'insideLeft' }} />
       <Tooltip wrapperStyle={{ width: 200, backgroundColor: '#ccc' }} />
-      {/* <Legend width={100} verticalAlign="top" /> */}
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
       <Bar dataKey="Land use change"fill="#cb5744"  />
       <Bar dataKey="Animal Feed" fill="#cb5744"  />
@@ -33,17 +27,13 @@ const Chart = (props) => {
       <Bar dataKey="Transport" fill="#cb5744"  />
       <Bar dataKey="Packaging" fill="#cb5744"  />
       <Bar dataKey="Retail" fill="#cb5744"  />
-       
-
     </BarChart>
 
   );
 
-
   return (
     <ChartWrapper>
       <div>
-
         {renderBarChart}
       </div>
     

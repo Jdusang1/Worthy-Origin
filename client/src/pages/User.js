@@ -116,7 +116,6 @@ const User = () => {
       .catch(err => console.log(err))
   }
 
-
   const calculateGHG = (list) => {
     let totalG = list.reduce((a, b) => {
       return { ghgEmission: a.ghgEmission + b.ghgEmission }
@@ -160,10 +159,10 @@ const User = () => {
                 {groceryList.length ? (
                   <>
                   <Row>
-                      <Grocerylist
-                        list={groceryList}
-                        removeFromGroceryList={removeFromGroceryList}
-                      />
+                    <Grocerylist
+                      list={groceryList}
+                      removeFromGroceryList={removeFromGroceryList}
+                    />
                   </Row>
 
                   <Row>
@@ -216,11 +215,10 @@ const User = () => {
                           onClick={(event) => addToGroceryList(event, result._id)}
                         >
                           Add Product to List
-                            </Button>
+                        </Button>
                       </Card>
                     </Col>
                   ))
-
                 ) : <h4>No items found</h4>}
               </Row>
             </div>

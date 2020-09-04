@@ -55,7 +55,6 @@ const MainJumbotron = () => {
             <span>"Environment is no one’s property to destroy; it’s everyone’s responsibility to protect."</span>
           </TextLoop>{" "}
           </div>
-
         </Jumbotron>
       </div>
     </JumboWrapper>

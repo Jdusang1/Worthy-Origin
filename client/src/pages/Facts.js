@@ -115,7 +115,6 @@ const Facts = () => {
         </Div>
 
         <Div>
-
           {product ? (
             <div>
               <Row>
@@ -129,9 +128,7 @@ const Facts = () => {
                 </Col>
               </Row>
             </div>
-
           ) : <div></div>}
-
         </Div>
 
         <Div color={"grey"}>
@@ -152,8 +149,6 @@ const Facts = () => {
       </Container>
     </>
   )
-
-
 }
 
 export default Facts;

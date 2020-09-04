@@ -29,8 +29,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
-
-
   addItem: function (req, res) {
     console.log("current user", req.query.currentUser)
     db.Foods.findOne({ _id: req.params.id })
@@ -48,6 +46,5 @@ module.exports = {
       .catch(err => console.log(err));
 
   }
-
 
 };

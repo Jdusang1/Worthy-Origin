@@ -5,6 +5,10 @@ export default {
         return axios.get(`https://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${searchTerm}`)
     },
 
+    getSelectedMarket: id => {
+        return axios.get(`https://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail?id=${id}`)
+    },
+
     getFood: searchTerm => {
         return axios.get(`/api/foods/${searchTerm}`)
     },

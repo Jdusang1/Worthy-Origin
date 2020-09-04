@@ -25,7 +25,6 @@ const FormWrapper = styled.div`
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
   return (
     <FormWrapper>
-
       <Form inline onSubmit={handleFormSubmit}>
         <FormGroup>
           <Label for={name} hidden>Zip Code</Label>
