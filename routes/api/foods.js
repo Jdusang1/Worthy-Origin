@@ -10,9 +10,11 @@ router.route("/")
 router.route("/:search")
   .get(foodsController.findAll)
 
-  // "api/foods/item/:id"
+// "api/foods/item/:id"
 router.route("/item/:id")
   .get(foodsController.addItem)
 
+router.route("/remove/:id")
+  .get(foodsController.removeItem)
 
-  module.exports = router;
+module.exports = router;

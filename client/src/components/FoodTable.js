@@ -41,9 +41,9 @@ const FoodTable = (props) => {
                     <tbody>
                         <tr>
 
-                            <td></td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            {/* <td>{result.product}</td>
+                            <td>{result.country}</td>
+                            <td>{result.ghgEmission}</td> */}
                         </tr>
 
                     </tbody>

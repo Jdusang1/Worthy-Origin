@@ -23,25 +23,25 @@ const FormWrapper = styled.form`
   `
 
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
-    return (
-      <FormWrapper>
+  return (
+    <FormWrapper>
 
-        <Form inline onSubmit={handleFormSubmit}>
-            <FormGroup>
-              <Label for={name} hidden>Zip Code</Label>
-                <Input 
-                  type="text" 
-                  name={name} 
-                  id={name}
-                  placeholder={placeholder}
-                  onChange={handleInputChange}
-                  value={searchTerm}
-                  />
-              <Button className="button">{button}</Button>
-            </FormGroup>
-        </Form>
-      </FormWrapper>
-    )
+      <Form inline onSubmit={handleFormSubmit}>
+        <FormGroup>
+          <Label for={name} hidden>Zip Code</Label>
+          <Input
+            type="text"
+            name={name}
+            id={name}
+            placeholder={placeholder}
+            onChange={handleInputChange}
+            value={searchTerm}
+          />
+          <Button className="button">{button}</Button>
+        </FormGroup>
+      </Form>
+    </FormWrapper>
+  )
 };
 
 export default SearchBar;
