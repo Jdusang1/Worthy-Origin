@@ -25,8 +25,8 @@ function GroceryList({ list }) {
     return (
 
         <TableWrapper>
-            <Card>
-                <CardHeader id="results">Grocery List</CardHeader>
+            {/* <Card>
+                <CardHeader id="results">Grocery List</CardHeader> */}
                 <Table>
 
                     <thead>
@@ -51,7 +51,7 @@ function GroceryList({ list }) {
 
                     </tbody>
                 </Table>
-            </Card>
+            {/* </Card> */}
         </TableWrapper>
 
 

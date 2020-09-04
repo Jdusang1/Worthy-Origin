@@ -2,13 +2,11 @@ import React from "react";
 import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
 import Jumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar";
-// import SearchBar from "../components/SearchBar";
 import deforest from "../img/deforest.jpg";
 import cows from "../img/cows.jpg";
 import fossilfuel from "../img/fossilfuel.jpg";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-// import MarketTable from "../components/MarketTable";
 import StackedBar from "../components/StackedBar";
 import market from "../img/farmersMarket.jpg";
 import CircleImage from "../components/CircleImage";
@@ -38,8 +36,8 @@ const Div = styled.div`
     font-family: "Raleway";
     font-size: 52px;
   }
-  li{
-    font-size:14px;
+  li {
+    font-size: 14px;
   }
   .button {
     background-color: #cb5744;
@@ -60,10 +58,12 @@ const Div = styled.div`
     text-align: left;
     opacity: 0.98;
   }
+
+
 `;
 const CardWrapper = styled.article`
   .card {
-    min-width:250px;
+    min-width: 250px;
     margin-top: 15px;
     border: 2px solid #3f5961;
   }
@@ -100,13 +100,18 @@ const Home = () => {
               illustrating the amount of              
                 <a data-for="custom-color-no-arrow"
                 data-tip="Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planets average temperature rise by increasing the greenhouse effect.">
-                <b>greenhouse gas emissions</b>
-              </a>
+                <b> greenhouse gas emissions </b>
+                </a>
               for the lifecycle of each product.
             </p>
             <StackedBar />
             <br/>
-            <Button className="button" href={"/facts"}> Learn More!</Button>
+            <br/>
+            
+            <div>
+
+              <Button className="button" href={"/facts"}> Learn More!</Button>
+            </div>
             <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
           </div>
         </Div>

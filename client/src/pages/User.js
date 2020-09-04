@@ -122,7 +122,6 @@ const User = () => {
             alt={user.name} 
             className="rounded-circle"/>  
             <h1>Welcome back, {user.name}!</h1>
-            <h2>BUILD YOUR GROCERY LIST</h2>
             <p>paragraph</p>
             <SearchBar
               product={searchTerm}
@@ -139,27 +138,22 @@ const User = () => {
 
           <div>
             <Row>
-              <h2>GROCERIES </h2>
-            </Row>
-            <Row>
-              {groceryList.length ? (
-                
-                  <Grocerylist
-                    list={groceryList}
-                  />
-                
-               ) : ""}
-            </Row>
-          </div>
-
-
-          <Row>
-            <Div>
-              <div>
+              <Col md-4>
+              <h2>GROCERY LIST </h2>
                 <Row>
-                  <h2>Results For: {searchTerm}</h2>
+                  {groceryList.length ? (
+                    
+                      <Grocerylist
+                        list={groceryList}
+                      />
+                    
+                  ) : ""}
+                </Row>
+              </Col>
 
-
+              <Col md-8>
+                <Row>
+                  {searchResults.length ? <h2>Results For: {searchTerm} </h2> : <div></div> }
                 </Row>
                 <Row>
                   {searchResults.map(result => (
@@ -184,12 +178,25 @@ const User = () => {
 
                   ))}
                 </Row>
+              
+              </Col>
+
+            </Row>
+            
+          </div>
+
+        </Div>
+
+            <Div color="grey">
+          
+              <div>
+                
               </div>
 
             </Div>
-          </Row>
+          
 
-        </Div>
+        
 
         <Footer />
 
