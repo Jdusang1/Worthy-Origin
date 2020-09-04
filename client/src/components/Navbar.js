@@ -9,7 +9,8 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 
 const NavStyle = styled.div`
 a {
-  color:white
+  color:white;
+  margin-right: 10px
 }
 .dropdown-profile {
   color: black;
@@ -98,7 +99,7 @@ const NavBar = () => {
                 </NavItem>
               )}
               {isAuthenticated && (
-                <UncontrolledDropdown nav inNavbar>
+                <UncontrolledDropdown nav inNavbar className="dropdown">
                   <DropdownToggle nav caret id="profileDropDown">
                     <img
                       src={user.picture}

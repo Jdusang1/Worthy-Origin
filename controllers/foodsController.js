@@ -4,7 +4,7 @@ const db = require("../models");
 module.exports = {
   findAll: function (req, res) {
     db.Foods
-      .find({ genre: req.params.search })
+      .find({ $or: [{genre: req.params.search}, {reference: req.params.search}] })
       .sort({ reference: 1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

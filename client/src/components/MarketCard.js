@@ -23,8 +23,8 @@ const MarketCard = ({ marketName, getMarketDetails, id }) => {
     return(
         <StyleWrapper>
             <Card onClick={() => getMarketDetails(id)}>
-                <CardTitle>{marketName.slice(4)}</CardTitle>
-                <CardFooter>Distance: {marketName.slice(0, 4)} miles</CardFooter>
+                <CardTitle>{id === "Error" ? marketName : marketName.slice(4)}</CardTitle>
+                {id !== "Error" && <CardFooter>Distance: {marketName.slice(0, 4)} miles</CardFooter>}
             </Card>
         </StyleWrapper>
     )
