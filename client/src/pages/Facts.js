@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "reactstrap"
 import NavBar from "../components/Navbar"
-import Jumbotron from "../components/Jumbotron";
+import MainJumbotron from "../components/Jumbotron";
 import FactsCarousel from "../components/Carousel";
 import SearchBar from "../components/SearchBar";
 import Converter from "../utils/Conversion";
@@ -96,7 +96,12 @@ const Facts = () => {
   return (
     <>
       <NavBar />
+<<<<<<< HEAD
       <Jumbotron />
+=======
+      <MainJumbotron image={"factsImg"}/>
+
+>>>>>>> cb1f4ab54135d4eaae4e829d9fe57ce6b156e9d2
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>

@@ -5,7 +5,10 @@ import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav,
 import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> cb1f4ab54135d4eaae4e829d9fe57ce6b156e9d2
 
 const NavStyle = styled.div`
 a {
@@ -74,15 +77,15 @@ const NavBar = () => {
         className={navBackground ? 'blue' : 'transparent'}
         style={{ transition: '1s ease' }}
         >
-          <NavbarBrand href={"/home"}>HOME</NavbarBrand>
+          <NavbarBrand><Link to ="/">HOME</Link></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href={"/facts"}>Facts</NavLink>
+                <NavLink><Link to ="/facts">Facts</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={"/farmers-markets"}>Farmers Markets</NavLink>
+                <NavLink><Link to ="/farmers-markets">Farmers Market</Link></NavLink>
               </NavItem>
             </Nav>
             <Nav className="d-none d-md-block" navbar>
