@@ -92,9 +92,7 @@ const FarmersMarkets = () => {
         })
         toggle()
       })
-    } else {
-
-    }
+    } 
 
   }
 
