@@ -36,7 +36,7 @@ const Footer = () => {
             The All Knowing-Nikki Castle
           </h5>
           <h5 id="three">
-            John Dusang-The Sundance Kid | Paul James-The Data Wizard
+            John Dusang-The Sundance Kid | Paul Ijames-The Data Wizard
           </h5>
         </div>
         <a>
