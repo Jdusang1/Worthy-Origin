@@ -163,6 +163,7 @@ const User = () => {
                 {groceryList.length ? (
                   <Grocerylist
                     list={groceryList}
+                    removeFromGroceryList={removeFromGroceryList}
                   />
 
                 ) : <h6>Add to your list by searching for an item!</h6>}
