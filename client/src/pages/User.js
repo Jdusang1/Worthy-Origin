@@ -123,7 +123,7 @@ const User = () => {
   const calculateGHG = (list) => {
     let totalG = list.reduce((a, b) => {
       return { ghgEmission: a.ghgEmission + b.ghgEmission }
-    })
+    }, [])
     console.log("total", totalG)
     setTotalGHG(totalG.ghgEmission);
   }
@@ -172,7 +172,7 @@ const User = () => {
                 <Col>
                   <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
                   <p>
-                    TOTAL: {totalGHG.toFixed(1)}
+                    TOTAL: {totalGHG}
                   </p>
                   <p>
                     Equivalent to <Converter ghg={totalGHG} /> car miles driven!
