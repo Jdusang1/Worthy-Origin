@@ -21,7 +21,7 @@ const StackedBar = () => {
 
       <div style={{ width: '100%', height: 500 }}>
         <h4>Product Life Cycle Greenhouse Gas Emissions</h4>
-        <h6>Hover over the chart to see the lifecycle for each product</h6>
+        <h6>Hover over the chart to see emissions per lifecycle for each product in kg C02</h6>
         <ResponsiveContainer>
           <AreaChart
             

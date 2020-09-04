@@ -4,6 +4,7 @@ import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
 import config from "./auth_config.json";
 import history from "./utils/history";
+import {BrowserRouter} from "react-router-dom";
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -14,14 +15,16 @@ const onRedirectCallback = (appState) => {
 };
 
 ReactDOM.render(
-  <Auth0Provider
-    domain={config.domain}
-    clientId={config.clientId}
-    redirectUri={window.location.origin}
-    onRedirectCallback={onRedirectCallback}
-    audience={config.audience}
-    scope={config.scope}
-  >
-    <App />
-  </Auth0Provider>,
+  <BrowserRouter>
+    <Auth0Provider
+      domain={config.domain}
+      clientId={config.clientId}
+      redirectUri={window.location.origin}
+      onRedirectCallback={onRedirectCallback}
+      audience={config.audience}
+      scope={config.scope}
+    >
+      <App />
+    </Auth0Provider>
+  </BrowserRouter>,
     document.getElementById("root"));

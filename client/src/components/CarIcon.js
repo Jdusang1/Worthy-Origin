@@ -13,7 +13,6 @@ const changeClass = (ghg) => {
   }
 }
 
-
 const IconWrapper = styled.div`
   font-size: 100px;
   ${({ghg}) => changeClass(ghg)};
@@ -23,12 +22,11 @@ const CarIcon = ({ghg}) => {
 
   return (
     <>
-    
-    <IconWrapper ghg={ghg}>
-      <div>
-        <i className="fas fa-car-side" ></i>
-      </div>
-    </IconWrapper>
+      <IconWrapper ghg={ghg}>
+        <div>
+          <i className="fas fa-car-side" ></i>
+        </div>
+      </IconWrapper>
     </>
 
   )
