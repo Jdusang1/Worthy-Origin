@@ -37,7 +37,7 @@ function GroceryList({ list, removeFromGroceryList }) {
                     <thead>
                         <tr>
                             <th>Food Item</th>
-                            <th>Greenhouse Gas Emissions kg C02</th>
+                            <th>Greenhouse Gas Emissions (kg C02)</th>
                             <th>Miles Driven</th>
                             <th></th>
                         </tr>
