@@ -10,6 +10,7 @@ margin: 0 auto;
     text-align: center;
     font-size: 30px;
     font-family: "Raleway";
+    background: transparent;
 }
 
 th{

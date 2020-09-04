@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardTitle, CardFooter, Modal, ModalBody, ModalFooter } from "reactstrap";
+import { Card, CardTitle, CardFooter} from "reactstrap";
 import styled from "styled-components";
 
 const StyleWrapper = styled.article `

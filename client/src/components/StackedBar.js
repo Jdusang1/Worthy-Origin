@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip,  ResponsiveContainer, Area, AreaChart
+  XAxis, YAxis, CartesianGrid, Tooltip,  ResponsiveContainer, Area, AreaChart
 } from 'recharts';
 import ghgData from "../data/wid.json";
 import styled from "styled-components";

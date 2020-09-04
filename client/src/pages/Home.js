@@ -134,9 +134,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>13 million hectares of forest have been converted for other uses or destroyed by natural causes.</li>
-                          <i class="fas fa-tree"></i>
+                          <i className="fas fa-tree"></i>
                           <li>Up to 28,000 species can go extinct in the next quarter century due to deforestation.</li>
-                          <i class="fas fa-tree"></i>
+                          <i className="fas fa-tree"></i>
                           <li>Tropical rain forests store more than 210 gigatons of carbon and deforestation is the cause of 15% of carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
@@ -157,9 +157,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>Animal agriculture water consumption ranges from 34-76 trillion gallons annually. </li>
-                          <i class="fas fa-poop"></i>
+                          <i className="fas fa-poop"></i>
                           <li>Animal agriculture is responsible for 18% of the total release of greenhouse gases world-wide.</li>
-                          <i class="fas fa-poop"></i>
+                          <i className="fas fa-poop"></i>
                           <li>The amount of waste produced by livestock and poultry in factory farms is almost 13 times more than that produced by the entire US population.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
@@ -180,9 +180,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>Fossil fuels emit carbon dioxide and other harmful pollutants when burned which leads to a wide variety environmental issues.</li>
-                          <i class="fas fa-gas-pump"></i>
+                          <i className="fas fa-gas-pump"></i>
                           <li>The use of fossil fuels in transportation contributes almost 30% of all US global warming emissions.</li>
-                          <i class="fas fa-gas-pump"></i>
+                          <i className="fas fa-gas-pump"></i>
                           <li>Oil releases a huge amount of carbon when burned – approximately a third of the world’s total carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
