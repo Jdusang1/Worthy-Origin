@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, 
-  NavItem, NavLink, Button, UncontrolledDropdown,DropdownToggle,
-  DropdownMenu,DropdownItem,} from 'reactstrap';
+import {Collapse, Navbar, NavbarToggler, Nav, NavItem, Button, UncontrolledDropdown,DropdownToggle DropdownMenu,DropdownItem,} from 'reactstrap';
 import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
@@ -73,15 +71,15 @@ const NavBar = () => {
         className={navBackground ? 'blue' : 'transparent'}
         style={{ transition: '1s ease' }}
         >
-          <NavbarBrand><Link to ="/">HOME</Link></NavbarBrand>
+          <Link to ="/">HOME</Link>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink><Link to ="/facts">Facts</Link></NavLink>
+                <Link to ="/facts">Facts</Link>
               </NavItem>
               <NavItem>
-                <NavLink><Link to ="/farmers-markets">Farmers Market</Link></NavLink>
+                <Link to ="/farmers-markets">Farmers Market</Link>
               </NavItem>
             </Nav>
             <Nav className="d-none d-md-block" navbar>
