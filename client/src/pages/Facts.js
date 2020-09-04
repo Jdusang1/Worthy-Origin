@@ -96,12 +96,8 @@ const Facts = () => {
   return (
     <>
       <NavBar />
-<<<<<<< HEAD
-      <Jumbotron />
-=======
       <MainJumbotron image={"factsImg"}/>
 
->>>>>>> cb1f4ab54135d4eaae4e829d9fe57ce6b156e9d2
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>

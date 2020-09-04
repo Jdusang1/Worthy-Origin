@@ -1,12 +1,7 @@
 import React from "react";
 import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
-<<<<<<< HEAD
-import { Link } from "react-router-dom"
-import Jumbotron from "../components/Jumbotron";
-=======
 import {Link} from "react-router-dom";
 import MainJumbotron from "../components/Jumbotron";
->>>>>>> cb1f4ab54135d4eaae4e829d9fe57ce6b156e9d2
 import NavBar from "../components/Navbar";
 import deforest from "../img/deforest.jpg";
 import cows from "../img/cows.jpg";
@@ -103,14 +98,9 @@ const Home = () => {
   return (
     <>
       <NavBar />
-<<<<<<< HEAD
-      <Jumbotron />
-
-=======
       <JumboWrapper>
       <MainJumbotron className="homeImg"/>
       </JumboWrapper>
->>>>>>> cb1f4ab54135d4eaae4e829d9fe57ce6b156e9d2
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>
