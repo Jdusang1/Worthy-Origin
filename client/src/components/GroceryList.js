@@ -8,15 +8,20 @@ const TableWrapper = styled.div`
 margin: 0 auto;
 #results{
     text-align: center;
+    font-size: 30px;
+    font-family: "Raleway";
+    background: transparent;
 }
 
 th{
     text-align: center;
+    font-family: "Roboto";
     
 }
 
 td{
     text-align: center;
+    font-family: "Roboto";
 }
 `
 
@@ -32,9 +37,8 @@ function GroceryList({ list, removeFromGroceryList }) {
 
                     <thead>
                         <tr>
-
                             <th>Food Item</th>
-                            <th>Emissions</th>
+                            <th>Greenhouse Gas Emissions kg C02</th>
                             <th>Miles Driven</th>
                             <th></th>
                         </tr>

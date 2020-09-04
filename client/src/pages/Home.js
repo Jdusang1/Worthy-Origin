@@ -1,14 +1,13 @@
 import React from "react";
 import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
+import {Link} from "react-router-dom"
 import Jumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar";
-// import SearchBar from "../components/SearchBar";
 import deforest from "../img/deforest.jpg";
 import cows from "../img/cows.jpg";
 import fossilfuel from "../img/fossilfuel.jpg";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-// import MarketTable from "../components/MarketTable";
 import StackedBar from "../components/StackedBar";
 import market from "../img/farmersMarket.jpg";
 import CircleImage from "../components/CircleImage";
@@ -38,8 +37,8 @@ const Div = styled.div`
     font-family: "Raleway";
     font-size: 52px;
   }
-  li{
-    font-size:14px;
+  li {
+    font-size: 14px;
   }
   .button {
     background-color: #cb5744;
@@ -60,10 +59,12 @@ const Div = styled.div`
     text-align: left;
     opacity: 0.98;
   }
+
+
 `;
 const CardWrapper = styled.article`
   .card {
-    min-width:250px;
+    min-width: 250px;
     margin-top: 15px;
     border: 2px solid #3f5961;
   }
@@ -100,13 +101,18 @@ const Home = () => {
               illustrating the amount of              
                 <a data-for="custom-color-no-arrow"
                 data-tip="Greenhouse gases reflect heat radiation that the Earth emits. Humans are adding greenhouse gases to the atmosphere. This is making the planet's average temperature rise by increasing the greenhouse effect.">
-                <b>greenhouse gas emissions</b>
+                <b> greenhouse gas emissions </b>
               </a>
               for the lifecycle of each product.
             </p>
             <StackedBar />
             <br/>
-            <Button className="button" href={"/facts"}> Learn More!</Button>
+            <br/>
+            
+            <div>
+
+              <Button className="button" href={"/facts"}> Learn More!</Button>
+            </div>
             <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
           </div>
         </Div>
@@ -129,9 +135,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>13 million hectares of forest have been converted for other uses or destroyed by natural causes.</li>
-                          <i class="fas fa-tree"></i>
+                          <i className="fas fa-tree"></i>
                           <li>Up to 28,000 species can go extinct in the next quarter century due to deforestation.</li>
-                          <i class="fas fa-tree"></i>
+                          <i className="fas fa-tree"></i>
                           <li>Tropical rain forests store more than 210 gigatons of carbon and deforestation is the cause of 15% of carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
@@ -152,9 +158,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>Animal agriculture water consumption ranges from 34-76 trillion gallons annually. </li>
-                          <i class="fas fa-poop"></i>
+                          <i className="fas fa-poop"></i>
                           <li>Animal agriculture is responsible for 18% of the total release of greenhouse gases world-wide.</li>
-                          <i class="fas fa-poop"></i>
+                          <i className="fas fa-poop"></i>
                           <li>The amount of waste produced by livestock and poultry in factory farms is almost 13 times more than that produced by the entire US population.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
@@ -175,9 +181,9 @@ const Home = () => {
                         <hr/>
                         <ul>
                           <li>Fossil fuels emit carbon dioxide and other harmful pollutants when burned which leads to a wide variety environmental issues.</li>
-                          <i class="fas fa-gas-pump"></i>
+                          <i className="fas fa-gas-pump"></i>
                           <li>The use of fossil fuels in transportation contributes almost 30% of all US global warming emissions.</li>
-                          <i class="fas fa-gas-pump"></i>
+                          <i className="fas fa-gas-pump"></i>
                           <li>Oil releases a huge amount of carbon when burned – approximately a third of the world’s total carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>

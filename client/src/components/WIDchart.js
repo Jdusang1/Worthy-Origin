@@ -1,8 +1,5 @@
 import React from "react";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, RadialBar, RadialBarChart} from 'recharts';
-import {
-  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
-} from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid} from 'recharts';
 import ghgData from "../data/wid.json";
 import styled from "styled-components";
 
@@ -13,7 +10,6 @@ const ChartWrapper = styled.div`
   }
   
 `
-
 
 const Chart = (props) => {
 
