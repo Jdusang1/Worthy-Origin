@@ -8,9 +8,7 @@ import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
 import API from "../utils/API";
 import Grocerylist from "../components/GroceryList";
-
-
-
+import Converter from "../utils/Conversion";
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -45,16 +43,20 @@ const Div = styled.div`
 
   .button:hover {
   background-color: #ec9a59;
+  }
+
+  .rounded-circle {
+    max-width: 200px;
+  }
 `
 
 const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
-
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
-
   const [groceryList, setGroceryList] = useState([]);
+  const [totalGHG, setTotalGHG] = useState(0)
   const currentUser = user.sub;
 
   // => if user then populate else => create user
@@ -75,6 +77,7 @@ const User = () => {
               .then(res => {
                 console.log(res)
                 setGroceryList(res.data.groceryList);
+                calculateGHG(res.data.groceryList);
               })
             }
           })
@@ -83,7 +86,6 @@ const User = () => {
   }, []) 
   
   const handleInputChange = event => {
-    
     setSearchTerm(event.target.value);
   }
 
@@ -92,8 +94,10 @@ const User = () => {
     let word = searchTerm;
     word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     API.getFood(word)
-      .then((data) => setSearchResults(data.data));
+      .then((data) => setSearchResults(data.data))
+      .catch(err=> console.log(err))
 
+    setSearchTerm(""); 
   }
 
   const addToGroceryList = (event, id) => {
@@ -104,9 +108,19 @@ const User = () => {
               .then(res => {
                 console.log(res)
                 setGroceryList(res.data.groceryList);
+                calculateGHG(res.data.groceryList);
               })
       })
       .catch(err => console.log(err))
+  }
+  
+  
+  const calculateGHG = (list) => {
+   let  totalG = list.reduce((a, b) => {
+    return {ghgEmission: a.ghgEmission + b.ghgEmission}
+    })
+    console.log("total", totalG)
+    setTotalGHG(totalG.ghgEmission);
   }
 
   return (
@@ -136,24 +150,36 @@ const User = () => {
         </Div>
 
         <Div>
-
           <div>
             <Row>
-              <Col md-4>
-              <h2>GROCERY LIST </h2>
-                <Row>
-                  {groceryList.length ? (
+                {groceryList.length ? (
+                    <Grocerylist
+                      list={groceryList}
+                    />
                     
-                      <Grocerylist
-                        list={groceryList}
-                      />
-                    
-                  ) : ""}
-                </Row>
-              </Col>
+                ) : ""}
+            </Row>
 
-              <Col md-8>
-                <Row>
+            <Row>
+              <Col>
+                <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
+                <p>
+                  TOTAL: {totalGHG}
+                </p>
+                <p>
+                  Equal to <Converter ghg={totalGHG}/> miles driven!
+                </p>
+              </Col>
+              <Col>
+                icon
+              </Col>
+            </Row>
+          </div>
+        </Div>
+
+            <Div color="grey">
+              <div>
+              <Row>
                   {searchResults.length ? <h2>Results For: {searchTerm} </h2> : <div></div> }
                 </Row>
                 <Row>
@@ -167,40 +193,20 @@ const User = () => {
                       >
                         <p>{result.reference}</p>
                         <p>Country Origin: {result.country}</p>
-                        <p>Ghg Emissions: {result.ghgEmission}</p>
+                        <p>Greenhouse Gas Emissions: {result.ghgEmission} kg CO2</p>
                         <Button 
                           onClick={(event) => addToGroceryList(event, result._id)}
                           >
                             Add Product to List
                           </Button>
                       </Card>
-
                     </Col>
-
                   ))}
                 </Row>
-              
-              </Col>
-
-            </Row>
-            
-          </div>
-
-        </Div>
-
-            <Div color="grey">
-          
-              <div>
-                
               </div>
-
             </Div>
-          
-
-        
 
         <Footer />
-
       </Container>
     </>
     )

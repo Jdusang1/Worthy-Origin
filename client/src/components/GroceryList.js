@@ -8,15 +8,19 @@ const TableWrapper = styled.div`
 margin: 0 auto;
 #results{
     text-align: center;
+    font-size: 30px;
+    font-family: "Raleway";
 }
 
 th{
     text-align: center;
+    font-family: "Roboto";
     
 }
 
 td{
     text-align: center;
+    font-family: "Roboto";
 }
 `
 
@@ -25,15 +29,14 @@ function GroceryList({ list }) {
     return (
 
         <TableWrapper>
-            {/* <Card>
-                <CardHeader id="results">Grocery List</CardHeader> */}
+            <Card>
+                <CardHeader id="results">Grocery List</CardHeader>
                 <Table>
 
                     <thead>
                         <tr>
-
                             <th>Food Item</th>
-                            <th>Emissions</th>
+                            <th>Greenhouse Gas Emissions kg C02</th>
                             <th>Miles Driven</th>
                             <th></th>
                         </tr>
@@ -51,7 +54,7 @@ function GroceryList({ list }) {
 
                     </tbody>
                 </Table>
-            {/* </Card> */}
+            </Card>
         </TableWrapper>
 
 
