@@ -9,7 +9,6 @@ router.route("/")
 // Matches with "/api/foods/:search"
 router.route("/:search")
   .get(foodsController.findAll)
-  .delete(foodsController.remove);
 
   // "api/foods/item/:id"
 router.route("/item/:id")

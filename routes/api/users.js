@@ -9,9 +9,11 @@ router.route("/")
 ///:username
 router.route("/:id")
   .get(userController.getUser)
+  
 
 router.route("/populate/:id")  
   .get(userController.populateList)
+
 
 
 //populate

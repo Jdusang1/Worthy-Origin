@@ -4,7 +4,7 @@ import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap
 import ghgData from "../data/wid.json";
 import styled from "styled-components";
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Legend
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
 } from 'recharts';
 
 
@@ -31,13 +31,11 @@ const ChartWrapper = styled.div`
   
 `
 
-
 const Charts = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selected, setSelected] =useState([]);
   const [name, setName] = useState("")
-  const COLORS = ["#424b3f", "#3f5961", "#87a6b0", "#cb5744", "#ec9a59", "#dbaa56" ]
-
+  
   const data = ghgData;
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
@@ -54,13 +52,12 @@ const Charts = () => {
       retail: dropdownItem.getAttribute("retail"), 
       name: dropdownItem.getAttribute("name")
     }])
-    console.log(selected)
+    
   }
 
-  const setTargetName = e => {
-    setName({name: e.target.value})
-    console.log(name)
-  }
+  // const setTargetName = e => {
+  //   setName({name: e.target.value})
+  // }
 
 
 const renderChart=(
@@ -95,6 +92,7 @@ const renderChart=(
   
   return (
     <>
+     
       <DropdownWrapper>
 
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -128,7 +126,7 @@ const renderChart=(
       </DropdownWrapper>
     
       <ChartWrapper>
-        {selected ? renderChart : <div></div>}
+        {selected.length ? renderChart : <div></div>}
       </ChartWrapper>        
     </>
 
