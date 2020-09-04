@@ -46,6 +46,9 @@ const Div = styled.div`
 `
 
 const FarmersMarkets = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
 
   const [marketInfo, setMarketInfo] = useState({
     searchTerm: "",
@@ -77,13 +80,17 @@ const FarmersMarkets = () => {
   }
 
   const getMarketDetails = id => {
-    LocalAPI.getSelectedMarket(id)
-      .then(({data}) => setMarketDetails({
-        address: data.marketdetails.Address,
-        link: data.marketdetails.GoogleLink,
-        products: data.marketdetails.Products,
-        schedule: data.marketdetails.Schedule,
-      }))
+    if (id !== "Error") {
+      LocalAPI.getSelectedMarket(id)
+        .then(({data}) => {setMarketDetails({
+          address: data.marketdetails.Address,
+          link: data.marketdetails.GoogleLink,
+          products: data.marketdetails.Products,
+          schedule: data.marketdetails.Schedule,
+        })
+        toggle()
+      })
+    }
 
   }
 
@@ -152,6 +159,8 @@ const FarmersMarkets = () => {
                   schedule={schedule}
                   products={products}
                   link={link}
+                  modal={modal}
+                  toggle={toggle}
                 />) : ""}
               </Col>
             </Row>
