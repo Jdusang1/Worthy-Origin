@@ -22,7 +22,7 @@ const LoginButton = () => {
 
   return (
       <Wrapper>
-          <button className="button" onClick={() => loginWithRedirect()}>Login</button>
+          <button className="button" onClick={() => loginWithRedirect()}>Log In</button>
       </Wrapper>
   );
 };
