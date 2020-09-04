@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "reactstrap"
 import NavBar from "../components/Navbar";
-import Jumbotron from "../components/Jumbotron";
+import MainJumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import MarketCard from "../components/MarketCard";
@@ -43,6 +43,7 @@ const Div = styled.div`
 
   .button:hover {
   background-color: #ec9a59;
+  }
 `
 
 const FarmersMarkets = () => {
@@ -108,7 +109,7 @@ const FarmersMarkets = () => {
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      <MainJumbotron image={"marketImg"}/>
 
       <Container fluid={true} >
         <Div color="grey">

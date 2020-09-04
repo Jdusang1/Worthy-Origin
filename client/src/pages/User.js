@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
-import Jumbotron from "../components/Jumbotron";
+import MainJumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
@@ -141,7 +141,7 @@ const User = () => {
     isAuthenticated && (
       <>
         <NavBar />
-        <Jumbotron />
+        <MainJumbotron image={"userImg"}/>
 
         <Container fluid={true} >
           <Div color="grey">
