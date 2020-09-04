@@ -23,24 +23,16 @@ const App = () => {
     <Router history={history}>
       <div>
         <Switch>
-          <Route exact path={["/", "/home"]}>
-            <Home />
-          </Route>
-          <Route exact path="/farmers-markets">
-            <FarmersMarkets />
-          </Route>
+          <Route exact path={["/", "/home"]} component={Home} />
+            
+          <Route exact path="/farmers-markets" component={FarmersMarkets} />
+            
+          <Route exact path="/facts" component={Facts} />
+           
+          <Route exact path="/user" component={User} />
 
-          <Route exact path="/facts">
-            <Facts />
-          </Route>
+          <Route component={NoMatch}/>
 
-          <Route exact path="/user">
-            <User />
-          </Route>
-
-          <Route>
-            <NoMatch />
-          </Route>
         </Switch>
       </div>
     </Router>

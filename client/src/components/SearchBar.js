@@ -15,28 +15,33 @@ const FormWrapper = styled.form`
   background-color: #ec9a59;
   }
 
+  .form-group {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
   `
 
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
-    return (
-      <FormWrapper>
+  return (
+    <FormWrapper>
 
-        <Form inline onSubmit={handleFormSubmit}>
-            <FormGroup>
-              <Label for={name} hidden>Zip Code</Label>
-                <Input 
-                  type="text" 
-                  name={name} 
-                  id={name}
-                  placeholder={placeholder}
-                  onChange={handleInputChange}
-                  value={searchTerm}
-                  />
-            </FormGroup>
-            <Button className="button">{button}</Button>
-        </Form>
-      </FormWrapper>
-    )
+      <Form inline onSubmit={handleFormSubmit}>
+        <FormGroup>
+          <Label for={name} hidden>Zip Code</Label>
+          <Input
+            type="text"
+            name={name}
+            id={name}
+            placeholder={placeholder}
+            onChange={handleInputChange}
+            value={searchTerm}
+          />
+          <Button className="button">{button}</Button>
+        </FormGroup>
+      </Form>
+    </FormWrapper>
+  )
 };
 
 export default SearchBar;
