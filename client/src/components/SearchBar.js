@@ -15,6 +15,11 @@ const FormWrapper = styled.form`
   background-color: #ec9a59;
   }
 
+  .form-group {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
   `
 
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
@@ -32,8 +37,8 @@ const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholde
             onChange={handleInputChange}
             value={searchTerm}
           />
+          <Button className="button">{button}</Button>
         </FormGroup>
-        <Button className="button">{button}</Button>
       </Form>
     </FormWrapper>
   )

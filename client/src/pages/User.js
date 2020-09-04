@@ -8,9 +8,8 @@ import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
 import API from "../utils/API";
 import Grocerylist from "../components/GroceryList";
-
-
-
+import Converter from "../utils/Conversion";
+import CarIcon from "../components/CarIcon";
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -20,6 +19,7 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
+    margin: 0 auto;
 
   }
 
@@ -46,16 +46,20 @@ const Div = styled.div`
 
   .button:hover {
   background-color: #ec9a59;
+  }
+
+  .rounded-circle {
+    max-width: 200px;
+  }
 `
 
 const User = () => {
 
   const { user, isAuthenticated } = useAuth0();
-
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
-
   const [groceryList, setGroceryList] = useState([]);
+  const [totalGHG, setTotalGHG] = useState(0)
   const currentUser = user.sub;
 
   // => if user then populate else => create user
@@ -76,15 +80,17 @@ const User = () => {
             .then(res => {
               console.log(res)
               setGroceryList(res.data.groceryList);
+              calculateGHG(res.data.groceryList);
             })
         }
       })
+
+
 
       .catch(err => console.log(err));
   }, [])
 
   const handleInputChange = event => {
-
     setSearchTerm(event.target.value);
   }
 
@@ -93,8 +99,10 @@ const User = () => {
     let word = searchTerm;
     word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     API.getFood(word)
-      .then((data) => setSearchResults(data.data));
+      .then((data) => setSearchResults(data.data))
+      .catch(err => console.log(err))
 
+    setSearchTerm("");
   }
 
   const addToGroceryList = (event, id) => {
@@ -105,9 +113,31 @@ const User = () => {
           .then(res => {
             console.log(res)
             setGroceryList(res.data.groceryList);
+            calculateGHG(res.data.groceryList);
           })
       })
       .catch(err => console.log(err))
+  }
+
+
+  const calculateGHG = (list) => {
+    let totalG = list.reduce((a, b) => {
+      return { ghgEmission: a.ghgEmission + b.ghgEmission }
+    })
+    console.log("total", totalG)
+    setTotalGHG(totalG.ghgEmission);
+  }
+
+  const removeFromGroceryList = (event, id) => {
+    event.preventDefault();
+    API.removeItem(id, currentUser)
+      .then(res => {
+        API.populateList(currentUser)
+          .then(res => {
+            setGroceryList(res.data.groceryList)
+          })
+          .catch(err => console.log(err))
+      })
   }
 
   return (
@@ -124,8 +154,40 @@ const User = () => {
                 alt={user.name}
                 className="rounded-circle" />
               <h1>Welcome back, {user.given_name}!</h1>
-              <h2>BUILD YOUR GROCERY LIST</h2>
-              <p>Search for grocery items to add to your list and see your total carbon footprint for food consumption.</p>
+            </div>
+          </Div>
+
+          <Div>
+            <div>
+              <Row>
+                {groceryList.length ? (
+                  <Grocerylist
+                    list={groceryList}
+                  />
+
+                ) : <h6>Add to your list by searching for an item!</h6>}
+              </Row>
+
+              <Row>
+                <Col>
+                  <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
+                  <p>
+                    TOTAL: {totalGHG.toFixed(1)}
+                  </p>
+                  <p>
+                    Equivalent to <Converter ghg={totalGHG} /> car miles driven!
+                </p>
+                </Col>
+                <Col>
+                  <CarIcon ghg={totalGHG} />
+                </Col>
+              </Row>
+            </div>
+          </Div>
+
+          <Div color="grey">
+            <div>
+              <h4>Search for grocery items to add to your list and see your total carbon footprint for food consumption.</h4>
               <SearchBar
                 searchTerm={searchTerm}
                 handleInputChange={handleInputChange}
@@ -134,67 +196,37 @@ const User = () => {
                 name={"item"}
                 button={"Search"}
               />
-            </div>
-          </Div>
-
-          <Div>
-
-            <div>
               <Row>
-                <h2>GROCERIES </h2>
+                {searchResults.length ? <h2> Search Results:</h2> : <div></div>}
               </Row>
               <Row>
-                {groceryList.length ? (
-
-                  <Grocerylist
-                    list={groceryList}
-                  />
-
-                ) : ""}
-              </Row>
-            </div>
-
-
-            <Row>
-              <Div>
-                <div>
-                  <Row>
-                    <h2>Results For: {searchTerm}</h2>
-
-
-                  </Row>
-                  <Row>
-                    {searchResults.map(result => (
-                      <Col md={3} key={result._id}>
-                        <Card
-                          id={result._id}
-                          product={result.reference}
-                          country={result.country}
-                          ghgemission={result.ghgEmission}
+                {searchResults.length ? (
+                  searchResults.map(result => (
+                    <Col md={3} key={result._id}>
+                      <Card
+                        id={result._id}
+                        product={result.reference}
+                        country={result.country}
+                        ghgemission={result.ghgEmission}
+                      >
+                        <p>{result.reference}</p>
+                        <p>Country Origin: {result.country}</p>
+                        <p>Greenhouse Gas Emissions: {result.ghgEmission} kg CO2</p>
+                        <Button
+                          onClick={(event) => addToGroceryList(event, result._id)}
                         >
-                          <p>{result.reference}</p>
-                          <p>Country Origin: {result.country}</p>
-                          <p>Ghg Emissions: {result.ghgEmission}</p>
-                          <Button
-                            onClick={(event) => addToGroceryList(event, result._id)}
-                          >
-                            Add Product to List
-                          </Button>
-                        </Card>
+                          Add Product to List
+                            </Button>
+                      </Card>
+                    </Col>
+                  ))
 
-                      </Col>
-
-                    ))}
-                  </Row>
-                </div>
-
-              </Div>
-            </Row>
-
+                ) : <h4>No items found</h4>}
+              </Row>
+            </div>
           </Div>
 
           <Footer />
-
         </Container>
       </>
     )

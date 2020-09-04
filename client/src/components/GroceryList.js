@@ -7,20 +7,26 @@ const TableWrapper = styled.div`
 margin: 0 auto;
 #results{
     text-align: center;
+    font-size: 30px;
+    font-family: "Raleway";
+    background: transparent;
 }
 
 th{
     text-align: center;
+    font-family: "Roboto";
     
 }
 
 td{
     text-align: center;
+    font-family: "Roboto";
 }
 `
 
 
-function GroceryList({ list }) {
+function GroceryList({ list, removeFromGroceryList }) {
+
     return (
 
         <TableWrapper>
@@ -30,21 +36,24 @@ function GroceryList({ list }) {
 
                     <thead>
                         <tr>
-
                             <th>Food Item</th>
-                            <th>Emissions</th>
+                            <th>Greenhouse Gas Emissions kg C02</th>
                             <th>Miles Driven</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         {list.map(item => (
-                        <tr key={item._id}>
-                            <td>{item.reference}</td>
-                            <td>{item.ghgEmission}</td>
-                            <td><Converter ghg={item.ghgEmission} /></td>
-                            <td>X</td>
-                        </tr>
+                            <tr key={item._id}>
+                                <td>{item.reference}</td>
+                                <td>{item.ghgEmission}</td>
+                                <td><Converter ghg={item.ghgEmission} /></td>
+                                <td
+                                    onClick={(event) => removeFromGroceryList(event, item._id)}
+                                >
+                                    X
+                                </td>
+                            </tr>
 
                         ))}
 
