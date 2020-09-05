@@ -18,13 +18,11 @@ const StackedBar = () => {
 
   return (
     <ChartWrapper>
-
       <div style={{ width: '100%', height: 500 }}>
         <h4>Product Life Cycle Greenhouse Gas Emissions</h4>
         <h6>Hover over the chart to see emissions per lifecycle for each product in kg C02</h6>
         <ResponsiveContainer>
           <AreaChart
-            
             data={data}
             margin={{
               top: 20, right: 30, left: 20, bottom: 5,
@@ -42,7 +40,6 @@ const StackedBar = () => {
               <Area dataKey="Packging" fill="##E941289" stackId="a" />
               <Area dataKey="Retail" fill="#F18229" stackId="a" />
           </AreaChart>
-
         </ResponsiveContainer>
       </div>
     </ChartWrapper>

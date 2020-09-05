@@ -1,36 +1,33 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, 
-  NavItem, NavLink, Button, UncontrolledDropdown,DropdownToggle,
-  DropdownMenu,DropdownItem,} from 'reactstrap';
-import styled from "styled-components";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Button, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { useAuth0 } from "@auth0/auth0-react";
-import { NavLink as RouterNavLink } from "react-router-dom";
-
+import { NavLink as RouterNavLink, Link } from "react-router-dom";
+import styled from "styled-components";
 
 const NavStyle = styled.div`
-a {
-  color:white;
-  margin-right: 10px
-}
-.dropdown-profile {
-  color: black;
-}
-.blue{
-  background-color:#143d3d;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.transparent{
-  background-color:transparent;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
+  a {
+    color:white;
+    margin-right: 10px
+  }
+  .dropdown-profile {
+    color: black;
+  }
+  .blue{
+    background-color:#143d3d;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .transparent{
+    background-color:transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
 `
 
 const NavBar = () => {
@@ -41,7 +38,6 @@ const NavBar = () => {
     const handleScroll = () => {
       const show = window.scrollY > 450
       if (navRef.current !== show) {
-        console.log(window.scrollY)
         setNavBackground(show)
       }
     }
@@ -74,15 +70,15 @@ const NavBar = () => {
         className={navBackground ? 'blue' : 'transparent'}
         style={{ transition: '1s ease' }}
         >
-          <NavbarBrand href={"/home"}>HOME</NavbarBrand>
+          <Link to ="/">HOME</Link>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href={"/facts"}>Facts</NavLink>
+                <Link to ="/facts">Facts</Link>
               </NavItem>
               <NavItem>
-                <NavLink href={"/farmers-markets"}>Farmers Markets</NavLink>
+                <Link to ="/farmers-markets">Farmers Market</Link>
               </NavItem>
             </Nav>
             <Nav className="d-none d-md-block" navbar>

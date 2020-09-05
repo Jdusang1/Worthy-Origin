@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "reactstrap"
 import NavBar from "../components/Navbar";
-import Jumbotron from "../components/Jumbotron";
+import MainJumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import MarketCard from "../components/MarketCard";
 import API from "../utils/API";
-import LocalAPI from "../utils/localAPI";
 import styled from "styled-components";
 import MarketDetails from "../components/MarketDetails";
+import NoDetails from "../components/NoDetailModal";
 
 const grey = "#f9f9f9";
 const white = "ffffff";
@@ -18,7 +18,7 @@ const Div = styled.div`
     text-align: center;
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
-
+    
   }
 
   p {
@@ -43,6 +43,7 @@ const Div = styled.div`
 
   .button:hover {
   background-color: #ec9a59;
+  }
 `
 
 const FarmersMarkets = () => {
@@ -65,7 +66,7 @@ const FarmersMarkets = () => {
     schedule: "",
   })
 
-  const { searchTerm, id, marketName, markets, selectedMarket } = marketInfo;
+  const { searchTerm, markets } = marketInfo;
   const { address, link, products, schedule } = marketDetails;
 
   const marketSearch = searchTerm => {
@@ -81,7 +82,7 @@ const FarmersMarkets = () => {
 
   const getMarketDetails = id => {
     if (id !== "Error") {
-      LocalAPI.getSelectedMarket(id)
+      API.getSelectedMarket(id)
         .then(({data}) => {setMarketDetails({
           address: data.marketdetails.Address,
           link: data.marketdetails.GoogleLink,
@@ -90,7 +91,7 @@ const FarmersMarkets = () => {
         })
         toggle()
       })
-    }
+    } 
 
   }
 
@@ -108,14 +109,14 @@ const FarmersMarkets = () => {
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      <MainJumbotron image={"marketImg"}/>
 
       <Container fluid={true} >
         <Div color="grey">
           <div>
-            <h2>SEARCH FOR LOCAL FARMERS MARKET</h2>
-            <h3>Why shop at farmer's markets?</h3>
-            <p>They feature produce that are in season so you'll get to buy (or sample!) fruits and vegetables at their freshest. Plus everything is typically locally grown so you can worry less about the GHG emissions of the transport from the farm to you.</p>
+            <h2>SEARCH FOR LOCAL FARMERS MARKETS</h2>
+            <h3>Why shop at farmers markets?</h3>
+            <p>They feature produce that is in season so you'll get to buy (or sample!) fruits and vegetables at their freshest. Plus typically everything is locally grown so you can worry less about the GHG emissions of the transport from the farm to you.</p>
             <a href="https://www.usda.gov/media/blog/2012/07/02/top-reasons-shop-farmers-market#:~:text=Access%20to%20fresh%2C%20locally%20grown,peak%20of%20the%20growing%20season.&text=Shopping%20at%20farmers%20markets%20also,food%20closer%20to%20your%20neighborhood." target="blank">Click Here to Learn More</a>
             <SearchBar
               searchTerm={searchTerm}
@@ -129,10 +130,9 @@ const FarmersMarkets = () => {
         </Div>
 
         <Div>
-
           <div>
             <Row>
-              <h2>Farmer's Markets in Your Area: </h2>
+              <h2>Farmers Markets in Your Area: </h2>
             </Row>
             <Row>
               <Col>
@@ -150,7 +150,6 @@ const FarmersMarkets = () => {
                   />
                 </Col>
               ))}
-
             </Row>
             <Row>
               <Col>
@@ -161,15 +160,17 @@ const FarmersMarkets = () => {
                   link={link}
                   modal={modal}
                   toggle={toggle}
-                />) : ""}
+                />) : <NoDetails
+                  modal={modal}
+                  toggle={toggle}
+                />
+               }
               </Col>
             </Row>
           </div>
         </Div>
 
-
         <Footer />
-
 
       </Container>
     </>

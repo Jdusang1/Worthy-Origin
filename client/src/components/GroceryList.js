@@ -50,11 +50,10 @@ function GroceryList({ list, removeFromGroceryList }) {
             <Card>
                 <CardHeader id="results">Grocery List</CardHeader>
                 <Table>
-
                     <thead>
                         <tr>
                             <th>Food Item</th>
-                            <th>Greenhouse Gas Emissions kg C02</th>
+                            <th>Greenhouse Gas Emissions (kg C02)</th>
                             <th>Miles Driven</th>
                             <th></th>
                         </tr>
@@ -72,15 +71,11 @@ function GroceryList({ list, removeFromGroceryList }) {
                                     />
                                 </td>
                             </tr>
-
                         ))}
-
                     </tbody>
                 </Table>
             </Card>
         </TableWrapper>
-
-
     )
 }
 

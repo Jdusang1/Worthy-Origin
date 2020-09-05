@@ -2,7 +2,7 @@ import React from "react";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import styled from "styled-components";
 
-const FormWrapper = styled.form`
+const FormWrapper = styled.div`
   padding: 10px 20px;
 
   .button {
@@ -25,7 +25,6 @@ const FormWrapper = styled.form`
 const SearchBar = ({ searchTerm, handleFormSubmit, handleInputChange, placeholder, name, button }) => {
   return (
     <FormWrapper>
-
       <Form inline onSubmit={handleFormSubmit}>
         <FormGroup>
           <Label for={name} hidden>Zip Code</Label>

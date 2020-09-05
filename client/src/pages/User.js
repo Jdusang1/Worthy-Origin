@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import { Container, Col, Row, Button, Card } from "reactstrap"
 import NavBar from "../components/Navbar";
-import Jumbotron from "../components/Jumbotron";
+import MainJumbotron from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import styled from "styled-components";
@@ -118,7 +118,6 @@ const User = () => {
       .catch(err => console.log(err))
   }
 
-
   const calculateGHG = (list) => {
     let totalG = list.reduce((a, b) => {
       return { ghgEmission: a.ghgEmission + b.ghgEmission }
@@ -134,6 +133,7 @@ const User = () => {
         API.populateList(currentUser)
           .then(res => {
             setGroceryList(res.data.groceryList)
+            calculateGHG(res.data.groceryList);
           })
           .catch(err => console.log(err))
       })
@@ -143,7 +143,7 @@ const User = () => {
     isAuthenticated && (
       <>
         <NavBar />
-        <Jumbotron />
+        <MainJumbotron image={"userImg"} />
 
         <Container fluid={true} >
           <Div color="grey">
@@ -182,7 +182,7 @@ const User = () => {
                     </Col>
                   </Row>
                 </>
-              ) : <h6>Add to your list by searching for an item!</h6>}
+              ) : <h6>Add to your list by searching for an item! </h6>}
             </div>
           </Div>
 
@@ -217,7 +217,7 @@ const User = () => {
                           onClick={(event) => addToGroceryList(event, result._id)}
                         >
                           Add Product to List
-                            </Button>
+                        </Button>
                       </Card>
                     </Col>
                   ))

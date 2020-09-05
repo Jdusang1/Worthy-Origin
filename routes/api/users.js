@@ -5,7 +5,7 @@ router.route("/")
   .get(userController.findUsers)
   .post(userController.createUser)
 // user routes go here
-//will need a  /:id
+
 ///:username
 router.route("/:id")
   .get(userController.getUser)

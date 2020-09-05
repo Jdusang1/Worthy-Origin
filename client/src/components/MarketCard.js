@@ -8,9 +8,8 @@ const StyleWrapper = styled.article `
     }
     .card:hover {
         border: 4px solid #11343e;
-        box-shadow: 0px 0px 10px #b5875e;
+        box-shadow: 0px 0px 10px #11343e;
     }
-
     .card-title {
      cursor: pointer;
      font-family: "Roboto";
@@ -31,20 +30,3 @@ const MarketCard = ({ marketName, getMarketDetails, id }) => {
 };
 
 export default MarketCard;
-
-
-
-
-
-
-
-// const titleStyle = {
-//     cursor: "pointer",
-//     fontFamily: "Roboto",
-//     fontSize: "20px",
-//     fontWeight: "bold",
-// }
-
-// const cardStyle = {
-//     border: "3px solid #bf5a41"
-// }

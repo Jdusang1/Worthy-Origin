@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
+import {BrowserRouter} from "react-router-dom";
 import config from "./auth_config.json";
 import history from "./utils/history";
-import {BrowserRouter} from "react-router-dom";
 
 const onRedirectCallback = (appState) => {
   history.push(

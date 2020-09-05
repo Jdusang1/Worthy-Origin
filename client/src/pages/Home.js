@@ -1,11 +1,12 @@
 import React from "react";
-import {Container,Col,Row,Button,Card,CardImg,CardBody,CardText} from "reactstrap";
-import {Link} from "react-router-dom"
-import Jumbotron from "../components/Jumbotron";
+import { Container,Col,Row,Button,Card,CardImg,CardBody } from "reactstrap";
+import { Link } from "react-router-dom";
+import MainJumbotron from "../components/Jumbotron";
 import NavBar from "../components/Navbar";
 import deforest from "../img/deforest.jpg";
 import cows from "../img/cows.jpg";
 import fossilfuel from "../img/fossilfuel.jpg";
+// import homeImg from "../img/heroImage.png"
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import StackedBar from "../components/StackedBar";
@@ -59,8 +60,6 @@ const Div = styled.div`
     text-align: left;
     opacity: 0.98;
   }
-
-
 `;
 const CardWrapper = styled.article`
   .card {
@@ -70,6 +69,10 @@ const CardWrapper = styled.article`
   }
   :hover {
     box-shadow: 0 4px 8px 0 #3f5961, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card-body {
+    padding: 20px;
   }
 
   ul {
@@ -84,12 +87,22 @@ const CardWrapper = styled.article`
   }
 `;
 
+const JumboWrapper =styled.div`
+.homeImg{
+background-image:url("../img/heroImage.png");
+}
+`
+
 const Home = () => {
+
   const { isAuthenticated } = useAuth0();
+  
   return (
     <>
       <NavBar />
-      <Jumbotron />
+      <JumboWrapper>
+      <MainJumbotron className="homeImg"/>
+      </JumboWrapper>
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>
@@ -111,7 +124,7 @@ const Home = () => {
             
             <div>
 
-              <Button className="button" href={"/facts"}> Learn More!</Button>
+              <Button className="button"><Link to ="/facts">Learn More!</Link></Button>
             </div>
             <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
           </div>
@@ -128,7 +141,6 @@ const Home = () => {
                   <Card>
                     <CardImg topwidth="100%" src={deforest} alt="Stack of logs" />
                     <CardBody>
-                      <CardText>
                       <a data-for="custom-color-no-arrow"
                         data-tip="Deforestation is the removal of a forest from land which is then converted to a non-forest use. It can involve conversion of forest land to farms, ranches, or urban use. The most concentrated deforestation occurs in tropical rain forests.">
                         <h3>Deforestation</h3></a>
@@ -141,7 +153,6 @@ const Home = () => {
                           <li>Tropical rain forests store more than 210 gigatons of carbon and deforestation is the cause of 15% of carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
-                      </CardText>
                     </CardBody>
                   </Card>
                 </CardWrapper>
@@ -151,7 +162,6 @@ const Home = () => {
                   <Card>
                     <CardImg top width="100%" src={cows} alt="Black and brown cows" />
                     <CardBody>
-                      <CardText>
                       <a data-for="custom-color-no-arrow"
                         data-tip="Animal agriculture is the practice of breeding animals for the production of animal products. In everyday life, animal agriculture links to our demand for meat. We know that reducing our meat consumption is one way that we can help to make our carbon footprint smaller.">
                         <h3>Agriculture</h3></a>
@@ -164,7 +174,6 @@ const Home = () => {
                           <li>The amount of waste produced by livestock and poultry in factory farms is almost 13 times more than that produced by the entire US population.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
-                      </CardText>
                     </CardBody>
                   </Card>
                 </CardWrapper>
@@ -174,7 +183,6 @@ const Home = () => {
                   <Card>
                     <CardImg topwidth="100%" src={fossilfuel} alt="Fossil fuel plant"/>
                     <CardBody>
-                      <CardText>
                         <a data-for="custom-color-no-arrow"
                         data-tip="All living matter is made up largely of the element carbon. and the fossils that formed retained the carbon that was present in these organisms when they died. Carbon burns, and as a result it is a source of energy.">
                         <h3>Fossil Fuels</h3></a>
@@ -187,7 +195,6 @@ const Home = () => {
                           <li>Oil releases a huge amount of carbon when burned – approximately a third of the world’s total carbon emissions.</li>
                         </ul>
                         <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
-                      </CardText>
                     </CardBody>
                   </Card>
                 </CardWrapper>
@@ -204,8 +211,8 @@ const Home = () => {
               <Col>
                 <h2>FIND YOUR CARBON FOOTPRINT</h2>
                 <p>
-                  Curious about your carbon footprint for your grocery list?
-                  Login to build your list and calculate your total carbon
+                  Curious about your carbon footprint for your grocery items?
+                  Log in to build your list and calculate your total carbon
                   footprint.{" "}
                 </p>
                 {isAuthenticated ? <ProfileButton /> : <LoginButton />}
@@ -221,8 +228,7 @@ const Home = () => {
                 <h2>FIND FARMERS MARKETS</h2>
                 <p>Switching to purchasing more local foods can reduce greenhouse
                   gas emissions. Search for local farmers markets in your area!</p>
-                <Button className="button" href={"/farmers-markets"}>
-                  Search
+                <Button className="button"><Link to ="/farmers-markets">Search</Link>
                 </Button>
               </Col>
               <Col>

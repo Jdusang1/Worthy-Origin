@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
-
 import ghgData from "../data/wid.json";
 import styled from "styled-components";
 import {
@@ -34,7 +33,6 @@ const ChartWrapper = styled.div`
 const Charts = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selected, setSelected] =useState([]);
-  const [name, setName] = useState("")
   
   const data = ghgData;
   const toggle = () => setDropdownOpen(prevState => !prevState);
@@ -52,21 +50,15 @@ const Charts = () => {
       retail: dropdownItem.getAttribute("retail"), 
       name: dropdownItem.getAttribute("name")
     }])
-    
-  }
 
-  // const setTargetName = e => {
-  //   setName({name: e.target.value})
-  // }
+  }
 
 
 const renderChart=(
-  //   
 
       <div style={{ width: '100%', height: 500 }}>
         <ResponsiveContainer>
         <BarChart
-  //     
           data={selected}
           margin={{
             top: 10, right: 30, left: 0, bottom: 0,
@@ -87,12 +79,10 @@ const renderChart=(
           
         </ResponsiveContainer>
       </div>
-
 )
   
   return (
     <>
-     
       <DropdownWrapper>
 
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -129,8 +119,6 @@ const renderChart=(
         {selected.length ? renderChart : <div></div>}
       </ChartWrapper>        
     </>
-
-
   );
 }
 
