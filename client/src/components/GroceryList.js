@@ -2,25 +2,42 @@ import React from 'react';
 import Converter from "../utils/Conversion"
 import styled from "styled-components";
 import { Table, Card, CardHeader } from 'reactstrap';
+import { FaTrash } from "react-icons/fa";
+
 
 const TableWrapper = styled.div`
 margin: 0 auto;
+
+.card{
+    border: none;
+}
+
+.table{
+    table-layout: auto;
+    width: 100%;
+}
 #results{
     text-align: center;
     font-size: 30px;
     font-family: "Raleway";
-    background: transparent;
+    color: white;
+    background: rgb(18, 61, 61);
 }
 
 th{
     text-align: center;
     font-family: "Roboto";
+   
+
     
 }
 
 td{
     text-align: center;
     font-family: "Roboto";
+}
+.Fa-Trash{
+    color: rgb(18, 61, 61);
 }
 `
 
@@ -51,7 +68,8 @@ function GroceryList({ list, removeFromGroceryList }) {
                                 <td
                                     onClick={(event) => removeFromGroceryList(event, item._id)}
                                 >
-                                    X
+                                    <FaTrash style={{ color: "rgb(18, 61, 61)" }} style={{ cursor: 'pointer' }}
+                                    />
                                 </td>
                             </tr>
 
