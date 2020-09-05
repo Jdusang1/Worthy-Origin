@@ -13,7 +13,7 @@ const Wrapper = styled.article`
         font-size: 20px;
   }
   .button:hover {
-      color: black;
+      color: white;
   }
 `
 
