@@ -20,36 +20,38 @@ const Div = styled.div`
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
     margin: 0 auto;
-
   }
-
   p {
     width: 60%;
     margin: 15px auto;
     font-size: 20px;
     font-family: "Roboto";
   }
-
   h2 {
    margin: 10px auto;
    font-family: "Raleway";
    font-size: 52px;
-
   }
-
   .button {
     background-color: #cb5744;
     border: none;
   
-
   }
-
   .button:hover {
   background-color: #ec9a59;
   }
-
   .rounded-circle {
     max-width: 200px;
+  }
+  h4{
+    color: rgb(18, 61, 61);
+  }
+  #equivalency{
+    color: rgb(18, 61, 61);
+  }
+  h5{
+    justify-content: center;
+  }
   }
 `
 
@@ -141,7 +143,7 @@ const User = () => {
     isAuthenticated && (
       <>
         <NavBar />
-        <MainJumbotron image={"userImg"}/>
+        <MainJumbotron image={"userImg"} />
 
         <Container fluid={true} >
           <Div color="grey">
@@ -156,8 +158,8 @@ const User = () => {
 
           <Div>
             <div>
-                {groceryList.length ? (
-                  <>
+              {groceryList.length ? (
+                <>
                   <Row>
                     <Grocerylist
                       list={groceryList}
@@ -168,19 +170,19 @@ const User = () => {
                   <Row>
                     <Col>
                       <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
-                      <p>
+                      <p id="equivalency">
                         TOTAL: {totalGHG.toFixed(1)}
                       </p>
-                      <p>
-                        Equivalent to <Converter ghg={totalGHG} /> miles driven in a passenger car!
+                      <p id="equivalency">
+                        Equivalent to <Converter ghg={totalGHG} /> car miles driven!
                     </p>
                     </Col>
                     <Col>
                       <CarIcon ghg={totalGHG} />
                     </Col>
                   </Row>
-                  </>
-                ) : <h6>Add to your list by searching for an item! </h6>}
+                </>
+              ) : <h6>Add to your list by searching for an item! </h6>}
             </div>
           </Div>
 
@@ -219,7 +221,8 @@ const User = () => {
                       </Card>
                     </Col>
                   ))
-                ) : <h4>No items found</h4>}
+
+                ) : <h5>No items found</h5>}
               </Row>
             </div>
           </Div>
