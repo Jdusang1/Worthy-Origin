@@ -52,6 +52,11 @@ const Div = styled.div`
   }
   a {
     background-color: none;
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
   .extraClass {
     font-size: 14px;
@@ -124,7 +129,7 @@ const Home = () => {
             
             <div>
 
-              <Button className="button"><Link to ="/facts">Learn More!</Link></Button>
+              <Button className="button"> <Link to ="/facts">Learn More!</Link></Button>
             </div>
             <ReactTooltip id="custom-color-no-arrow" className="extraClass" textColor="#e7d8d6" effect="solid"/>
           </div>

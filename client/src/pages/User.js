@@ -82,7 +82,10 @@ const User = () => {
             .then(res => {
               console.log(res)
               setGroceryList(res.data.groceryList);
-              calculateGHG(res.data.groceryList);
+              if (res.data.groceryList.length) {
+                calculateGHG(res.data.groceryList);
+
+              }
             })
         }
       })

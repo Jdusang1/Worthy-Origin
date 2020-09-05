@@ -16,26 +16,25 @@ margin: 0 auto;
     table-layout: auto;
     width: 100%;
 }
+
 #results{
     text-align: center;
     font-size: 30px;
     font-family: "Raleway";
-    color: white;
-    background: rgb(18, 61, 61);
+    color: rgb(18, 61, 61);
+    background: transparent;
 }
 
 th{
     text-align: center;
     font-family: "Roboto";
-   
-
-    
 }
 
 td{
     text-align: center;
     font-family: "Roboto";
 }
+
 .Fa-Trash{
     color: rgb(18, 61, 61);
 }
