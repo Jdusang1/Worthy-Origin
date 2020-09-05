@@ -121,7 +121,7 @@ const User = () => {
   const calculateGHG = (list) => {
     let totalG = list.reduce((a, b) => {
       return { ghgEmission: a.ghgEmission + b.ghgEmission }
-    }, [])
+    })
     console.log("total", totalG)
     setTotalGHG(totalG.ghgEmission);
   }
