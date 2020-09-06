@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "reactstrap";
 import styled from "styled-components";
+import { NavLink as RouterNavLink, Link } from "react-router-dom";
 
 const Wrapper = styled.article`
     .button {
@@ -21,7 +22,7 @@ const ProfileButton = () => {
 
     return (
         <Wrapper>
-            <Button className="button"> <Link to "/user">Go to your list</Button>
+            <Button className="button"> <Link to="/user">Go to your list</Link></Button>
         </Wrapper>
     );
 };
