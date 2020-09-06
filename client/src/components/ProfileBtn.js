@@ -22,7 +22,7 @@ const ProfileButton = () => {
 
     return (
         <Wrapper>
-            <Button className="button"> <Link to="/user">Go to your list</Link></Button>
+            <Button className="button"> <Link to="./User">Go to your list</Link></Button>
         </Wrapper>
     );
 };
