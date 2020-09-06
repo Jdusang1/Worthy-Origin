@@ -38,6 +38,9 @@ const JumboWrapper = styled.div`
     font-size: 24px;
     font-family: "Raleway", sans-serif;
   }
+  span{
+    overflow-wrap: break-word;
+  }
 `
 // {image}
 const MainJumbotron = () => {
