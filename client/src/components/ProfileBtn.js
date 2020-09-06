@@ -19,11 +19,11 @@ const Wrapper = styled.article`
 
 const ProfileButton = () => {
 
-  return (
-      <Wrapper>
-          <Button className="button" href={"/user"}>Go to your list</Button>
-      </Wrapper>
-  );
+    return (
+        <Wrapper>
+            <Button className="button"> <Link to "/user">Go to your list</Button>
+        </Wrapper>
+    );
 };
 
 export default ProfileButton;
