@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/dbfoods")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/dbfoods")
 
 const foodsSeed =
   [
@@ -15262,8 +15262,9 @@ const foodsSeed =
 
 
 db.Foods
-  .deleteMany({})
-  .then(() => db.Foods.collection.insertMany(foodsSeed))
+  .remove({})
+  .then(() => db.Foods.collection.insertMany(foodsSeed)).catch(err=> console.log(err))
+
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
