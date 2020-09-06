@@ -84,7 +84,6 @@ const User = () => {
               setGroceryList(res.data.groceryList);
               if (res.data.groceryList.length) {
                 calculateGHG(res.data.groceryList);
-
               }
             })
         }
