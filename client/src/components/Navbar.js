@@ -28,6 +28,11 @@ const NavStyle = styled.div`
     left: 0;
     z-index: 1030;
   }
+
+  .hamburger {
+    background-color: #143d3d;
+  }
+
 `
 
 const NavBar = () => {
@@ -66,12 +71,13 @@ const NavBar = () => {
       <div>
         <Navbar 
         expand="md"
+        dark= {true}
         // className="fixed-top" 
         className={navBackground ? 'blue' : 'transparent'}
         style={{ transition: '1s ease' }}
         >
           <Link to ="/">HOME</Link>
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle} className="hamburger" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
