@@ -10,6 +10,7 @@ import styled from "styled-components";
 import MarketDetails from "../components/MarketDetails";
 import NoDetails from "../components/NoDetailModal";
 
+//Styling
 const grey = "#f9f9f9";
 const white = "ffffff";
 
@@ -48,6 +49,7 @@ const Div = styled.div`
 `
 
 const FarmersMarkets = () => {
+  //Variables and States
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -70,6 +72,7 @@ const FarmersMarkets = () => {
   const { searchTerm, markets } = marketInfo;
   const { address, link, products, schedule } = marketDetails;
 
+  //API calls to USDA farmers market database
   const marketSearch = searchTerm => {
     API.getMarkets(searchTerm)
       .then(({ data }) => setMarketInfo({
@@ -140,6 +143,7 @@ const FarmersMarkets = () => {
                 <h3>Click on a market to find out more!</h3>
               </Col>
             </Row>
+            {/* Map through results from API call to create an array of farmers markets  */}
             <Row>
               {markets.map(market => (
                 <Col md={3} key={market.id}>
@@ -153,6 +157,7 @@ const FarmersMarkets = () => {
               ))}
             </Row>
             <Row>
+              {/* If the market contains details on the products, use the MarketDetails modal, otherwise use the NoDetails modal */}
               <Col>
                 { products ? (<MarketDetails 
                   address={address}

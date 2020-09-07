@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the FoodsController
+// Defining methods for the UserController
 module.exports = {
 
   createUser: function (req, res) {
@@ -14,7 +14,6 @@ module.exports = {
     db.Users
       .findOne({ id: req.params.id })
       .then(dbUser => {
-        console.log("get user", dbUser)
         res.json(dbUser)
       })
       .catch(err => res.status(422).json(err));
@@ -32,7 +31,6 @@ module.exports = {
     db.Users.findOne({ id: req.params.id })
       .populate("groceryList")
       .then(dbUser => {
-        console.log(dbUser)
         res.json(dbUser);
       })
       .catch(err => {

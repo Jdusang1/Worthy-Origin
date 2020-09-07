@@ -2,6 +2,7 @@ import React from "react";
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import styled from "styled-components";
 
+//Styling
 const FormWrapper = styled.div`
   padding: 10px 20px;
 

@@ -11,6 +11,7 @@ import Grocerylist from "../components/GroceryList";
 import Converter from "../utils/Conversion";
 import CarIcon from "../components/CarIcon";
 
+//Styling
 const grey = "#f9f9f9";
 const white = "ffffff";
 
@@ -56,7 +57,8 @@ const Div = styled.div`
 `
 
 const User = () => {
-
+  
+  //Variables and States
   const { user, isAuthenticated } = useAuth0();
   const [searchResults, setSearchResults] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
@@ -97,6 +99,7 @@ const User = () => {
 
   const handleFormSubmit = event => {
     event.preventDefault();
+    // take input search term and set it to correct format to search, first letter uppercase and rest lowercase
     let word = searchTerm;
     word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     API.getFood(word)
@@ -108,6 +111,7 @@ const User = () => {
 
   const addToGroceryList = (event, id) => {
     event.preventDefault();
+    // API call to Foods collection to grab food for User to add to list in User collection
     API.addItem(id, currentUser)
       .then(res => {
         API.populateList(currentUser)
@@ -124,12 +128,12 @@ const User = () => {
     let totalG = list.reduce((a, b) => {
       return { ghgEmission: a.ghgEmission + b.ghgEmission }
     })
-    console.log("total", totalG)
     setTotalGHG(totalG.ghgEmission);
   }
 
   const removeFromGroceryList = (event, id) => {
     event.preventDefault();
+    // API call to Foods collection to find item by ID and remove from User's collection
     API.removeItem(id, currentUser)
       .then(res => {
         API.populateList(currentUser)
@@ -159,6 +163,7 @@ const User = () => {
           </Div>
 
           <Div>
+            {/* If there are items in the grocery list, populate list. Otherwise subtitle telling User to search for an item */}
             <div>
               {groceryList.length ? (
                 <>
@@ -168,7 +173,7 @@ const User = () => {
                       removeFromGroceryList={removeFromGroceryList}
                     />
                   </Row>
-
+                  {/* Call on the Converter component to total up the ghg emissions for all items in User's grocery list and convert to miles driven */}
                   <Row>
                     <Col>
                       <h4>YOUR TOTAL GROCERY CARBON FOOTPRINT</h4>
@@ -202,6 +207,7 @@ const User = () => {
               <Row>
                 {searchResults.length ? <h2> Search Results:</h2> : <div></div>}
               </Row>
+              {/* If there are search results, map through them to create a card for each item in the array. Otherwise note no items were found*/}
               <Row>
                 {searchResults.length ? (
                   searchResults.map(result => (

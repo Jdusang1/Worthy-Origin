@@ -4,6 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 
+//Styling
 const NavStyle = styled.div`
   a {
     color:white;
@@ -31,6 +32,7 @@ const NavStyle = styled.div`
 `
 
 const NavBar = () => {
+  //Variables and States
   const [navBackground, setNavBackground] = useState()
   const navRef = useRef()
   navRef.current = navBackground
@@ -94,6 +96,7 @@ const NavBar = () => {
                   </Button>
                 </NavItem>
               )}
+              {/* Add User picture, Grocery List link, and Log out link if they are logged in */}
               {isAuthenticated && (
                 <UncontrolledDropdown nav inNavbar className="dropdown">
                   <DropdownToggle nav caret id="profileDropDown">
