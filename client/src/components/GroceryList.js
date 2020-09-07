@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Table, Card, CardHeader } from 'reactstrap';
 import { FaTrash } from "react-icons/fa";
 
-
+//Styling
 const TableWrapper = styled.div`
 margin: 0 auto;
 
@@ -26,10 +26,7 @@ margin: 0 auto;
 
 th{
     text-align: center;
-    font-family: "Roboto";
-   
-
-    
+    font-family: "Roboto";   
 }
 
 td{
@@ -59,6 +56,7 @@ function GroceryList({ list, removeFromGroceryList }) {
                         </tr>
                     </thead>
                     <tbody>
+                        {/* Map through each item in User's grocery array to create a new table row */}
                         {list.map(item => (
                             <tr key={item._id}>
                                 <td>{item.reference}</td>

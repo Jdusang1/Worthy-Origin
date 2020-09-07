@@ -11,7 +11,7 @@ import Charts from "../components/Charts";
 import API from "../utils/API";
 import Placeholder from "../img/placeholder.png";
 
-
+//Styling
 const grey = "#f9f9f9";
 const white = "ffffff";
 
@@ -61,6 +61,7 @@ const Div = styled.div`
   `
 
 const Facts = () => {
+  //Variables and States
   const [searchTerm, setSearchTerm] = useState("")
   const [itemInfo, setItemInfo] = useState({
     id: "",
@@ -121,6 +122,7 @@ const Facts = () => {
                 <Col>
                   <img src={Placeholder} alt="Fruit in circle" className="placeholder" />
                 </Col>
+                {/* Call on Converter component function to puts GHG emissions in to easy to understand terms */}
                 <Col>
                   <h2>{product}</h2>
                   <p><strong>{product}</strong> produces <strong>{ghg}</strong> kg CO2.</p>

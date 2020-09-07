@@ -4,6 +4,7 @@ import logo from "../img/WorthyOrigin.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
+//Styling
 const FooterWrapper = styled.div`
   #footer {
     width: 100%;
@@ -36,7 +37,7 @@ const Footer = () => {
             The All Knowing-Nikki Castle
           </h5>
           <h5 id="three">
-            John Dusang-The Sundance Kid | Paul Ijames-The Data Wizard
+            John Dusang-The Swift Scripter | Paul Ijames-The Data Wizard
           </h5>
         </div>
         <a>

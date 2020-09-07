@@ -18,6 +18,7 @@ import ProfileButton from "../components/ProfileBtn";
 import { useAuth0 } from "@auth0/auth0-react";
 import ReactTooltip from "react-tooltip";
 
+//Styling
 const grey = "#f9f9f9";
 const white = "ffffff";
 
@@ -110,6 +111,7 @@ const Home = () => {
       </JumboWrapper>
       <Container fluid={true}>
         <Div color={"grey"}>
+          {/* Did You Know section, with chart on ghg emission data */}
           <div>
             <h2>DID YOU KNOW?</h2>
             <p>
@@ -136,6 +138,7 @@ const Home = () => {
         </Div>
 
         <Div>
+          {/* Top 3 contributors to global warming */}
           <div>
             <Row>
               <h2>TOP CONTRIBUTORS TO GLOBAL WARMING</h2>
@@ -209,6 +212,7 @@ const Home = () => {
         </Div>
         <Div color={"grey"}>
           <div>
+            {/* Log in section, user can log in to find their own carbon footprint for food consumption */}
             <Row>
               <Col>
                 <CircleImage image={groceries} alt="Groceries in mesh bag"/>
@@ -228,6 +232,7 @@ const Home = () => {
 
         <Div>
           <div>
+            {/* Find farmers markets within a certain area, enter zip code to search*/}
             <Row>
               <Col>
                 <h2>FIND FARMERS MARKETS</h2>
