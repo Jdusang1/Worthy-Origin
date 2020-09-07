@@ -3,6 +3,7 @@ import { Button } from "reactstrap";
 import styled from "styled-components";
 import { NavLink as RouterNavLink, Link } from "react-router-dom";
 
+//Styling
 const Wrapper = styled.article`
     .button {
         background-color: #cb5744;

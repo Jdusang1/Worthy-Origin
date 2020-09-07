@@ -20,6 +20,8 @@ import homeImg from "../img/heroImage.png";
 //     return "background-image: url('../img/heroImage.png');"
 //   }
 // }
+
+//Styling
 const JumboWrapper = styled.div`
   ${'' /* ${({image}) => changeImg(image)}; */}
   .jumbotron {

@@ -6,7 +6,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
 } from 'recharts';
 
-
+//Styling
 const DropdownWrapper = styled.div`
   .scrollable {
   height: auto;
@@ -31,6 +31,7 @@ const ChartWrapper = styled.div`
 `
 
 const Charts = () => {
+  //Variables and States
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selected, setSelected] =useState([]);
   
@@ -91,6 +92,7 @@ const renderChart=(
           </DropdownToggle>
           <DropdownMenu 
             
+            // Map through the data to create the dropdown items to select for viewing in the chart
             className="scrollable">
             {data.map(item => (
                 <DropdownItem 

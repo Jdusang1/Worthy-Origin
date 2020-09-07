@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default {
+    //External API calls
     getMarkets: searchTerm => {
         return axios.get(`https://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${searchTerm}`)
     },
@@ -9,6 +10,7 @@ export default {
         return axios.get(`https://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail?id=${id}`)
     },
 
+    //Internal API database calls
     getFood: searchTerm => {
         return axios.get(`/api/foods/${searchTerm}`)
     },
@@ -36,7 +38,5 @@ export default {
     removeItem: (id, currentUser) => {
         return axios.get(`/api/foods/remove/${id}?currentUser=${currentUser}`)
     }
-
-
 
 }

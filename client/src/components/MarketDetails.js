@@ -2,6 +2,7 @@ import React from "react";
 import { Modal, ModalHeader, ModalBody, ModalFooter  } from "reactstrap";
 import styled from "styled-components";
 
+//Styling
 const StyleModal = styled(Modal)`
     border: 5px solid #bf5a41;
     border-radius: 10px;
