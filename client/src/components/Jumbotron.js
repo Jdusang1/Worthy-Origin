@@ -53,7 +53,7 @@ const MainJumbotron = () => {
         <Jumbotron >
           <img src={logo} alt="Worthy Origin Logo" />
           <div className="text-loop">
-          <TextLoop interval={7000} adjustingSpeed={1000}>
+          <TextLoop interval={7000} adjustingSpeed={1000} >
             <span>“The greatest threat to our planet is the belief that someone else will save it.” -Robert Swan</span>
             <span>“We are living on this planet as if we had another one to go to.” -Terri Swearingen</span>
             <span>"The first rule of sustainability is to align with natural forces, or at least not try to defy them." -Paul Hawken</span>
