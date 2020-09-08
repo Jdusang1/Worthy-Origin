@@ -6,6 +6,7 @@ import styled from "styled-components";
 const StyleModal = styled(Modal)`
     border: 5px solid #bf5a41;
     border-radius: 10px;
+    width: 100vw;
 
     .modal-header {
         text-decoration: underline;
