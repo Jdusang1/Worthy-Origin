@@ -1,5 +1,5 @@
+//includes all models in index to be called by the controller 
 module.exports = {
   Foods: require("./foods"),
-  Groceries: require("./groceries"),
   Users: require("./user")
 };

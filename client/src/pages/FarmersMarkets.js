@@ -11,7 +11,7 @@ import MarketDetails from "../components/MarketDetails";
 import NoDetails from "../components/NoDetailModal";
 
 const grey = "#f9f9f9";
-const white = "ffffff";
+const white = "#ffffff";
 
 const Div = styled.div`
   div {
@@ -19,7 +19,6 @@ const Div = styled.div`
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
     margin: 0 auto;
-    
   }
 
   p {
@@ -30,16 +29,14 @@ const Div = styled.div`
   }
 
   h2 {
-   margin: 10px auto;
-   font-family: "Raleway";
-   font-size: 52px;
-
+    margin: 10px auto;
+    font-family: "Raleway";
+    font-size: 52px;
   }
 
   .button {
     background-color: #cb5744;
     border: none;
-
   }
 
   .button:hover {
@@ -48,10 +45,11 @@ const Div = styled.div`
 `
 
 const FarmersMarkets = () => {
+  //sets default for modals to false 
   const [modal, setModal] = useState(false);
-
+  //toggles modals from open to close and vise versa 
   const toggle = () => setModal(!modal);
-
+  //setting market state
   const [marketInfo, setMarketInfo] = useState({
     searchTerm: "",
     id: "",
@@ -59,17 +57,17 @@ const FarmersMarkets = () => {
     markets: [],
     selectedMarket: null,
   })
-
+  //setting state for market details
   const [marketDetails, setMarketDetails] = useState ({
     address: "",
     link: "",
     products: "",
     schedule: "",
   })
-
+  //destructuring data from state  
   const { searchTerm, markets } = marketInfo;
   const { address, link, products, schedule } = marketDetails;
-
+  //updating state based off of zip code put into searchbar 
   const marketSearch = searchTerm => {
     API.getMarkets(searchTerm)
       .then(({ data }) => setMarketInfo({
@@ -80,7 +78,7 @@ const FarmersMarkets = () => {
         searchTerm: "",
       }))
   }
-
+  //updating state based off of the market the user clicks on (stored in modal)-calls toggle function for modal  
   const getMarketDetails = id => {
     if (id !== "Error") {
       API.getSelectedMarket(id)
@@ -93,10 +91,9 @@ const FarmersMarkets = () => {
         toggle()
       })
     } 
-
   }
 
-
+  //lets user provide input in search  
   const handleInputChange = event => {
     setMarketInfo({ ...marketInfo, searchTerm: event.target.value });
   }
@@ -106,12 +103,10 @@ const FarmersMarkets = () => {
     marketSearch(searchTerm)
   };
 
-
   return (
     <>
       <NavBar />
       <MainJumbotron image={"marketImg"}/>
-
       <Container fluid={true} >
         <Div color="grey">
           <div>
@@ -141,6 +136,7 @@ const FarmersMarkets = () => {
               </Col>
             </Row>
             <Row>
+            {/* mapping through markets that come back from API call/search and displaying them in a card */}
               {markets.map(market => (
                 <Col md={3} key={market.id}>
                   <MarketCard
@@ -154,6 +150,7 @@ const FarmersMarkets = () => {
             </Row>
             <Row>
               <Col>
+              {/* if market clicked on has details, will show MarketDetails, if not, will show NoDetails */}
                 { products ? (<MarketDetails 
                   address={address}
                   schedule={schedule}
@@ -170,14 +167,10 @@ const FarmersMarkets = () => {
             </Row>
           </div>
         </Div>
-
         <Footer />
-
       </Container>
     </>
   )
-
-
 }
 
 export default FarmersMarkets;

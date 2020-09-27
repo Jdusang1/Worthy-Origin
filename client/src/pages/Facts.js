@@ -11,9 +11,8 @@ import Charts from "../components/Charts";
 import API from "../utils/API";
 import Placeholder from "../img/placeholder.png";
 
-
 const grey = "#f9f9f9";
-const white = "ffffff";
+const white = "#ffffff";
 
 const Div = styled.div`
   
@@ -22,12 +21,10 @@ const Div = styled.div`
     background-color: ${props => props.color === "grey" ? grey : white};
     padding: 15px;
     margin: 0 auto;
-  
   }
 
   .searchBar {
-    margin: 0 auto;
-   
+    margin: 0 auto;  
   }
 
   p {
@@ -42,7 +39,6 @@ const Div = styled.div`
    font-family: "Raleway";
    font-size: 52px;
    text-align: center;
-
   }
 
   .button {
@@ -61,27 +57,29 @@ const Div = styled.div`
   `
 
 const Facts = () => {
+  //takes input from user in search bar and updates state 
   const [searchTerm, setSearchTerm] = useState("")
+  //displays information from database that matches user search-if found 
   const [itemInfo, setItemInfo] = useState({
     id: "",
     ghg: "",
     country: "",
     product: ""
   })
-
+  //destructuring greenhouse gas and product from itemInfo 
   const { ghg, product } = itemInfo;
-
+  //allows user to enter search term 
   const handleInputChange = event => {
     setSearchTerm(event.target.value);
   }
-
+  //takes user input and searches-not case sensitive  
   const handleFormSubmit = event => {
     event.preventDefault();
     let word = searchTerm;
     word = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     API.getFood(word)
       .then((data) => {
-        console.log(data)
+        //sets itemInfo to second item in array 
         setItemInfo({
           id: data.data[1]._id,
           ghg: data.data[1].ghgEmission,
@@ -97,7 +95,6 @@ const Facts = () => {
     <>
       <NavBar />
       <MainJumbotron image={"factsImg"}/>
-
       <Container fluid={true}>
         <Div color={"grey"}>
           <div>
@@ -128,7 +125,7 @@ const Facts = () => {
                 </Col>
               </Row>
             </div>
-          ) : <div></div>}
+          ) : <div><h4>No item found.</h4></div>}
         </Div>
 
         <Div color={"grey"}>
